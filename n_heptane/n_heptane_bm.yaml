@@ -11390,7 +11390,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 129807800.0
-    Ea0: 1.37
+    Ea0: 19.80762618498247
     b: 0.805
     w: 239.0
   type: Blowers-Masel
@@ -16080,7 +16080,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.02759059
-    Ea0: 6.324
+    Ea0: 24.312831293731325
     b: 3.802
     w: 239.0
   type: Blowers-Masel
@@ -16100,7 +16100,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 2218.692
-    Ea0: 14.117
+    Ea0: 16.196379297735774
     b: 3.19
     w: 239.0
   type: Blowers-Masel
@@ -16120,7 +16120,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 127.65
-    Ea0: 4.7
+    Ea0: 7.28408254223736
     b: 3.68
     w: 239.0
   type: Blowers-Masel
@@ -16142,7 +16142,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 28002300.0
-    Ea0: 0.471
+    Ea0: 6.784717811329413
     b: 1.6
     w: 239.0
   type: Blowers-Masel
@@ -16162,7 +16162,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002101105
-    Ea0: 0.542
+    Ea0: 4.185938052324132
     b: 4.133
     w: 239.0
   type: Blowers-Masel
@@ -16182,7 +16182,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.03212
-    Ea0: 6.61
+    Ea0: 9.594631599664279
     b: 4.34
     w: 239.0
   type: Blowers-Masel
@@ -16200,10 +16200,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 6.648107e-06
-    Ea0: -2.464
+    Ea: -2.464
     b: 4.906
-    w: 239.0
-  type: Blowers-Masel
 - equation: C2H5(34) + C7H16(1) <=> C2H6(38) + C7H15(686)
   note: 'Reaction index: Chemkin #875; RMG #3524
 
@@ -16220,7 +16218,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.004327734
-    Ea0: 7.536
+    Ea0: 8.648685257643708
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -16274,10 +16272,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH2OH(30) + C7H15(686) <=> CH2O(9) + C7H16(1)
   note: 'Reaction index: Chemkin #879; RMG #3545
 
@@ -16388,7 +16384,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 360000.0
-    Ea0: 49.297
+    Ea0: 12.198951674276433
     b: 2.27
     w: 239.0
   type: Blowers-Masel
@@ -16408,7 +16404,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 220000000000.0
-    Ea0: 8.624
+    Ea0: 11.882966243313072
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -16426,7 +16422,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002641929
-    Ea0: 2.536
+    Ea0: 18.42402456167795
     b: 4.194
     w: 239.0
   type: Blowers-Masel
@@ -16444,7 +16440,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 3.062323
-    Ea0: 9.354
+    Ea0: 29.555617352841494
     b: 3.295
     w: 239.0
   type: Blowers-Masel
@@ -17182,7 +17178,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.02759059
-    Ea0: 6.324
+    Ea0: 24.312690930342242
     b: 3.802
     w: 239.0
   type: Blowers-Masel
@@ -17202,7 +17198,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 2218.692
-    Ea0: 14.117
+    Ea0: 16.19658910580783
     b: 3.19
     w: 239.0
   type: Blowers-Masel
@@ -17222,7 +17218,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 127.65
-    Ea0: 4.7
+    Ea0: 7.284268982046137
     b: 3.68
     w: 239.0
   type: Blowers-Masel
@@ -17244,7 +17240,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 28002300.0
-    Ea0: 0.471
+    Ea0: 6.784842505593284
     b: 1.6
     w: 239.0
   type: Blowers-Masel
@@ -17264,7 +17260,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002101105
-    Ea0: 0.542
+    Ea0: 4.185803601301498
     b: 4.133
     w: 239.0
   type: Blowers-Masel
@@ -17284,7 +17280,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.03212
-    Ea0: 6.61
+    Ea0: 9.594822166173815
     b: 4.34
     w: 239.0
   type: Blowers-Masel
@@ -17302,10 +17298,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 6.648107e-06
-    Ea0: -2.464
+    Ea: -2.464
     b: 4.906
-    w: 239.0
-  type: Blowers-Masel
 - equation: C2H5(34) + C7H16(1) <=> C2H6(38) + C7H15(683)
   note: 'Reaction index: Chemkin #921; RMG #3522
 
@@ -17322,7 +17316,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.004327734
-    Ea0: 7.536
+    Ea0: 8.648895463483074
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -17374,10 +17368,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH2OH(30) + C7H15(683) <=> CH2O(9) + C7H16(1)
   note: 'Reaction index: Chemkin #925; RMG #3547
 
@@ -17504,7 +17496,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 220000000000.0
-    Ea0: 8.624
+    Ea0: 11.883160375789663
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -17524,7 +17516,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.005147495
-    Ea0: 7.713
+    Ea0: 7.712590119436475
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -17595,7 +17587,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 220000000000.0
-    Ea0: 8.624
+    Ea0: 11.730350069913058
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -17615,7 +17607,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 220000000000.0
-    Ea0: 8.624
+    Ea0: 11.730154908007318
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -17637,7 +17629,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 35500000000000.0
-    Ea0: 65.008
+    Ea0: 15.887014611724132
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -17657,7 +17649,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 140000000000.0
-    Ea0: 0.0
+    Ea0: 14.039350248251552
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -17960,7 +17952,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.02759059
-    Ea0: 6.324
+    Ea0: 24.312690930342242
     b: 3.802
     w: 239.0
   type: Blowers-Masel
@@ -17980,7 +17972,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1109.346
-    Ea0: 14.117
+    Ea0: 16.19658910580783
     b: 3.19
     w: 239.0
   type: Blowers-Masel
@@ -18000,7 +17992,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 63.825
-    Ea0: 4.7
+    Ea0: 7.284268982046137
     b: 3.68
     w: 239.0
   type: Blowers-Masel
@@ -18022,7 +18014,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 14001150.0
-    Ea0: 0.471
+    Ea0: 6.784842505593284
     b: 1.6
     w: 239.0
   type: Blowers-Masel
@@ -18042,7 +18034,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002101105
-    Ea0: 0.542
+    Ea0: 4.185803601301498
     b: 4.133
     w: 239.0
   type: Blowers-Masel
@@ -18062,7 +18054,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.01606
-    Ea0: 6.61
+    Ea0: 9.594822166173815
     b: 4.34
     w: 239.0
   type: Blowers-Masel
@@ -18080,10 +18072,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 6.648107e-06
-    Ea0: -2.464
+    Ea: -2.464
     b: 4.906
-    w: 239.0
-  type: Blowers-Masel
 - equation: C2H5(34) + C7H16(1) <=> C2H6(38) + C7H15(684)
   note: 'Reaction index: Chemkin #958; RMG #3523
 
@@ -18100,7 +18090,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002163867
-    Ea0: 7.536
+    Ea0: 8.648895463483074
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -18152,10 +18142,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH2OH(30) + C7H15(684) <=> CH2O(9) + C7H16(1)
   note: 'Reaction index: Chemkin #962; RMG #3549
 
@@ -18260,7 +18248,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 110000000000.0
-    Ea0: 8.624
+    Ea0: 11.883160375789663
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -18280,7 +18268,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.005147495
-    Ea0: 7.713
+    Ea0: 7.712590119436475
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -18319,7 +18307,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.005147495
-    Ea0: 7.713
+    Ea0: 7.712814887999993
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -18339,7 +18327,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 110000000000.0
-    Ea0: 8.624
+    Ea0: 11.730350069913058
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -18485,7 +18473,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 3.062323
-    Ea0: 9.354
+    Ea0: 29.04155402957246
     b: 3.295
     w: 239.0
   type: Blowers-Masel
@@ -18505,7 +18493,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1940.0
-    Ea0: 4.66
+    Ea0: 5.457653955544239
     b: 3.23
     w: 239.0
   type: Blowers-Masel
@@ -18526,7 +18514,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 16638.24
-    Ea0: 6.496
+    Ea0: 7.968277852895878
     b: 2.718
     w: 239.0
   type: Blowers-Masel
@@ -18546,10 +18534,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 18800.0
-    Ea0: -1.004
+    Ea: -1.004
     b: 2.67
-    w: 239.0
-  type: Blowers-Masel
 - equation: H2O2(18) + C7H15(687) <=> HO2(17) + C7H16(1)
   note: 'Reaction index: Chemkin #983; RMG #3509
 
@@ -18566,7 +18552,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.773899
-    Ea0: 1.143
+    Ea0: 5.935949799530246
     b: 3.328
     w: 239.0
   type: Blowers-Masel
@@ -18586,7 +18572,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 4.0
-    Ea0: 7.717
+    Ea0: 9.562469675871174
     b: 3.57
     w: 239.0
   type: Blowers-Masel
@@ -18606,10 +18592,8 @@ reactions:
     Ea raised from -7.3 to -7.3 kJ/mol.'
   rate-constant:
     A: 0.0006391396
-    Ea0: -1.737
+    Ea: -1.737
     b: 4.352
-    w: 239.0
-  type: Blowers-Masel
 - equation: C2H5(34) + C7H16(1) <=> C2H6(38) + C7H15(687)
   note: 'Reaction index: Chemkin #986; RMG #3525
 
@@ -18626,7 +18610,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.00552
-    Ea0: 9.2
+    Ea0: 9.025584742624051
     b: 4.34
     w: 239.0
   type: Blowers-Masel
@@ -18678,10 +18662,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH2OH(30) + C7H15(687) <=> CH2O(9) + C7H16(1)
   note: 'Reaction index: Chemkin #990; RMG #3551
 
@@ -18800,7 +18782,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 24000.0
-    Ea0: 15.75
+    Ea0: 17.884906492052526
     b: 2.55
     w: 239.0
   type: Blowers-Masel
@@ -18820,7 +18802,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.004327734
-    Ea0: 7.536
+    Ea0: 8.810102990339555
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -18882,7 +18864,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.004327734
-    Ea0: 7.536
+    Ea0: 8.810311430953433
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -18902,7 +18884,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 24000.0
-    Ea0: 15.75
+    Ea0: 17.719076482160006
     b: 2.55
     w: 239.0
   type: Blowers-Masel
@@ -18978,7 +18960,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002163867
-    Ea0: 7.536
+    Ea0: 8.810311430953433
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -19565,10 +19547,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 2.0
-    Ea0: -7.48
+    Ea: -7.48
     b: 3.52
-    w: 239.0
-  type: Blowers-Masel
 - equation: HO2(17) + C2H5(34) <=> H2O2(18) + C2H4(11)
   note: 'Reaction index: Chemkin #1032; RMG #5016
 
@@ -19620,7 +19600,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.02051684
-    Ea0: 19.764
+    Ea0: 43.01545692855332
     b: 4.261
     w: 239.0
   type: Blowers-Masel
@@ -20650,7 +20630,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.001148238
-    Ea0: 6.424
+    Ea0: 8.110179166443475
     b: 4.287
     w: 239.0
   type: Blowers-Masel
@@ -20670,7 +20650,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.001148238
-    Ea0: 6.424
+    Ea0: 8.110179166443475
     b: 4.287
     w: 239.0
   type: Blowers-Masel
@@ -20690,7 +20670,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.001148238
-    Ea0: 6.424
+    Ea0: 8.11038081460088
     b: 4.287
     w: 239.0
   type: Blowers-Masel
@@ -20710,7 +20690,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.000515365
-    Ea0: 5.188
+    Ea0: 7.989199019231011
     b: 4.471
     w: 239.0
   type: Blowers-Masel
@@ -20729,7 +20709,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.6189024
-    Ea0: 4.372
+    Ea0: 9.935364928309259
     b: 3.527
     w: 239.0
   type: Blowers-Masel
@@ -20748,7 +20728,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.6189024
-    Ea0: 4.372
+    Ea0: 9.935364928309259
     b: 3.527
     w: 239.0
   type: Blowers-Masel
@@ -20767,7 +20747,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.6189024
-    Ea0: 4.372
+    Ea0: 9.93552989183432
     b: 3.527
     w: 239.0
   type: Blowers-Masel
@@ -20785,7 +20765,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0065
-    Ea0: 7.2
+    Ea0: 14.057633121598617
     b: 4.245
     w: 239.0
   type: Blowers-Masel
@@ -20803,10 +20783,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 49497470000.0
-    Ea0: -1.637
+    Ea: -1.637
     b: 0.0
-    w: 239.0
-  type: Blowers-Masel
 - data:
   - - -19.56
     - 1.615
@@ -21023,10 +21001,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: C7H15(684) + S(849) <=> S(829) + C7H16(1)
   note: 'Reaction index: Chemkin #1093; RMG #4324
 
@@ -21043,10 +21019,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: C7H15(686) + S(849) <=> S(829) + C7H16(1)
   note: 'Reaction index: Chemkin #1094; RMG #4325
 
@@ -21063,10 +21037,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: C7H15(687) + S(849) <=> S(829) + C7H16(1)
   note: 'Reaction index: Chemkin #1095; RMG #4326
 
@@ -21083,10 +21055,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: OH(15) + S(849) <=> H2O(8) + S(829)
   note: 'Reaction index: Chemkin #1096; RMG #5116
 
@@ -21103,7 +21073,7 @@ reactions:
     Ea raised from -1.8 to -1.8 kJ/mol.'
   rate-constant:
     A: 1100000000000.0
-    Ea0: -0.437
+    Ea0: 7.037405977332465
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -21123,7 +21093,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 41200.0
-    Ea0: 10.21
+    Ea0: 10.156009762983363
     b: 2.5
     w: 239.0
   type: Blowers-Masel
@@ -21141,10 +21111,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.0
-    Ea0: -7.48
+    Ea: -7.48
     b: 3.52
-    w: 239.0
-  type: Blowers-Masel
 - equation: HO2(17) + C7H15(686) <=> S(849)
   note: "Reaction index: Chemkin #1099; RMG #5719\nTemplate reaction: R_Recombination\n\
     Flux pairs: HO2(17), S(849); C7H15(686), S(849);\nBM rule fitted to 2 training\
@@ -21196,10 +21164,8 @@ reactions:
     Ea raised from -8.2 to -8.2 kJ/mol.'
   rate-constant:
     A: 120000000000.0
-    Ea0: -1.95
+    Ea: -1.95
     b: 0.0
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(846) <=> S(829)
   note: 'Reaction index: Chemkin #1103; RMG #4320
 
@@ -21241,7 +21207,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.02759059
-    Ea0: 6.324
+    Ea0: 24.31277054364205
     b: 3.802
     w: 239.0
   type: Blowers-Masel
@@ -21261,7 +21227,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.005147495
-    Ea0: 7.713
+    Ea0: 7.712942373878355
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -21281,7 +21247,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002573748
-    Ea0: 7.713
+    Ea0: 7.712687401035139
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -21301,7 +21267,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.005147495
-    Ea0: 7.713
+    Ea0: 7.712717607230419
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -21321,7 +21287,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002163867
-    Ea0: 7.536
+    Ea0: 8.810193204963092
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -21352,10 +21318,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: C7H15(684) + S(906) <=> S(885) + C7H16(1)
   note: 'Reaction index: Chemkin #1112; RMG #4490
 
@@ -21372,10 +21336,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: C7H15(686) + S(906) <=> S(885) + C7H16(1)
   note: 'Reaction index: Chemkin #1113; RMG #4491
 
@@ -21392,10 +21354,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: C7H15(687) + S(906) <=> S(885) + C7H16(1)
   note: 'Reaction index: Chemkin #1114; RMG #4492
 
@@ -21412,10 +21372,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(903) + C7H16(1) <=> C7H15(683) + S(906)
   note: 'Reaction index: Chemkin #1115; RMG #4899
 
@@ -21432,7 +21390,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.004327734
-    Ea0: 7.536
+    Ea0: 8.810258509738903
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -21452,7 +21410,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002163867
-    Ea0: 7.536
+    Ea0: 8.810258509738903
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -21472,7 +21430,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.004327734
-    Ea0: 7.536
+    Ea0: 8.810050068558057
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -21492,7 +21450,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0003260601
-    Ea0: 8.49
+    Ea0: 8.489739173366035
     b: 4.81
     w: 239.0
   type: Blowers-Masel
@@ -21512,7 +21470,7 @@ reactions:
     Ea raised from -1.8 to -1.8 kJ/mol.'
   rate-constant:
     A: 1100000000000.0
-    Ea0: -0.437
+    Ea0: 7.037405977332465
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -21532,7 +21490,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 41200.0
-    Ea0: 10.21
+    Ea0: 10.156009762983363
     b: 2.5
     w: 239.0
   type: Blowers-Masel
@@ -21550,10 +21508,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.0
-    Ea0: -7.48
+    Ea: -7.48
     b: 3.52
-    w: 239.0
-  type: Blowers-Masel
 - equation: HO2(17) + C7H15(683) <=> S(906)
   note: "Reaction index: Chemkin #1122; RMG #5909\nTemplate reaction: R_Recombination\n\
     Flux pairs: HO2(17), S(906); C7H15(683), S(906);\nBM rule fitted to 2 training\
@@ -21605,10 +21561,8 @@ reactions:
     Ea raised from -8.2 to -8.2 kJ/mol.'
   rate-constant:
     A: 120000000000.0
-    Ea0: -1.95
+    Ea: -1.95
     b: 0.0
-    w: 239.0
-  type: Blowers-Masel
 - equation: HO2(17) + S(903) <=> O2(2) + S(906)
   note: 'Reaction index: Chemkin #1126; RMG #5931
 
@@ -21623,7 +21577,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 5.75
-    Ea0: 0.46
+    Ea0: 15.02365532443518
     b: 2.94
     w: 239.0
   type: Blowers-Masel
@@ -21643,10 +21597,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: C7H15(684) + S(1085) <=> S(987) + C7H16(1)
   note: 'Reaction index: Chemkin #1128; RMG #4944
 
@@ -21663,10 +21615,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: C7H15(686) + S(1085) <=> S(987) + C7H16(1)
   note: 'Reaction index: Chemkin #1129; RMG #4945
 
@@ -21683,10 +21633,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: C7H15(687) + S(1085) <=> S(987) + C7H16(1)
   note: 'Reaction index: Chemkin #1130; RMG #4946
 
@@ -21703,10 +21651,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: HO2(17) + C7H15(687) <=> S(1085)
   note: "Reaction index: Chemkin #1131; RMG #5935\nTemplate reaction: R_Recombination\n\
     Flux pairs: HO2(17), S(1085); C7H15(687), S(1085);\nBM rule fitted to 2 training\
@@ -21780,10 +21726,8 @@ reactions:
     Ea raised from -8.2 to -8.2 kJ/mol.'
   rate-constant:
     A: 120000000000.0
-    Ea0: -1.95
+    Ea: -1.95
     b: 0.0
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(1286) <=> S(1306)
   note: 'Reaction index: Chemkin #1137; RMG #5887
 
@@ -21865,7 +21809,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.02759059
-    Ea0: 6.324
+    Ea0: 24.31287272546457
     b: 3.802
     w: 239.0
   type: Blowers-Masel
@@ -21885,7 +21829,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.005147495
-    Ea0: 7.713
+    Ea0: 7.7131059976273395
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -21905,7 +21849,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002573748
-    Ea0: 7.713
+    Ea0: 7.712523772707398
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -21925,7 +21869,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.005147495
-    Ea0: 7.713
+    Ea0: 7.712881233437879
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -21945,7 +21889,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002163867
-    Ea0: 7.536
+    Ea0: 8.810041463433418
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -23369,7 +23313,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.004327734
-    Ea0: 7.536
+    Ea0: 9.263610308143914
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -23389,7 +23333,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002163867
-    Ea0: 7.536
+    Ea0: 9.263610308143914
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -23409,7 +23353,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.004327734
-    Ea0: 7.536
+    Ea0: 9.263406462234554
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -23429,7 +23373,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0003260601
-    Ea0: 8.49
+    Ea0: 8.97711984059986
     b: 4.81
     w: 239.0
   type: Blowers-Masel
@@ -23720,10 +23664,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: C7H15(684) + S(1310) <=> S(1286) + C7H16(1)
   note: 'Reaction index: Chemkin #1234; RMG #5892
 
@@ -23740,10 +23682,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: C7H15(686) + S(1310) <=> S(1286) + C7H16(1)
   note: 'Reaction index: Chemkin #1235; RMG #5893
 
@@ -23760,10 +23700,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: C7H15(687) + S(1310) <=> S(1286) + C7H16(1)
   note: 'Reaction index: Chemkin #1236; RMG #5894
 
@@ -23780,10 +23718,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(1306) + C7H16(1) <=> C7H15(683) + S(1310)
   note: 'Reaction index: Chemkin #1237; RMG #6018
 
@@ -23800,7 +23736,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.004327734
-    Ea0: 7.536
+    Ea0: 8.810287977965086
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -23820,7 +23756,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002163867
-    Ea0: 7.536
+    Ea0: 8.810287977965086
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -23840,7 +23776,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.004327734
-    Ea0: 7.536
+    Ea0: 8.810079537099929
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -23860,7 +23796,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0003260601
-    Ea0: 8.49
+    Ea0: 8.489770949899794
     b: 4.81
     w: 239.0
   type: Blowers-Masel
@@ -23880,10 +23816,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: C7H15(684) + S(1310) <=> S(1309) + C7H16(1)
   note: 'Reaction index: Chemkin #1242; RMG #6074
 
@@ -23900,10 +23834,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: C7H15(686) + S(1310) <=> S(1309) + C7H16(1)
   note: 'Reaction index: Chemkin #1243; RMG #6075
 
@@ -23920,10 +23852,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: C7H15(687) + S(1310) <=> S(1309) + C7H16(1)
   note: 'Reaction index: Chemkin #1244; RMG #6076
 
@@ -23940,10 +23870,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: HO2(17) + S(904) <=> S(1310)
   note: "Reaction index: Chemkin #1245; RMG #6551\nTemplate reaction: R_Recombination\n\
     Flux pairs: S(904), S(1310); HO2(17), S(1310);\nBM rule fitted to 2 training reactions\
@@ -24017,7 +23945,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 14001150.0
-    Ea0: 0.471
+    Ea0: 6.784771779790063
     b: 1.6
     w: 239.0
   type: Blowers-Masel
@@ -24039,7 +23967,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 14001150.0
-    Ea0: 0.471
+    Ea0: 6.7846810046339225
     b: 1.6
     w: 239.0
   type: Blowers-Masel
@@ -24060,7 +23988,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.9364935
-    Ea0: 1.248
+    Ea0: 7.401753196713281
     b: 3.77
     w: 239.0
   type: Blowers-Masel
@@ -24080,7 +24008,7 @@ reactions:
     Ea raised from -1.8 to -1.8 kJ/mol.'
   rate-constant:
     A: 1100000000000.0
-    Ea0: -0.437
+    Ea0: 7.037363961019086
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -24102,10 +24030,8 @@ reactions:
     Ea raised from -8.2 to -8.2 kJ/mol.'
   rate-constant:
     A: 120000000000.0
-    Ea0: -1.95
+    Ea: -1.95
     b: 0.0
-    w: 239.0
-  type: Blowers-Masel
 - equation: HO2(17) + S(1286) <=> O2(2) + S(1310)
   note: 'Reaction index: Chemkin #1255; RMG #6610
 
@@ -24124,10 +24050,8 @@ reactions:
     Ea raised from -8.2 to -8.2 kJ/mol.'
   rate-constant:
     A: 120000000000.0
-    Ea0: -1.95
+    Ea: -1.95
     b: 0.0
-    w: 239.0
-  type: Blowers-Masel
 - equation: HO2(17) + S(1306) <=> O2(2) + S(1310)
   note: 'Reaction index: Chemkin #1256; RMG #6617
 
@@ -24142,7 +24066,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 5.75
-    Ea0: 0.46
+    Ea0: 15.023671131583935
     b: 2.94
     w: 239.0
   type: Blowers-Masel
@@ -24194,7 +24118,7 @@ reactions:
     Ea raised from -1.8 to -1.8 kJ/mol.'
   rate-constant:
     A: 1100000000000.0
-    Ea0: -0.437
+    Ea0: 7.037372630569534
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -24214,7 +24138,7 @@ reactions:
     Ea raised from -1.8 to -1.8 kJ/mol.'
   rate-constant:
     A: 1100000000000.0
-    Ea0: -0.437
+    Ea0: 7.037372630569534
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -25064,10 +24988,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(885) + S(849) <=> S(829) + S(906)
   note: 'Reaction index: Chemkin #1311; RMG #6972
 
@@ -25082,7 +25004,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 6.629840880000019
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -25102,10 +25024,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(903) + S(849) <=> S(829) + S(906)
   note: 'Reaction index: Chemkin #1313; RMG #6979
 
@@ -25121,7 +25041,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.201353e-05
-    Ea0: -4.07
+    Ea0: 2.377873091337729
     b: 4.855
     w: 239.0
   type: Blowers-Masel
@@ -25139,7 +25059,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 6.629881061203629
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -25157,7 +25077,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 6.62988276019815
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -25175,7 +25095,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 6.62988276019815
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -25194,10 +25114,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.201353e-05
-    Ea0: -4.07
+    Ea: -4.07
     b: 4.855
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(846) + S(906) <=> S(885) + S(849)
   note: 'Reaction index: Chemkin #1318; RMG #7094
 
@@ -25214,10 +25132,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(904) + S(906) <=> S(885) + S(906)
   note: 'Reaction index: Chemkin #1319; RMG #7118
 
@@ -25234,10 +25150,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(903) + S(906) <=> S(885) + S(906)
   note: 'Reaction index: Chemkin #1320; RMG #7120
 
@@ -25253,10 +25167,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.201353e-05
-    Ea0: -4.07
+    Ea: -4.07
     b: 4.855
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(987) + S(906) <=> S(885) + S(1085)
   note: 'Reaction index: Chemkin #1321; RMG #7121
 
@@ -25271,7 +25183,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 6.629881061203629
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -25289,7 +25201,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 6.62988276019815
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -25307,7 +25219,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 6.62988276019815
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -25326,10 +25238,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.201353e-05
-    Ea0: -4.07
+    Ea: -4.07
     b: 4.855
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(903) + S(849) <=> S(846) + S(906)
   note: 'Reaction index: Chemkin #1325; RMG #7589
 
@@ -25346,7 +25256,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002163867
-    Ea0: 7.536
+    Ea0: 8.810140283427025
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -25366,7 +25276,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002163867
-    Ea0: 7.536
+    Ea0: 8.809988541484614
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -25386,10 +25296,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(904) + S(1085) <=> S(987) + S(906)
   note: 'Reaction index: Chemkin #1328; RMG #7633
 
@@ -25406,10 +25314,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(903) + S(1085) <=> S(987) + S(906)
   note: 'Reaction index: Chemkin #1329; RMG #7635
 
@@ -25425,7 +25331,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.201353e-05
-    Ea0: -4.07
+    Ea0: 2.377773200198691
     b: 4.855
     w: 239.0
   type: Blowers-Masel
@@ -25443,7 +25349,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 6.629842578999804
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -25461,7 +25367,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 6.629842578999804
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -25480,10 +25386,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.201353e-05
-    Ea0: -4.07
+    Ea: -4.07
     b: 4.855
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(846) + S(1310) <=> S(1286) + S(849)
   note: 'Reaction index: Chemkin #1333; RMG #7757
 
@@ -25500,10 +25404,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(846) + S(1310) <=> S(1309) + S(849)
   note: 'Reaction index: Chemkin #1334; RMG #7764
 
@@ -25520,10 +25422,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: PC4H9(189) + S(846) <=> C4H8(195) + S(849)
   note: 'Reaction index: Chemkin #1335; RMG #7773
 
@@ -25678,10 +25578,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(903) + S(1310) <=> S(1286) + S(906)
   note: 'Reaction index: Chemkin #1344; RMG #7823
 
@@ -25697,7 +25595,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.201353e-05
-    Ea0: -4.07
+    Ea0: 2.377831232257839
     b: 4.855
     w: 239.0
   type: Blowers-Masel
@@ -25715,7 +25613,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 6.629840880000019
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -25734,10 +25632,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.201353e-05
-    Ea0: -4.07
+    Ea: -4.07
     b: 4.855
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(904) + S(1310) <=> S(1309) + S(906)
   note: 'Reaction index: Chemkin #1347; RMG #7859
 
@@ -25754,10 +25650,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(903) + S(1310) <=> S(1309) + S(906)
   note: 'Reaction index: Chemkin #1348; RMG #7861
 
@@ -25773,10 +25667,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.201353e-05
-    Ea0: -4.07
+    Ea: -4.07
     b: 4.855
-    w: 239.0
-  type: Blowers-Masel
 - equation: PC4H9(189) + S(904) <=> C4H8(195) + S(906)
   note: 'Reaction index: Chemkin #1349; RMG #7864
 
@@ -26068,10 +25960,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.201353e-05
-    Ea0: -4.07
+    Ea: -4.07
     b: 4.855
-    w: 239.0
-  type: Blowers-Masel
 - equation: PC4H9(189) + S(1306) <=> C4H8(195) + S(1310)
   note: 'Reaction index: Chemkin #1366; RMG #7992
 
@@ -26235,7 +26125,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.02759059
-    Ea0: 6.324
+    Ea0: 24.31277054364205
     b: 3.802
     w: 239.0
   type: Blowers-Masel
@@ -26274,7 +26164,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 14001150.0
-    Ea0: 0.471
+    Ea0: 6.784771779790063
     b: 1.6
     w: 239.0
   type: Blowers-Masel
@@ -26396,7 +26286,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.005147495
-    Ea0: 7.713
+    Ea0: 7.712717607230419
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -26416,10 +26306,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(845) + C7H16(1) <=> C7H15(683) + S(849)
   note: 'Reaction index: Chemkin #1386; RMG #7036
 
@@ -26436,7 +26324,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.005147495
-    Ea0: 7.713
+    Ea0: 7.712942373878355
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -26456,10 +26344,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: C7H15(687) + S(849) <=> S(845) + C7H16(1)
   note: 'Reaction index: Chemkin #1388; RMG #7350
 
@@ -26476,7 +26362,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002163867
-    Ea0: 7.536
+    Ea0: 8.810193204963092
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -26496,7 +26382,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002163867
-    Ea0: 7.536
+    Ea0: 8.810140283427025
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -26516,10 +26402,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(845) + S(1310) <=> S(1286) + S(849)
   note: 'Reaction index: Chemkin #1391; RMG #7758
 
@@ -26536,10 +26420,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(845) + S(1310) <=> S(1309) + S(849)
   note: 'Reaction index: Chemkin #1392; RMG #7765
 
@@ -26556,10 +26438,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: PC4H9(189) + S(845) <=> C4H8(195) + S(849)
   note: 'Reaction index: Chemkin #1393; RMG #7775
 
@@ -26664,7 +26544,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002573748
-    Ea0: 7.713
+    Ea0: 7.712687401035139
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -27358,7 +27238,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 576166.6
-    Ea0: 12.851
+    Ea0: 12.42454170111123
     b: 2.156
     w: 239.0
   type: Blowers-Masel
@@ -27379,7 +27259,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 288083.3
-    Ea0: 12.851
+    Ea0: 12.42454170111123
     b: 2.156
     w: 239.0
   type: Blowers-Masel
@@ -27400,7 +27280,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 576166.6
-    Ea0: 12.851
+    Ea0: 12.424312858560556
     b: 2.156
     w: 239.0
   type: Blowers-Masel
@@ -27420,10 +27300,8 @@ reactions:
     Ea raised from -7.3 to -7.3 kJ/mol.'
   rate-constant:
     A: 0.0006391396
-    Ea0: -1.737
+    Ea: -1.737
     b: 4.352
-    w: 239.0
-  type: Blowers-Masel
 - data:
   - - -5.126
     - 0.3632
@@ -28313,7 +28191,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.02759059
-    Ea0: 6.324
+    Ea0: 24.312839081764285
     b: 3.802
     w: 239.0
   type: Blowers-Masel
@@ -28335,7 +28213,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 14001150.0
-    Ea0: 0.471
+    Ea0: 6.784710892680291
     b: 1.6
     w: 239.0
   type: Blowers-Masel
@@ -28441,10 +28319,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(1082) + S(906) <=> S(885) + S(1085)
   note: 'Reaction index: Chemkin #1495; RMG #7123
 
@@ -28461,10 +28337,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(1082) + S(1085) <=> S(987) + S(1085)
   note: 'Reaction index: Chemkin #1496; RMG #7637
 
@@ -28481,10 +28355,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(1082) + S(1310) <=> S(1286) + S(1085)
   note: 'Reaction index: Chemkin #1497; RMG #7825
 
@@ -28501,10 +28373,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: S(1082) + S(1310) <=> S(1309) + S(1085)
   note: 'Reaction index: Chemkin #1498; RMG #7911
 
@@ -28521,10 +28391,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: PC4H9(189) + S(1082) <=> C4H8(195) + S(1085)
   note: 'Reaction index: Chemkin #1499; RMG #7921
 
@@ -28661,7 +28529,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.005147495
-    Ea0: 7.713
+    Ea0: 7.713052124147102
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -28681,7 +28549,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002573748
-    Ea0: 7.713
+    Ea0: 7.712577648090498
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -28701,7 +28569,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.005147495
-    Ea0: 7.713
+    Ea0: 7.71282735914818
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -28721,7 +28589,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002163867
-    Ea0: 7.536
+    Ea0: 8.810091424980689
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -28790,10 +28658,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.73e-10
-    Ea0: -2.14
+    Ea: -2.14
     b: 6.3
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH3CO(21) + S(849) <=> CH3CHO(39) + S(829)
   note: 'Reaction index: Chemkin #1514; RMG #13306
 
@@ -28810,7 +28676,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0009569
-    Ea0: 42.343
+    Ea0: 42.92147782331648
     b: 4.45
     w: 239.0
   type: Blowers-Masel
@@ -28830,10 +28696,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.73e-10
-    Ea0: -2.14
+    Ea: -2.14
     b: 6.3
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH3CO(21) + S(906) <=> CH3CHO(39) + S(885)
   note: 'Reaction index: Chemkin #1516; RMG #13324
 
@@ -28850,7 +28714,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0009569
-    Ea0: 42.343
+    Ea0: 42.92147782331648
     b: 4.45
     w: 239.0
   type: Blowers-Masel
@@ -28870,10 +28734,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.73e-10
-    Ea0: -2.14
+    Ea: -2.14
     b: 6.3
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH3CO(21) + S(1085) <=> CH3CHO(39) + S(987)
   note: 'Reaction index: Chemkin #1518; RMG #13342
 
@@ -28890,7 +28752,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0009569
-    Ea0: 42.343
+    Ea0: 42.92143795096989
     b: 4.45
     w: 239.0
   type: Blowers-Masel
@@ -29274,7 +29136,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 8700000000000.0
-    Ea0: 4.75
+    Ea0: 10.75147313912975
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -29292,7 +29154,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 8700000000000.0
-    Ea0: 4.75
+    Ea0: 10.75147313912975
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -29310,7 +29172,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 8700000000000.0
-    Ea0: 4.75
+    Ea0: 10.75144366090741
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -29328,7 +29190,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 8700000000000.0
-    Ea0: 4.75
+    Ea0: 10.751442414467885
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -29346,7 +29208,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 8700000000000.0
-    Ea0: 4.75
+    Ea0: 10.751442414467885
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -29437,7 +29299,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.9364935
-    Ea0: 1.248
+    Ea0: 7.401733794146174
     b: 3.77
     w: 239.0
   type: Blowers-Masel
@@ -29457,10 +29319,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.322876
-    Ea0: -5.755
+    Ea: -5.755
     b: 3.555
-    w: 239.0
-  type: Blowers-Masel
 - equation: HO2(17) + CH3OOH(36) <=> H2O2(18) + CH2OOH(37)
   note: 'Reaction index: Chemkin #1548; RMG #13977
 
@@ -29479,7 +29339,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.00035
-    Ea0: 10.767
+    Ea0: 2.646354370541317
     b: 4.85
     w: 239.0
   type: Blowers-Masel
@@ -29499,10 +29359,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 2.0
-    Ea0: -7.48
+    Ea: -7.48
     b: 3.52
-    w: 239.0
-  type: Blowers-Masel
 - equation: O2(2) + HOCH2O(65) <=> HO2(17) + HOCHO(59)
   note: 'Reaction index: Chemkin #1550; RMG #13987
 
@@ -29537,7 +29395,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.184
-    Ea0: 6.63
+    Ea0: 6.910385805290108
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -29557,7 +29415,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002101105
-    Ea0: 0.542
+    Ea0: 4.185879861186095
     b: 4.133
     w: 239.0
   type: Blowers-Masel
@@ -29577,7 +29435,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002101105
-    Ea0: 0.542
+    Ea0: 4.185879861186095
     b: 4.133
     w: 239.0
   type: Blowers-Masel
@@ -29599,7 +29457,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.184
-    Ea0: 6.63
+    Ea0: 6.910385805290108
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -29619,7 +29477,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002101105
-    Ea0: 0.542
+    Ea0: 4.1859777388061605
     b: 4.133
     w: 239.0
   type: Blowers-Masel
@@ -29641,7 +29499,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 11.5
-    Ea0: 0.46
+    Ea0: 4.8164568510579935
     b: 2.94
     w: 239.0
   type: Blowers-Masel
@@ -29663,7 +29521,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.184
-    Ea0: 6.63
+    Ea0: 6.910425155646981
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -29683,7 +29541,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002101105
-    Ea0: 0.542
+    Ea0: 4.185945512300018
     b: 4.133
     w: 239.0
   type: Blowers-Masel
@@ -29705,7 +29563,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.184
-    Ea0: 6.63
+    Ea0: 6.910426819510841
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -29727,7 +29585,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.184
-    Ea0: 6.63
+    Ea0: 6.910426819510841
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -29749,7 +29607,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 11.5
-    Ea0: 0.46
+    Ea0: 4.816475191658924
     b: 2.94
     w: 239.0
   type: Blowers-Masel
@@ -30266,10 +30124,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.6614378
-    Ea0: -5.755
+    Ea: -5.755
     b: 3.555
-    w: 239.0
-  type: Blowers-Masel
 - equation: HCO(20) + HCCO(50) <=> CO(6) + CH2CO(25)
   note: 'Reaction index: Chemkin #1594; RMG #15032
 
@@ -30434,10 +30290,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.6614378
-    Ea0: -5.755
+    Ea: -5.755
     b: 3.555
-    w: 239.0
-  type: Blowers-Masel
 - equation: HCCO(50) + S(906) <=> CH2CO(25) + S(885)
   note: 'Reaction index: Chemkin #1604; RMG #15136
 
@@ -30452,10 +30306,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.6614378
-    Ea0: -5.755
+    Ea: -5.755
     b: 3.555
-    w: 239.0
-  type: Blowers-Masel
 - equation: HCCO(50) + S(1085) <=> CH2CO(25) + S(987)
   note: 'Reaction index: Chemkin #1605; RMG #15202
 
@@ -30470,10 +30322,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.6614378
-    Ea0: -5.755
+    Ea: -5.755
     b: 3.555
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH3CO(21) + S(846) <=> CH2CO(25) + S(849)
   note: 'Reaction index: Chemkin #1606; RMG #15247
 
@@ -30578,10 +30428,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.6614378
-    Ea0: -5.755
+    Ea: -5.755
     b: 3.555
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH3CO(21) + S(904) <=> CH2CO(25) + S(906)
   note: 'Reaction index: Chemkin #1613; RMG #15298
 
@@ -30746,10 +30594,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.6614378
-    Ea0: -5.755
+    Ea: -5.755
     b: 3.555
-    w: 239.0
-  type: Blowers-Masel
 - equation: HCCO(50) + PC4H9(189) <=> CH2CO(25) + C4H8(195)
   note: 'Reaction index: Chemkin #1624; RMG #15394
 
@@ -30894,7 +30740,7 @@ reactions:
     Ea raised from 311.8 to 350.8 kJ/mol to match endothermicity of reaction.'
   rate-constant:
     A: 24200000000000.0
-    Ea0: 83.847
+    Ea0: 20.387561198411646
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -30912,7 +30758,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 4.331279
-    Ea0: 14.279
+    Ea0: 22.90336597164747
     b: 3.368
     w: 239.0
   type: Blowers-Masel
@@ -31099,7 +30945,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 4.331279
-    Ea0: 14.279
+    Ea0: 17.8450607976502
     b: 3.368
     w: 239.0
   type: Blowers-Masel
@@ -31120,7 +30966,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.05766281
-    Ea0: 13.723
+    Ea0: 14.471873066932408
     b: 4.245
     w: 239.0
   type: Blowers-Masel
@@ -31314,7 +31160,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.001205773
-    Ea0: 7.327
+    Ea0: 8.466490221024038
     b: 4.283
     w: 239.0
   type: Blowers-Masel
@@ -31332,7 +31178,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 4.331279
-    Ea0: 14.279
+    Ea0: 21.873798351993102
     b: 3.368
     w: 239.0
   type: Blowers-Masel
@@ -31352,10 +31198,8 @@ reactions:
     Ea raised from -22.5 to -22.5 kJ/mol.'
   rate-constant:
     A: 6.589613e-11
-    Ea0: -5.37
+    Ea: -5.37
     b: 6.535
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH3O(31) + S(906) <=> CH3OH(28) + S(885)
   note: 'Reaction index: Chemkin #1660; RMG #15789
 
@@ -31370,7 +31214,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 4.331279
-    Ea0: 14.279
+    Ea0: 21.873798351993102
     b: 3.368
     w: 239.0
   type: Blowers-Masel
@@ -31390,10 +31234,8 @@ reactions:
     Ea raised from -22.5 to -22.5 kJ/mol.'
   rate-constant:
     A: 6.589613e-11
-    Ea0: -5.37
+    Ea: -5.37
     b: 6.535
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH3O(31) + S(1085) <=> CH3OH(28) + S(987)
   note: 'Reaction index: Chemkin #1662; RMG #15799
 
@@ -31408,7 +31250,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 4.331279
-    Ea0: 14.279
+    Ea0: 21.873765309590095
     b: 3.368
     w: 239.0
   type: Blowers-Masel
@@ -31428,10 +31270,8 @@ reactions:
     Ea raised from -22.5 to -22.5 kJ/mol.'
   rate-constant:
     A: 6.589613e-11
-    Ea0: -5.37
+    Ea: -5.37
     b: 6.535
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH3O(31) + S(849) <=> CH3OH(28) + S(846)
   note: 'Reaction index: Chemkin #1664; RMG #15805
 
@@ -31448,7 +31288,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 110000000000.0
-    Ea0: 8.624
+    Ea0: 11.730239375415689
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -31468,7 +31308,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.001205773
-    Ea0: 7.327
+    Ea0: 8.466399519846153
     b: 4.283
     w: 239.0
   type: Blowers-Masel
@@ -31486,7 +31326,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 4.331279
-    Ea0: 14.279
+    Ea0: 21.87376391244499
     b: 3.368
     w: 239.0
   type: Blowers-Masel
@@ -31506,10 +31346,8 @@ reactions:
     Ea raised from -22.5 to -22.5 kJ/mol.'
   rate-constant:
     A: 6.589613e-11
-    Ea0: -5.37
+    Ea: -5.37
     b: 6.535
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH3O(31) + S(906) <=> CH3OH(28) + S(904)
   note: 'Reaction index: Chemkin #1668; RMG #15809
 
@@ -31526,7 +31364,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 110000000000.0
-    Ea0: 8.624
+    Ea0: 11.730097300817384
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -31546,7 +31384,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.001205773
-    Ea0: 7.327
+    Ea0: 8.466552079267567
     b: 4.283
     w: 239.0
   type: Blowers-Masel
@@ -31564,7 +31402,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 4.331279
-    Ea0: 14.279
+    Ea0: 21.87376391244499
     b: 3.368
     w: 239.0
   type: Blowers-Masel
@@ -31584,10 +31422,8 @@ reactions:
     Ea raised from -22.5 to -22.5 kJ/mol.'
   rate-constant:
     A: 6.589613e-11
-    Ea0: -5.37
+    Ea: -5.37
     b: 6.535
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH2OH(30) + PC4H9(189) <=> CH3OH(28) + C4H8(195)
   note: 'Reaction index: Chemkin #1672; RMG #15817
 
@@ -31746,7 +31582,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0699
-    Ea0: 19.545
+    Ea0: 31.23321328501232
     b: 3.75
     w: 239.0
   type: Blowers-Masel
@@ -31764,7 +31600,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0001582731
-    Ea0: 41.32
+    Ea0: 47.379290328787526
     b: 4.663
     w: 239.0
   type: Blowers-Masel
@@ -31782,7 +31618,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 11.809589425889412
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -31800,7 +31636,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 7.841107872786203
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -31818,10 +31654,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 6.648107e-06
-    Ea0: -2.464
+    Ea: -2.464
     b: 4.906
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH3OOH(36) + S(845) <=> CH3OO(33) + S(849)
   note: 'Reaction index: Chemkin #1685; RMG #16139
 
@@ -31836,10 +31670,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 6.648107e-06
-    Ea0: -2.464
+    Ea: -2.464
     b: 4.906
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH3OOH(36) + S(885) <=> CH3OO(33) + S(906)
   note: 'Reaction index: Chemkin #1686; RMG #16153
 
@@ -31854,7 +31686,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 7.841107872786203
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -31872,10 +31704,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 6.648107e-06
-    Ea0: -2.464
+    Ea: -2.464
     b: 4.906
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH3OOH(36) + S(903) <=> CH3OO(33) + S(906)
   note: 'Reaction index: Chemkin #1688; RMG #16160
 
@@ -31890,7 +31720,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 5.75
-    Ea0: 0.46
+    Ea0: 5.378357610704252
     b: 2.94
     w: 239.0
   type: Blowers-Masel
@@ -31908,7 +31738,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 7.841144955597752
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -31926,10 +31756,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 6.648107e-06
-    Ea0: -2.464
+    Ea: -2.464
     b: 4.906
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH3OOH(36) + S(1309) <=> CH3OO(33) + S(1310)
   note: 'Reaction index: Chemkin #1691; RMG #16200
 
@@ -31944,7 +31772,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 7.841146523582823
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -31962,7 +31790,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 7.841146523582823
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -31980,7 +31808,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 5.75
-    Ea0: 0.46
+    Ea0: 5.378375705811392
     b: 2.94
     w: 239.0
   type: Blowers-Masel
@@ -32096,7 +31924,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 8.479371e-07
-    Ea0: 0.124
+    Ea0: 0.4307817779620397
     b: 5.286
     w: 239.0
   type: Blowers-Masel
@@ -32206,10 +32034,8 @@ reactions:
     Ea raised from -22.5 to -22.5 kJ/mol.'
   rate-constant:
     A: 6.589613e-11
-    Ea0: -5.37
+    Ea: -5.37
     b: 6.535
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH2OOH(37) + S(906) <=> CH3OOH(36) + S(885)
   note: 'Reaction index: Chemkin #1708; RMG #16354
 
@@ -32226,10 +32052,8 @@ reactions:
     Ea raised from -22.5 to -22.5 kJ/mol.'
   rate-constant:
     A: 6.589613e-11
-    Ea0: -5.37
+    Ea: -5.37
     b: 6.535
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH2OOH(37) + S(1085) <=> CH3OOH(36) + S(987)
   note: 'Reaction index: Chemkin #1709; RMG #16355
 
@@ -32246,10 +32070,8 @@ reactions:
     Ea raised from -22.5 to -22.5 kJ/mol.'
   rate-constant:
     A: 6.589613e-11
-    Ea0: -5.37
+    Ea: -5.37
     b: 6.535
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH2OOH(37) + S(1310) <=> CH3OOH(36) + S(1286)
   note: 'Reaction index: Chemkin #1710; RMG #16360
 
@@ -32266,10 +32088,8 @@ reactions:
     Ea raised from -22.5 to -22.5 kJ/mol.'
   rate-constant:
     A: 6.589613e-11
-    Ea0: -5.37
+    Ea: -5.37
     b: 6.535
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH2OOH(37) + S(1310) <=> CH3OOH(36) + S(1309)
   note: 'Reaction index: Chemkin #1711; RMG #16361
 
@@ -32286,10 +32106,8 @@ reactions:
     Ea raised from -22.5 to -22.5 kJ/mol.'
   rate-constant:
     A: 6.589613e-11
-    Ea0: -5.37
+    Ea: -5.37
     b: 6.535
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH2OOH(37) + PC4H9(189) <=> CH3OOH(36) + C4H8(195)
   note: 'Reaction index: Chemkin #1712; RMG #16362
 
@@ -33059,10 +32877,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.73e-10
-    Ea0: -2.14
+    Ea: -2.14
     b: 6.3
-    w: 239.0
-  type: Blowers-Masel
 - equation: CH3CO(21) + S(1310) <=> CH3CHO(39) + S(1286)
   note: 'Reaction index: Chemkin #1760; RMG #16626
 
@@ -33079,7 +32895,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0009569
-    Ea0: 42.343
+    Ea0: 42.921436265031645
     b: 4.45
     w: 239.0
   type: Blowers-Masel
@@ -33099,7 +32915,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.73e-10
-    Ea0: -2.14
+    Ea0: 1.195939546798203
     b: 6.3
     w: 239.0
   type: Blowers-Masel
@@ -33119,7 +32935,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0009569
-    Ea0: 42.343
+    Ea0: 42.921436265031645
     b: 4.45
     w: 239.0
   type: Blowers-Masel
@@ -33365,7 +33181,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 12.093130609633514
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -33383,10 +33199,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.0
-    Ea0: -7.48
+    Ea: -7.48
     b: 3.52
-    w: 239.0
-  type: Blowers-Masel
 - equation: HCO(20) + CH2CHO(22) <=> CO(6) + C2H4O(43)
   note: 'Reaction index: Chemkin #1779; RMG #17212
 
@@ -33657,7 +33471,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 8.171861632858427
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -33675,10 +33489,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.0
-    Ea0: -7.48
+    Ea: -7.48
     b: 3.52
-    w: 239.0
-  type: Blowers-Masel
 - equation: C2H4O(43) + S(885) <=> CH2CHO(22) + S(906)
   note: 'Reaction index: Chemkin #1797; RMG #17308
 
@@ -33693,7 +33505,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 8.171861632858427
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -33711,10 +33523,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.0
-    Ea0: -7.48
+    Ea: -7.48
     b: 3.52
-    w: 239.0
-  type: Blowers-Masel
 - equation: C2H4O(43) + S(987) <=> CH2CHO(22) + S(1085)
   note: 'Reaction index: Chemkin #1799; RMG #17359
 
@@ -33729,7 +33539,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 8.171898049011949
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -33747,10 +33557,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.0
-    Ea0: -7.48
+    Ea: -7.48
     b: 3.52
-    w: 239.0
-  type: Blowers-Masel
 - equation: C2H5O(44) + S(846) <=> C2H4O(43) + S(849)
   note: 'Reaction index: Chemkin #1801; RMG #17392
 
@@ -33870,7 +33678,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 8.171899588808634
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -33888,10 +33696,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.0
-    Ea0: -7.48
+    Ea: -7.48
     b: 3.52
-    w: 239.0
-  type: Blowers-Masel
 - equation: C2H5O(44) + S(904) <=> C2H4O(43) + S(906)
   note: 'Reaction index: Chemkin #1809; RMG #17428
 
@@ -34080,7 +33886,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 8.171899588808634
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -34098,10 +33904,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.0
-    Ea0: -7.48
+    Ea: -7.48
     b: 3.52
-    w: 239.0
-  type: Blowers-Masel
 - equation: CHCHOH(52) + PC4H9(189) <=> C2H4O(43) + C4H8(195)
   note: 'Reaction index: Chemkin #1821; RMG #17504
 
@@ -34287,7 +34091,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 3159.663
-    Ea0: 8.568
+    Ea0: 18.245347384374355
     b: 2.302
     w: 239.0
   type: Blowers-Masel
@@ -34686,7 +34490,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 4.331279
-    Ea0: 14.279
+    Ea0: 22.01871201765192
     b: 3.368
     w: 239.0
   type: Blowers-Masel
@@ -34704,7 +34508,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 6.505575
-    Ea0: 1.574
+    Ea0: 4.306852607039111
     b: 3.215
     w: 239.0
   type: Blowers-Masel
@@ -34724,10 +34528,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: C2H5O(40) + S(906) <=> C2H6O(55) + S(885)
   note: 'Reaction index: Chemkin #1859; RMG #18102
 
@@ -34742,7 +34544,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 4.331279
-    Ea0: 14.279
+    Ea0: 22.01871201765192
     b: 3.368
     w: 239.0
   type: Blowers-Masel
@@ -34760,7 +34562,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 6.505575
-    Ea0: 1.574
+    Ea0: 4.306852607039111
     b: 3.215
     w: 239.0
   type: Blowers-Masel
@@ -34780,10 +34582,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: C2H5O(40) + S(1085) <=> C2H6O(55) + S(987)
   note: 'Reaction index: Chemkin #1862; RMG #18111
 
@@ -34798,7 +34598,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 4.331279
-    Ea0: 14.279
+    Ea0: 22.018679063665623
     b: 3.368
     w: 239.0
   type: Blowers-Masel
@@ -34816,7 +34616,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 6.505575
-    Ea0: 1.574
+    Ea0: 4.306824111342291
     b: 3.215
     w: 239.0
   type: Blowers-Masel
@@ -34836,10 +34636,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: C2H5O(40) + S(1310) <=> C2H6O(55) + S(1286)
   note: 'Reaction index: Chemkin #1865; RMG #18120
 
@@ -34854,7 +34652,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 4.331279
-    Ea0: 14.279
+    Ea0: 22.018677670259116
     b: 3.368
     w: 239.0
   type: Blowers-Masel
@@ -34872,7 +34670,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 6.505575
-    Ea0: 1.574
+    Ea0: 4.3068229064468175
     b: 3.215
     w: 239.0
   type: Blowers-Masel
@@ -34892,10 +34690,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: C2H5O(40) + S(1310) <=> C2H6O(55) + S(1309)
   note: 'Reaction index: Chemkin #1868; RMG #18123
 
@@ -34910,7 +34706,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 4.331279
-    Ea0: 14.279
+    Ea0: 22.018677670259116
     b: 3.368
     w: 239.0
   type: Blowers-Masel
@@ -34928,7 +34724,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 6.505575
-    Ea0: 1.574
+    Ea0: 4.3068229064468175
     b: 3.215
     w: 239.0
   type: Blowers-Masel
@@ -34948,10 +34744,8 @@ reactions:
     Ea raised from -36.0 to -36.0 kJ/mol.'
   rate-constant:
     A: 2.51e-11
-    Ea0: -8.6
+    Ea: -8.6
     b: 6.77
-    w: 239.0
-  type: Blowers-Masel
 - equation: C2H5O(56) + PC4H9(189) <=> C2H6O(55) + C4H8(195)
   note: 'Reaction index: Chemkin #1871; RMG #18130
 
@@ -35103,7 +34897,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0699
-    Ea0: 19.545
+    Ea0: 26.2682889445312
     b: 3.75
     w: 239.0
   type: Blowers-Masel
@@ -35121,7 +34915,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0001582731
-    Ea0: 41.32
+    Ea0: 41.653179967425906
     b: 4.663
     w: 239.0
   type: Blowers-Masel
@@ -35484,7 +35278,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0699
-    Ea0: 19.545
+    Ea0: 30.211376799446715
     b: 3.75
     w: 239.0
   type: Blowers-Masel
@@ -35502,7 +35296,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0009569
-    Ea0: 42.343
+    Ea0: 47.22497275621554
     b: 4.45
     w: 239.0
   type: Blowers-Masel
@@ -35522,7 +35316,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0699
-    Ea0: 19.545
+    Ea0: 30.211376799446715
     b: 3.75
     w: 239.0
   type: Blowers-Masel
@@ -35540,7 +35334,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0009569
-    Ea0: 42.343
+    Ea0: 47.22497275621554
     b: 4.45
     w: 239.0
   type: Blowers-Masel
@@ -35560,7 +35354,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0699
-    Ea0: 19.545
+    Ea0: 30.211344080768633
     b: 3.75
     w: 239.0
   type: Blowers-Masel
@@ -35578,7 +35372,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0009569
-    Ea0: 42.343
+    Ea0: 47.22493492613158
     b: 4.45
     w: 239.0
   type: Blowers-Masel
@@ -35646,7 +35440,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0699
-    Ea0: 19.545
+    Ea0: 30.211342697311878
     b: 3.75
     w: 239.0
   type: Blowers-Masel
@@ -35664,7 +35458,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0009569
-    Ea0: 42.343
+    Ea0: 47.22493332654725
     b: 4.45
     w: 239.0
   type: Blowers-Masel
@@ -35764,7 +35558,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0699
-    Ea0: 19.545
+    Ea0: 30.211342697311878
     b: 3.75
     w: 239.0
   type: Blowers-Masel
@@ -35782,7 +35576,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0009569
-    Ea0: 42.343
+    Ea0: 47.22493332654725
     b: 4.45
     w: 239.0
   type: Blowers-Masel
@@ -35980,7 +35774,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 10.7995082979544
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -36001,7 +35795,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 288083.3
-    Ea0: 12.851
+    Ea0: 12.424411903270279
     b: 2.156
     w: 239.0
   type: Blowers-Masel
@@ -36021,7 +35815,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 5600000000000.0
-    Ea0: 17.686
+    Ea0: 17.26030648158014
     b: 0.0
     w: 239.0
   type: Blowers-Masel
@@ -36039,7 +35833,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 10.7995082979544
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -36060,7 +35854,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 288083.3
-    Ea0: 12.851
+    Ea0: 12.42424530950224
     b: 2.156
     w: 239.0
   type: Blowers-Masel
@@ -36078,7 +35872,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 5.75
-    Ea0: 0.46
+    Ea0: 1.775627361187763
     b: 2.94
     w: 239.0
   type: Blowers-Masel
@@ -36096,7 +35890,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 10.799475662121079
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -36117,7 +35911,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 288083.3
-    Ea0: 12.851
+    Ea0: 12.424300161202272
     b: 2.156
     w: 239.0
   type: Blowers-Masel
@@ -36135,7 +35929,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 10.799474282166843
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -36153,7 +35947,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.092
-    Ea0: 6.63
+    Ea0: 10.799474282166843
     b: 3.96
     w: 239.0
   type: Blowers-Masel
@@ -36171,7 +35965,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 5.75
-    Ea0: 0.46
+    Ea0: 1.7756485514334326
     b: 2.94
     w: 239.0
   type: Blowers-Masel
@@ -36518,7 +36312,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1109.346
-    Ea0: 14.117
+    Ea0: 16.19647010408839
     b: 3.19
     w: 239.0
   type: Blowers-Masel
@@ -36540,7 +36334,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 169.0
-    Ea0: 13.72
+    Ea0: 15.797660107604107
     b: 3.43
     w: 239.0
   type: Blowers-Masel
@@ -36560,7 +36354,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1109.346
-    Ea0: 14.117
+    Ea0: 16.19631736736922
     b: 3.19
     w: 239.0
   type: Blowers-Masel
@@ -36583,7 +36377,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.3008338
-    Ea0: 4.08
+    Ea0: 4.873939687788453
     b: 4.05
     w: 239.0
   type: Blowers-Masel
@@ -36603,7 +36397,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1109.346
-    Ea0: 14.117
+    Ea0: 16.196367656531176
     b: 3.19
     w: 239.0
   type: Blowers-Masel
@@ -36626,7 +36420,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.3008338
-    Ea0: 4.08
+    Ea0: 4.873910458489887
     b: 4.05
     w: 239.0
   type: Blowers-Masel
@@ -37198,7 +36992,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 41200.0
-    Ea0: 10.21
+    Ea0: 10.156050054974232
     b: 2.5
     w: 239.0
   type: Blowers-Masel
@@ -37218,7 +37012,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 41200.0
-    Ea0: 10.21
+    Ea0: 10.156051758654096
     b: 2.5
     w: 239.0
   type: Blowers-Masel
@@ -37238,7 +37032,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 41200.0
-    Ea0: 10.21
+    Ea0: 10.156051758654096
     b: 2.5
     w: 239.0
   type: Blowers-Masel
@@ -37326,10 +37120,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.0
-    Ea0: -7.48
+    Ea: -7.48
     b: 3.52
-    w: 239.0
-  type: Blowers-Masel
 - equation: C2H3(23) + S(1310) <=> C2H4(11) + S(1286)
   note: 'Reaction index: Chemkin #2015; RMG #24002
 
@@ -37344,10 +37136,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.0
-    Ea0: -7.48
+    Ea: -7.48
     b: 3.52
-    w: 239.0
-  type: Blowers-Masel
 - equation: C2H3(23) + S(1310) <=> C2H4(11) + S(1309)
   note: 'Reaction index: Chemkin #2016; RMG #24012
 
@@ -37362,10 +37152,8 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 1.0
-    Ea0: -7.48
+    Ea: -7.48
     b: 3.52
-    w: 239.0
-  type: Blowers-Masel
 - equation: H(14) + S(1310) <=> H2(13) + S(1286)
   note: 'Reaction index: Chemkin #2017; RMG #24748
 
@@ -37381,7 +37169,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 64.06374
-    Ea0: 10.182
+    Ea0: 17.19372220398239
     b: 2.8
     w: 239.0
   type: Blowers-Masel
@@ -37401,7 +37189,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002163867
-    Ea0: 7.536
+    Ea0: 8.810038503167771
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -37421,7 +37209,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.0001630301
-    Ea0: 8.49
+    Ea0: 8.489828016423292
     b: 4.81
     w: 239.0
   type: Blowers-Masel
@@ -37441,7 +37229,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002573748
-    Ea0: 7.713
+    Ea0: 7.712814887999993
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -37461,7 +37249,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002163867
-    Ea0: 7.536
+    Ea0: 8.81016975183223
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -37481,7 +37269,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002163867
-    Ea0: 7.536
+    Ea0: 8.81016975183223
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -37501,7 +37289,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002573748
-    Ea0: 7.713
+    Ea0: 7.712651261066828
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -37521,7 +37309,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002573748
-    Ea0: 7.713
+    Ea0: 7.712651261066828
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -37541,7 +37329,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002573748
-    Ea0: 7.713
+    Ea0: 7.712924639204075
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -37561,7 +37349,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002163867
-    Ea0: 7.536
+    Ea0: 8.810018010119688
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -37581,7 +37369,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002163867
-    Ea0: 7.536
+    Ea0: 8.81006797172715
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -37601,7 +37389,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.002573748
-    Ea0: 7.713
+    Ea0: 7.712761013471388
     b: 4.29
     w: 239.0
   type: Blowers-Masel
@@ -38975,7 +38763,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.000194
-    Ea0: 6.31
+    Ea0: 10.33412013670839
     b: 4.68
     w: 239.0
   type: Blowers-Masel
@@ -38993,7 +38781,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.000194
-    Ea0: 6.31
+    Ea0: 10.33412013670839
     b: 4.68
     w: 239.0
   type: Blowers-Masel
@@ -39011,7 +38799,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 0.000194
-    Ea0: 6.31
+    Ea0: 10.33430244258641
     b: 4.68
     w: 239.0
   type: Blowers-Masel
@@ -39029,7 +38817,7 @@ reactions:
     family: H_Abstraction'
   rate-constant:
     A: 380000000000.0
-    Ea0: 7.21
+    Ea0: 12.349675226066744
     b: 0.0
     w: 239.0
   type: Blowers-Masel
