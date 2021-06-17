@@ -1,0 +1,2142 @@
+PT_SURFACE-reactions:
+- equation: H2 + _Pt_ + _Pt_ => H_Pt + H_Pt
+  id: PT_SURFACE-1
+  sticking-coefficient:
+    A: 0.046
+    Ea0: 0.0
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- equation: _Pt_ + _Pt_ + O2 => O_Pt + O_Pt
+  id: PT_SURFACE-2
+  rate-constant:
+    A: 1.891e+21
+    Ea0: 15.652237620302131
+    b: -0.5
+    w: 1000
+  type: Blowers-Masel
+- equation: CH4 + _Pt_ + _Pt_ => H_Pt + CH3_Pt
+  id: PT_SURFACE-3
+  sticking-coefficient:
+    A: 0.0009
+    Ea0: 156.61448394627945
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- coverage-dependencies:
+    O_Pt:
+      E: 8.0
+      a: 0.0
+      m: 0.0
+  equation: _Pt_ + O_Pt + CH4 => OH_Pt + CH3_Pt
+  id: PT_SURFACE-4
+  rate-constant:
+    A: 5.0e+18
+    Ea0: 102.31030897844416
+    b: 0.7
+    w: 1000
+  type: Blowers-Masel
+- equation: CH4 + OH_Pt + _Pt_ => H2O_Pt + CH3_Pt
+  id: PT_SURFACE-5
+  sticking-coefficient:
+    A: 1.0
+    Ea0: 83.54723885493802
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- equation: H2O + _Pt_ => H2O_Pt
+  id: PT_SURFACE-6
+  sticking-coefficient:
+    A: 0.75
+    Ea0: 55.2007985428083
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- equation: CO2 + _Pt_ => CO2_Pt
+  id: PT_SURFACE-7
+  sticking-coefficient:
+    A: 0.005
+    Ea0: 71.63164741249223
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- equation: CO + _Pt_ => CO_Pt
+  id: PT_SURFACE-8
+  sticking-coefficient:
+    A: 0.84
+    Ea0: 38.978490021849225
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- coverage-dependencies:
+    H_Pt:
+      E: -10.0
+      a: 0.0
+      m: 0.0
+  equation: H_Pt + H_Pt => _Pt_ + _Pt_ + H2
+  id: PT_SURFACE-9
+  rate-constant:
+    A: 3.7e+21
+    Ea0: 133.13685629347546
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- coverage-dependencies:
+    O_Pt:
+      E: -188.28
+      a: 0.0
+      m: 0.0
+  equation: O_Pt + O_Pt => _Pt_ + _Pt_ + O2
+  id: PT_SURFACE-10
+  rate-constant:
+    A: 3.7e+21
+    Ea0: 332.37797338828426
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- equation: H2O_Pt => _Pt_ + H2O
+  id: PT_SURFACE-11
+  rate-constant:
+    A: 4500000000000.0
+    Ea0: 96.35588442217137
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- coverage-dependencies:
+    CO_Pt:
+      E: -33.0
+      a: 0.0
+      m: 0.0
+  equation: CO_Pt => _Pt_ + CO
+  id: PT_SURFACE-12
+  rate-constant:
+    A: 1000000000000000.0
+    Ea0: 194.0117132750919
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- equation: CO2_Pt => _Pt_ + CO2
+  id: PT_SURFACE-13
+  rate-constant:
+    A: 10000000000000.0
+    Ea0: 117.27346775392583
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- equation: O_Pt + C_Pt => _Pt_ + CO_Pt
+  id: PT_SURFACE-14
+  rate-constant:
+    A: 3.7e+19
+    Ea0: 38.15929610847721
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- coverage-dependencies:
+    CO_Pt:
+      E: -33.0
+      a: 0.0
+      m: 0.0
+  equation: _Pt_ + CO_Pt => O_Pt + C_Pt
+  id: PT_SURFACE-15
+  rate-constant:
+    A: 3.7e+19
+    Ea0: 203.07443798566212
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- coverage-dependencies:
+    CO_Pt:
+      E: -33.0
+      a: 0.0
+      m: 0.0
+  equation: O_Pt + CO_Pt => _Pt_ + CO2_Pt
+  id: PT_SURFACE-16
+  rate-constant:
+    A: 3.7e+21
+    Ea0: 181.31844021253747
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- coverage-dependencies:
+    O_Pt:
+      E: 94.14
+      a: 0.0
+      m: 0.0
+  equation: _Pt_ + CO2_Pt => O_Pt + CO_Pt
+  id: PT_SURFACE-17
+  rate-constant:
+    A: 3.7e+19
+    Ea0: 338.05591769999586
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- coverage-dependencies:
+    CO_Pt:
+      E: -30.0
+      a: 0.0
+      m: 0.0
+  equation: OH_Pt + CO_Pt => H_Pt + CO2_Pt
+  id: PT_SURFACE-18
+  rate-constant:
+    A: 1.0e+19
+    Ea0: 112.08309223738698
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- equation: H_Pt + CO2_Pt => OH_Pt + CO_Pt
+  id: PT_SURFACE-19
+  rate-constant:
+    A: 1.0e+19
+    Ea0: 30.480739999417146
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- equation: _Pt_ + CH3_Pt => H_Pt + CH2_Pt
+  id: PT_SURFACE-20
+  rate-constant:
+    A: 1.262e+22
+    Ea0: 93.82397888687372
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- coverage-dependencies:
+    H_Pt:
+      E: -2.8
+      a: 0.0
+      m: 0.0
+  equation: H_Pt + CH2_Pt => _Pt_ + CH3_Pt
+  id: PT_SURFACE-21
+  rate-constant:
+    A: 3.09e+22
+    Ea0: 30.022849757621
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- coverage-dependencies:
+    C_Pt:
+      E: 50.0
+      a: 0.0
+      m: 0.0
+  equation: _Pt_ + CH2_Pt => H_Pt + CH_Pt
+  id: PT_SURFACE-22
+  rate-constant:
+    A: 7.314e+22
+    Ea0: 52.24972524370983
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- coverage-dependencies:
+    H_Pt:
+      E: -2.8
+      a: 0.0
+      m: 0.0
+  equation: H_Pt + CH_Pt => _Pt_ + CH2_Pt
+  id: PT_SURFACE-23
+  rate-constant:
+    A: 3.09e+22
+    Ea0: 15.236406196792213
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- coverage-dependencies:
+    H_Pt:
+      E: -2.8
+      a: 0.0
+      m: 0.0
+  equation: _Pt_ + CH_Pt => H_Pt + C_Pt
+  id: PT_SURFACE-24
+  rate-constant:
+    A: 3.09e+22
+    Ea0: 0.0
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- equation: H_Pt + C_Pt => _Pt_ + CH_Pt
+  id: PT_SURFACE-25
+  rate-constant:
+    A: 1.248e+22
+    Ea0: 233.99364025442463
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- equation: O_Pt + H_Pt => _Pt_ + OH_Pt
+  id: PT_SURFACE-26
+  rate-constant:
+    A: 1.28e+21
+    Ea0: 47.92946284641512
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- coverage-dependencies:
+    O_Pt:
+      E: -73.22
+      a: 0.0
+      m: 0.0
+  equation: _Pt_ + OH_Pt => O_Pt + H_Pt
+  id: PT_SURFACE-27
+  rate-constant:
+    A: 7.39e+19
+    Ea0: 170.9365266671006
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- coverage-dependencies:
+    O_Pt:
+      E: 167.36
+      a: 0.0
+      m: 0.0
+  equation: _Pt_ + H2O_Pt => OH_Pt + H_Pt
+  id: PT_SURFACE-28
+  rate-constant:
+    A: 1.15e+19
+    Ea0: 248.34584879630503
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- equation: OH_Pt + OH_Pt => O_Pt + H2O_Pt
+  id: PT_SURFACE-29
+  rate-constant:
+    A: 7.4e+20
+    Ea0: 9.263421198417934
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- coverage-dependencies:
+    O_Pt:
+      E: 240.58
+      a: 0.0
+      m: 0.0
+  equation: O_Pt + H2O_Pt => OH_Pt + OH_Pt
+  id: PT_SURFACE-30
+  rate-constant:
+    A: 1.0e+20
+    Ea0: 93.30341959913359
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- equation: H2 + C_Pt => CH2_Pt
+  id: PT_SURFACE-31
+  sticking-coefficient:
+    A: 0.04
+    Ea0: 54.6551065227623
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- coverage-dependencies:
+    C_Pt:
+      E: 50.0
+      a: 0.0
+      m: 0.0
+  equation: CH2_Pt => C_Pt + H2
+  id: PT_SURFACE-32
+  rate-constant:
+    A: 76900000000000.0
+    Ea0: -85.78553926802134
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- equation: OH_Pt + H_Pt => _Pt_ + H2O_Pt
+  id: PT_SURFACE-33
+  rate-constant:
+    A: 2.04e+21
+    Ea0: 108.69891776444383
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- coverage-dependencies:
+    H_Pt:
+      E: -2.8
+      a: 0.0
+      m: 0.0
+  equation: H_Pt + CH3_Pt => _Pt_ + _Pt_ + CH4
+  id: PT_SURFACE-34
+  rate-constant:
+    A: 3.3e+21
+    Ea0: 91.4653218284613
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- equation: H2O_Pt + CH3_Pt => _Pt_ + OH_Pt + CH4
+  id: PT_SURFACE-35
+  rate-constant:
+    A: 3.7e+21
+    Ea0: 163.448720308027
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+- equation: OH_Pt + CH3_Pt => _Pt_ + O_Pt + CH4
+  id: PT_SURFACE-36
+  rate-constant:
+    A: 3.7e+21
+    Ea0: 90.39842768762583
+    b: 0.0
+    w: 1000
+  type: Blowers-Masel
+cantera-version: 2.6.0a2
+date: Wed, 16 Jun 2021 22:33:13 -0400
+gas-reactions:
+- equation: O2 + H <=> OH + O
+  id: gas-1
+  rate-constant:
+    A: 97560000000000.0
+    Ea: 62.1
+    b: 0.0
+- equation: OH + H2 <=> H2O + H
+  id: gas-2
+  rate-constant:
+    A: 100000000.0
+    Ea: 13.8
+    b: 1.6
+- efficiencies:
+    CH4: 3.0
+    CO: 0.75
+    CO2: 1.5
+    H2: 1.0
+    H2O: 6.5
+    HE: 0.29000000000000004
+    O2: 0.4
+  equation: O2 + H + M <=> HO2 + M
+  id: gas-3
+  rate-constant:
+    A: 2.1e+18
+    Ea: 0.0
+    b: -0.8
+  type: three-body
+- equation: HO2 + H <=> OH + OH
+  id: gas-4
+  rate-constant:
+    A: 150000000000000.0
+    Ea: 3.8
+    b: 0.0
+- equation: HO2 + H <=> O2 + H2
+  id: gas-5
+  rate-constant:
+    A: 30000000000000.0
+    Ea: 4.0
+    b: 0.0
+- equation: HO2 + H <=> O + H2O
+  id: gas-6
+  rate-constant:
+    A: 30000000000000.0
+    Ea: 7.2
+    b: 0.0
+- equation: OH + HO2 <=> O2 + H2O
+  id: gas-7
+  rate-constant:
+    A: 60000000000000.0
+    Ea: 0.0
+    b: 0.0
+- duplicate: true
+  equation: HO2 + HO2 <=> O2 + H2O2
+  id: gas-8
+  rate-constant:
+    A: 422000000000000.0
+    Ea: 50.14
+    b: 0.0
+- duplicate: true
+  equation: HO2 + HO2 <=> O2 + H2O2
+  id: gas-9
+  rate-constant:
+    A: 132000000000.0
+    Ea: -6.82
+    b: 0.0
+- Troe:
+    A: 0.5
+    T1: 0.0
+    T2: 0.0
+    T3: 0.0
+  efficiencies:
+    CH4: 3.0
+    CO: 0.75
+    CO2: 1.5
+    H2: 1.0
+    H2O: 6.5
+    HE: 0.35
+    O2: 0.4
+  equation: OH + OH (+ M) <=> H2O2 (+ M)
+  high-P-rate-constant:
+    A: 7.23e+19
+    Ea: 0.0
+    b: -0.37
+  id: gas-10
+  low-P-rate-constant:
+    A: 55300000000000.0
+    Ea: 0.0
+    b: -0.76
+  type: falloff
+- equation: OH + H2O2 <=> HO2 + H2O
+  id: gas-11
+  rate-constant:
+    A: 5400000000000.0
+    Ea: 4.2
+    b: 0.0
+- equation: OH + CO <=> H + CO2
+  id: gas-12
+  rate-constant:
+    A: 47600000.0
+    Ea: 0.29
+    b: 1.23
+- equation: HO2 + CO <=> OH + CO2
+  id: gas-13
+  rate-constant:
+    A: 150000000000000.0
+    Ea: 98.7
+    b: 0.0
+- equation: CO + CH3O <=> CO2 + CH3
+  id: gas-14
+  rate-constant:
+    A: 15800000000000.0
+    Ea: 49.4
+    b: 0.0
+- efficiencies:
+    CH4: 3.0
+    CO: 0.75
+    CO2: 1.5
+    H2: 1.0
+    H2O: 6.5
+    HE: 0.35
+    O2: 0.4
+  equation: CHO + M <=> H + CO + M
+  id: gas-15
+  rate-constant:
+    A: 450000000000000.0
+    Ea: 66.0
+    b: 0.0
+  type: three-body
+- equation: O2 + CHO <=> HO2 + CO
+  id: gas-16
+  rate-constant:
+    A: 2400000000000.0
+    Ea: 0.0
+    b: 0.0
+- equation: O2 + CHO <=> OH + CO2
+  id: gas-17
+  rate-constant:
+    A: 600000000000.0
+    Ea: 0.0
+    b: 0.0
+- equation: HO2 + CHO <=> OH + H + CO2
+  id: gas-18
+  rate-constant:
+    A: 30000000000000.0
+    Ea: 0.0
+    b: 0.0
+- equation: H + CH2O <=> H2 + CHO
+  id: gas-19
+  rate-constant:
+    A: 127000000.0
+    Ea: 9.0
+    b: 1.62
+- equation: O + CH2O <=> OH + CHO
+  id: gas-20
+  rate-constant:
+    A: 415000000000.0
+    Ea: 11.6
+    b: 0.57
+- equation: OH + CH2O <=> H2O + CHO
+  id: gas-21
+  rate-constant:
+    A: 3400000000.0
+    Ea: -1.87
+    b: 1.18
+- equation: HO2 + CH2O <=> H2O2 + CHO
+  id: gas-22
+  rate-constant:
+    A: 3000000000000.0
+    Ea: 54.7
+    b: 0.0
+- equation: CH3 + CH2O <=> CHO + CH4
+  id: gas-23
+  rate-constant:
+    A: 7.83e-08
+    Ea: 8.2
+    b: 6.1
+- equation: O2 + CH2O <=> HO2 + CHO
+  id: gas-24
+  rate-constant:
+    A: 60000000000000.0
+    Ea: 170.7
+    b: 0.0
+- equation: O2 + CH3 <=> OH + CH2O
+  id: gas-25
+  rate-constant:
+    A: 330000000000.0
+    Ea: 37.4
+    b: 0.0
+- equation: HO2 + CH3 <=> OH + CH3O
+  id: gas-26
+  rate-constant:
+    A: 18000000000000.0
+    Ea: 0.0
+    b: 0.0
+- equation: HO2 + CH3 <=> O2 + CH4
+  id: gas-27
+  rate-constant:
+    A: 3600000000000.0
+    Ea: 0.0
+    b: 0.0
+- Troe:
+    A: 0.62
+    T1: 1180.0
+    T2: 0.0
+    T3: 73.0
+  efficiencies:
+    CH4: 3.0
+    CO: 0.75
+    CO2: 1.5
+    H2: 1.0
+    H2O: 6.5
+    HE: 0.35
+    O2: 0.4
+  equation: CH3 + CH3 (+ M) <=> C2H6 (+ M)
+  high-P-rate-constant:
+    A: 3.61e+19
+    Ea: 0.0
+    b: 0.0
+  id: gas-28
+  low-P-rate-constant:
+    A: 3.63e+35
+    Ea: 11.6
+    b: -7.0
+  type: falloff
+- efficiencies:
+    CH4: 3.0
+    CO: 0.75
+    CO2: 1.5
+    H2: 1.0
+    H2O: 6.5
+    HE: 0.35
+    O2: 0.4
+  equation: CH3O + M <=> H + CH2O + M
+  id: gas-29
+  rate-constant:
+    A: 50000000000000.0
+    Ea: 105.0
+    b: 0.0
+  type: three-body
+- equation: O2 + CH3O <=> HO2 + CH2O
+  id: gas-30
+  rate-constant:
+    A: 30000000000.0
+    Ea: 7.3
+    b: 0.0
+- equation: CH3O + CH2O <=> CHO + CH3OH
+  id: gas-31
+  rate-constant:
+    A: 115000000000.0
+    Ea: 5.2
+    b: 0.0
+- equation: O2 + CH3 <=> O + CH3O
+  id: gas-32
+  rate-constant:
+    A: 40410000000000.0
+    Ea: 122.2
+    b: 0.0
+- duplicate: true
+  equation: O2 + CH2OH <=> HO2 + CH2O
+  id: gas-33
+  rate-constant:
+    A: 1570000000000000.0
+    Ea: 0.0
+    b: -1.0
+- duplicate: true
+  equation: O2 + CH2OH <=> HO2 + CH2O
+  id: gas-34
+  rate-constant:
+    A: 72300000000000.0
+    Ea: 14.97
+    b: 0.0
+- Troe:
+    A: 0.495
+    T1: 10.0
+    T2: 0.0
+    T3: 2325.5
+  efficiencies:
+    CH4: 3.0
+    CO: 0.75
+    CO2: 1.5
+    H2: 1.0
+    H2O: 6.5
+    HE: 0.35
+    O2: 0.4
+  equation: O2 + CH3 (+ M) <=> CH3O2 (+ M)
+  high-P-rate-constant:
+    A: 780000000000000.0
+    Ea: 0.0
+    b: 1.2
+  id: gas-35
+  low-P-rate-constant:
+    A: 1.65e+20
+    Ea: 0.0
+    b: -3.3
+  type: falloff
+- equation: CH3O2 + CH2O <=> CHO + CH3O2H
+  id: gas-36
+  rate-constant:
+    A: 2000000000000.0
+    Ea: 48.74
+    b: 0.0
+- equation: CH3O2 + CH3 <=> CH3O + CH3O
+  id: gas-37
+  rate-constant:
+    A: 24000000000000.0
+    Ea: 0.0
+    b: 0.0
+- equation: HO2 + CH3O2 <=> O2 + CH3O2H
+  id: gas-38
+  rate-constant:
+    A: 240000000000.0
+    Ea: -6.6
+    b: 0.0
+- equation: H + CH4 <=> H2 + CH3
+  id: gas-39
+  rate-constant:
+    A: 104700000.0
+    Ea: 44.89
+    b: 1.9
+- equation: O + CH4 <=> OH + CH3
+  id: gas-40
+  rate-constant:
+    A: 692300000.0
+    Ea: 35.5
+    b: 1.56
+- equation: OH + CH4 <=> H2O + CH3
+  id: gas-41
+  rate-constant:
+    A: 10000000.0
+    Ea: 11.6
+    b: 1.83
+- equation: HO2 + CH4 <=> H2O2 + CH3
+  id: gas-42
+  rate-constant:
+    A: 11000000000000.0
+    Ea: 103.1
+    b: 0.0
+- equation: CH4 + CH3O <=> CH3OH + CH3
+  id: gas-43
+  rate-constant:
+    A: 4300000000000.0
+    Ea: 42.0
+    b: 0.0
+- equation: CH4 + CH3O2 <=> CH3O2H + CH3
+  id: gas-44
+  rate-constant:
+    A: 181000000000.0
+    Ea: 77.8
+    b: 0.0
+- equation: H + CH3OH <=> H2 + CH2OH
+  id: gas-45
+  rate-constant:
+    A: 16400000.0
+    Ea: 18.89
+    b: 2.0
+- equation: OH + CH3OH <=> H2O + CH2OH
+  id: gas-46
+  rate-constant:
+    A: 1440000.0
+    Ea: -3.5
+    b: 2.0
+- equation: OH + CH3OH <=> H2O + CH3O
+  id: gas-47
+  rate-constant:
+    A: 10000000000000.0
+    Ea: -7.1
+    b: 0.0
+- equation: HO2 + CH3OH <=> H2O2 + CH2OH
+  id: gas-48
+  rate-constant:
+    A: 96400000000.0
+    Ea: 52.58
+    b: 0.0
+- equation: CH3OH + CH3 <=> CH4 + CH2OH
+  id: gas-49
+  rate-constant:
+    A: 9000000000000.0
+    Ea: 41.1
+    b: 0.0
+- equation: CH3OH + CH3O <=> CH3OH + CH2OH
+  id: gas-50
+  rate-constant:
+    A: 300000000000.0
+    Ea: 17.0
+    b: 0.0
+- equation: CH3O2H <=> OH + CH3O
+  id: gas-51
+  rate-constant:
+    A: 600000000000000.0
+    Ea: 177.1
+    b: 0.0
+- equation: H2O2 + CH3O2 <=> HO2 + CH3O2H
+  id: gas-52
+  rate-constant:
+    A: 2400000000000.0
+    Ea: 41.8
+    b: 0.0
+- Troe:
+    A: 0.5
+    T1: 0.0
+    T2: 0.0
+    T3: 0.0
+  efficiencies:
+    CH4: 3.0
+    CO: 0.75
+    CO2: 1.5
+    H2: 1.0
+    H2O: 6.5
+    HE: 0.35
+    O2: 0.4
+  equation: CO + CH3 (+ M) <=> CH3CO (+ M)
+  high-P-rate-constant:
+    A: 5.058e+17
+    Ea: 28.77
+    b: 0.0
+  id: gas-53
+  low-P-rate-constant:
+    A: 310900000.0
+    Ea: 15.88
+    b: 0.0
+  type: falloff
+- equation: CH3O + C2H4 <=> OXIRAN + CH3
+  id: gas-54
+  rate-constant:
+    A: 100000000000.0
+    Ea: 60.61
+    b: 0.0
+- equation: OH + CH3CHO <=> H2O + CH3CO
+  id: gas-55
+  rate-constant:
+    A: 23000000000.0
+    Ea: -4.6
+    b: 0.73
+- equation: HO2 + CH3CHO <=> H2O2 + CH3CO
+  id: gas-56
+  rate-constant:
+    A: 3100000000000.0
+    Ea: 50.0
+    b: 0.0
+- equation: CH3CHO + CH3 <=> CH4 + CH3CO
+  id: gas-57
+  rate-constant:
+    A: 2.05e-06
+    Ea: 10.3
+    b: 5.6
+- Troe:
+    A: 0.76
+    T1: 1025.0
+    T2: 0.0
+    T3: 40.0
+  efficiencies:
+    CH4: 3.0
+    CO: 0.75
+    CO2: 1.5
+    H2: 1.0
+    H2O: 6.5
+    HE: 0.35
+    O2: 0.4
+  equation: H + C2H4 (+ M) => C2H5 (+ M)
+  high-P-rate-constant:
+    A: 2000000000000000.0
+    Ea: 5.4
+    b: 1.28
+  id: gas-58
+  low-P-rate-constant:
+    A: 6980000000000.0
+    Ea: 3.2
+    b: 0.0
+  type: falloff
+- Troe:
+    A: 0.75
+    T1: 1379.0
+    T2: 0.0
+    T3: 97.0
+  efficiencies:
+    CH4: 3.0
+    CO: 0.75
+    CO2: 1.5
+    H2: 1.0
+    H2O: 6.5
+    HE: 0.35
+    O2: 0.4
+  equation: C2H5 (+ M) => H + C2H4 (+ M)
+  high-P-rate-constant:
+    A: 8.2e+19
+    Ea: 166.8
+    b: 0.0
+  id: gas-59
+  low-P-rate-constant:
+    A: 340000000000.0
+    Ea: 139.6
+    b: 0.0
+  type: falloff
+- equation: H + C2H6 <=> H2 + C2H5
+  id: gas-60
+  rate-constant:
+    A: 1150000000.0
+    Ea: 31.1
+    b: 1.9
+- equation: OH + C2H6 <=> H2O + C2H5
+  id: gas-61
+  rate-constant:
+    A: 6200000.0
+    Ea: 3.6
+    b: 2.0
+- equation: HO2 + C2H6 <=> H2O2 + C2H5
+  id: gas-62
+  rate-constant:
+    A: 13330000000000.0
+    Ea: 85.6
+    b: 0.0
+- equation: CH3 + C2H6 <=> CH4 + C2H5
+  id: gas-63
+  rate-constant:
+    A: 9990000000000.0
+    Ea: 56.54
+    b: 0.0
+- equation: CH3O + C2H6 <=> CH3OH + C2H5
+  id: gas-64
+  rate-constant:
+    A: 240900000000.0
+    Ea: 29.68
+    b: 0.0
+- equation: O + CH3CO <=> CO2 + CH3
+  id: gas-65
+  rate-constant:
+    A: 4.818e+23
+    Ea: 0.0
+    b: 0.0
+- equation: OXIRAN + H <=> H2 + C2H3O
+  id: gas-66
+  rate-constant:
+    A: 80100000000000.0
+    Ea: 40.5
+    b: 0.0
+- equation: OXIRAN + OH <=> H2O + C2H3O
+  id: gas-67
+  rate-constant:
+    A: 6625000000000.0
+    Ea: 12.139
+    b: 0.0
+- equation: OXIRAN + CH3 <=> CH4 + C2H3O
+  id: gas-68
+  rate-constant:
+    A: 1072000000000.0
+    Ea: 49.47
+    b: 0.0
+- equation: OXIRAN <=> CH3CHO
+  id: gas-69
+  rate-constant:
+    A: 63100000000000.0
+    Ea: 247.71
+    b: 0.0
+- equation: OXIRAN <=> CO + CH4
+  id: gas-70
+  rate-constant:
+    A: 12100000000000.0
+    Ea: 239.46
+    b: 0.0
+- equation: OXIRAN <=> CHO + CH3
+  id: gas-71
+  rate-constant:
+    A: 36300000000000.0
+    Ea: 239.46
+    b: 0.0
+- equation: O2 + C2H5 <=> C2H5O2
+  id: gas-72
+  rate-constant:
+    A: 2.002e+42
+    Ea: 25.442
+    b: -10.3
+- equation: C2H5O2 => DC2OOH1
+  id: gas-73
+  rate-constant:
+    A: 2080000000000.0
+    Ea: 138.0
+    b: 0.0
+- equation: DC2OOH1 => C2H5O2
+  id: gas-74
+  rate-constant:
+    A: 8500000000.0
+    Ea: 69.5
+    b: -0.099
+- equation: DC2OOH1 <=> OXIRAN + OH
+  id: gas-75
+  rate-constant:
+    A: 13000000000.0
+    Ea: 65.5
+    b: 0.0
+- equation: HO2 + C2H5O2 <=> O2 + C2H5OOH
+  id: gas-76
+  rate-constant:
+    A: 96970000000.0
+    Ea: -10.476
+    b: 0.0
+- equation: CH2O + C2H5O2 => CHO + C2H5OOH
+  id: gas-77
+  rate-constant:
+    A: 1000000000000.0
+    Ea: 42.0
+    b: 0.0
+- equation: CHO + C2H5OOH => CH2O + C2H5O2
+  id: gas-78
+  rate-constant:
+    A: 2170000.0
+    Ea: 0.688
+    b: 1.01
+generator: cti2yaml
+input-files:
+- dm_cpox_gas.cti
+phases:
+- elements:
+  - C
+  - H
+  - O
+  - Pt
+  - He
+  kinetics: gas
+  name: gas
+  reactions:
+  - gas-reactions
+  species:
+  - C2H3O
+  - C2H4
+  - C2H5
+  - C2H5O2
+  - C2H5OOH
+  - C2H6
+  - CH2O
+  - CH2OH
+  - CH3
+  - CH3CHO
+  - CH3CO
+  - CH3O
+  - CH3O2
+  - CH3O2H
+  - CH3OH
+  - CH4
+  - CHO
+  - CO
+  - CO2
+  - DC2OOH1
+  - H
+  - H2
+  - H2O
+  - H2O2
+  - HO2
+  - O
+  - O2
+  - OH
+  - OXIRAN
+  - HE
+  state:
+    P: 101325.0
+    T: 300.0
+  thermo: ideal-gas
+- Motz-Wise: false
+  elements:
+  - C
+  - H
+  - O
+  - Pt
+  - He
+  kinetics: surface
+  name: PT_SURFACE
+  reactions:
+  - PT_SURFACE-reactions
+  site-density: 2.72e-09
+  species:
+  - _Pt_
+  - H2O_Pt
+  - H_Pt
+  - OH_Pt
+  - CO_Pt
+  - C_Pt
+  - CH3_Pt
+  - CH2_Pt
+  - CH_Pt
+  - O_Pt
+  - CO2_Pt
+  state:
+    P: 101325.0
+    T: 300.0
+  thermo: ideal-surface
+species:
+- composition:
+    C: 2
+    H: 3
+    O: 1
+  name: C2H3O
+  note: T9/92
+  thermo:
+    data:
+    - - 1.0854772
+      - 0.012845259
+      - 2.413866e-06
+      - -4.4642672e-09
+      - -2.9381916e-13
+      - 15910.655
+      - 33.395312
+    - - 0.4813147
+      - 0.020711914
+      - -1.2693155e-05
+      - 3.4579642e-09
+      - -3.5399703e-13
+      - 15648.642
+      - 34.629876
+    model: NASA7
+    temperature-ranges:
+    - 298.15
+    - 1000.0
+    - 3500.0
+- composition:
+    C: 2
+    H: 4
+  name: C2H4
+  note: '121286'
+  thermo:
+    data:
+    - - -0.861488
+      - 0.02796162
+      - -3.388677e-05
+      - 2.785152e-08
+      - -9.737879e-12
+      - 5573.046
+      - 24.21148
+    - - 3.528418
+      - 0.011485185
+      - -4.418385e-06
+      - 7.8446e-10
+      - -5.266848e-14
+      - 4428.288
+      - 2.230389
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 5000.0
+- composition:
+    C: 2
+    H: 5
+  name: C2H5
+  note: '12387'
+  thermo:
+    data:
+    - - 2.690701
+      - 0.008719133
+      - 4.419838e-06
+      - 9.338703e-10
+      - -3.927773e-12
+      - 12870.404
+      - 12.138195
+    - - 7.19048
+      - 0.006484077
+      - -6.428064e-07
+      - -2.347879e-10
+      - 3.880877e-14
+      - 10674.549
+      - -14.780892
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 5000.0
+- composition:
+    C: 2
+    H: 5
+    O: 2
+  name: C2H5O2
+  note: MAR97
+  thermo:
+    data:
+    - - 1.14509259
+      - 0.0340950493
+      - -2.63317159e-05
+      - 1.09211311e-08
+      - -1.86974412e-12
+      - -3758.62702
+      - 22.5106527
+    - - 10.1174925
+      - 0.0114414478
+      - -3.87093107e-06
+      - 5.96456991e-10
+      - -3.44195189e-14
+      - -6721.93488
+      - -25.1029911
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1401.0
+    - 5000.0
+- composition:
+    C: 2
+    H: 6
+    O: 2
+  name: C2H5OOH
+  thermo:
+    data:
+    - - 0.176442089
+      - 0.0429475359
+      - -3.45056187e-05
+      - 1.409098e-08
+      - -2.29710196e-12
+      - -22362.8129
+      - 25.6156874
+    - - 12.6555265
+      - 0.011334722
+      - -3.82256729e-06
+      - 5.88089793e-10
+      - -3.39112055e-14
+      - -26383.9689
+      - -40.4200223
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1409.0
+    - 5000.0
+- composition:
+    C: 2
+    H: 6
+  name: C2H6
+  note: '121686'
+  thermo:
+    data:
+    - - 1.4625388
+      - 0.015494667
+      - 5.780507e-06
+      - -1.2578319e-08
+      - 4.586267e-12
+      - -11239.176
+      - 14.432295
+    - - 4.825938
+      - 0.013840429
+      - -4.557258e-06
+      - 6.724967e-10
+      - -3.598161e-14
+      - -12717.793
+      - -5.239506
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 4000.0
+- composition:
+    C: 1
+    H: 2
+    O: 1
+  name: CH2O
+  note: '121286'
+  thermo:
+    data:
+    - - 1.6527311
+      - 0.012631439
+      - -1.888168e-05
+      - 2.050031e-08
+      - -8.413237e-12
+      - -14865.404
+      - 13.78482
+    - - 2.995606
+      - 0.006681321
+      - -2.628954e-06
+      - 4.737153e-10
+      - -3.212517e-14
+      - -15320.369
+      - 6.912572
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 5000.0
+- composition:
+    C: 1
+    H: 3
+    O: 1
+  name: CH2OH
+  note: MAR97
+  thermo:
+    data:
+    - - 2.60067849
+      - 0.0128447854
+      - -8.33796185e-06
+      - 2.75727606e-09
+      - -3.57041106e-13
+      - -2334.78724
+      - 11.3272307
+    - - 6.00127803
+      - 0.00498721568
+      - -1.60953515e-06
+      - 2.40227135e-10
+      - -1.355827e-14
+      - -3501.57098
+      - -6.92836844
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1410.0
+    - 5000.0
+- composition:
+    C: 1
+    H: 3
+  name: CH3
+  note: '121286'
+  thermo:
+    data:
+    - - 2.430442
+      - 0.011124099
+      - -1.68022e-05
+      - 1.6218288e-08
+      - -5.864952e-12
+      - 16423.781
+      - 6.789794
+    - - 2.844051
+      - 0.006137974
+      - -2.230345e-06
+      - 3.785161e-10
+      - -2.452159e-14
+      - 16437.809
+      - 5.452697
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 5000.0
+- composition:
+    C: 2
+    H: 4
+    O: 1
+  name: CH3CHO
+  note: 9/20/1
+  thermo:
+    data:
+    - - 1.98023941
+      - 0.0169300955
+      - -4.36472545e-06
+      - -1.70119601e-09
+      - 7.72360943e-13
+      - -21019.5065
+      - 15.6487028
+    - - 7.06734034
+      - 0.00972785577
+      - -3.36197228e-06
+      - 5.25639518e-10
+      - -3.06473991e-14
+      - -23275.4287
+      - -13.3686458
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1366.0
+    - 5000.0
+- composition:
+    C: 2
+    H: 3
+    O: 1
+  name: CH3CO
+  note: '120186'
+  thermo:
+    data:
+    - - 3.125278
+      - 0.00977822
+      - 4.521448e-06
+      - -9.009462e-09
+      - 3.193718e-12
+      - -4108.508
+      - 11.22885
+    - - 5.612279
+      - 0.008449886
+      - -2.854147e-06
+      - 4.238376e-10
+      - -2.268404e-14
+      - -5187.863
+      - -3.274949
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 5000.0
+- composition:
+    C: 1
+    H: 3
+    O: 1
+  name: CH3O
+  note: '121686'
+  thermo:
+    data:
+    - - 2.106204
+      - 0.007216595
+      - 5.338472e-06
+      - -7.377636e-09
+      - 2.07561e-12
+      - 978.6011
+      - 13.152177
+    - - 3.770799
+      - 0.007871497
+      - -2.656384e-06
+      - 3.944431e-10
+      - -2.112616e-14
+      - 127.83252
+      - 2.929575
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 3000.0
+- composition:
+    C: 1
+    H: 3
+    O: 2
+  name: CH3O2
+  note: BURCT
+  thermo:
+    data:
+    - - 2.098649
+      - 0.015786357
+      - 7.5683261e-08
+      - -1.1274587e-08
+      - 5.6665133e-12
+      - 2069.5879
+      - 15.007068
+    - - 6.6812963
+      - 0.0080057271
+      - -2.7188507e-06
+      - 4.0631365e-10
+      - -2.1927725e-14
+      - 526.21851
+      - -9.9423847
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 5000.0
+- composition:
+    C: 1
+    H: 4
+    O: 2
+  name: CH3O2H
+  note: CH4O2T5/92
+  thermo:
+    data:
+    - - 2.7586279
+      - 0.018150526
+      - -4.0892298e-06
+      - -6.8391987e-09
+      - 4.1430701e-12
+      - -17986.394
+      - 13.071986
+    - - 6.6499943
+      - 0.010351461
+      - -3.3524105e-06
+      - 5.3645535e-10
+      - -3.3949756e-14
+      - -19232.344
+      - -7.7922626
+    model: NASA7
+    temperature-ranges:
+    - 298.15
+    - 1000.0
+    - 5000.0
+- composition:
+    C: 1
+    H: 4
+    O: 1
+  name: CH3OH
+  note: '121686'
+  thermo:
+    data:
+    - - 2.660115
+      - 0.007341508
+      - 7.170051e-06
+      - -8.793194e-09
+      - 2.39057e-12
+      - -25353.48
+      - 11.23263
+    - - 4.029061
+      - 0.009376593
+      - -3.050254e-06
+      - 4.358793e-10
+      - -2.224723e-14
+      - -26157.91
+      - 2.378196
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 5000.0
+- composition:
+    C: 1
+    H: 4
+  name: CH4
+  thermo:
+    data:
+    - - 0.778741479
+      - 0.0174766835
+      - -2.78340904e-05
+      - 3.04970804e-08
+      - -1.22393068e-11
+      - -9825.22852
+      - 13.7221947
+    - - 1.68347883
+      - 0.0102372356
+      - -3.87512864e-06
+      - 6.78558487e-10
+      - -4.50342312e-14
+      - -10080.7871
+      - 9.62339497
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 5000.0
+- composition:
+    C: 1
+    H: 1
+    O: 1
+  name: CHO
+  note: HCO121286
+  thermo:
+    data:
+    - - 2.898329
+      - 0.006199146
+      - -9.623084e-06
+      - 1.0898249e-08
+      - -4.574885e-12
+      - 4159.922
+      - 8.983614
+    - - 3.557271
+      - 0.003345572
+      - -1.335006e-06
+      - 2.470572e-10
+      - -1.71385e-14
+      - 3916.324
+      - 5.552299
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 5000.0
+- composition:
+    C: 1
+    O: 1
+  name: CO
+  thermo:
+    data:
+    - - 3.26245165
+      - 0.00151194085
+      - -3.88175522e-06
+      - 5.58194424e-09
+      - -2.47495123e-12
+      - -14310.5391
+      - 4.84889698
+    - - 3.02507806
+      - 0.00144268852
+      - -5.63082779e-07
+      - 1.01858133e-10
+      - -6.91095156e-15
+      - -14268.3496
+      - 6.10821772
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 5000.0
+- composition:
+    C: 1
+    O: 2
+  name: CO2
+  thermo:
+    data:
+    - - 2.27572465
+      - 0.00992207229
+      - -1.04091132e-05
+      - 6.86668678e-09
+      - -2.11728009e-12
+      - -48373.1406
+      - 10.188488
+    - - 4.45362282
+      - 0.00314016873
+      - -1.27841054e-06
+      - 2.39399667e-10
+      - -1.66903319e-14
+      - -48966.9609
+      - -0.955395877
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 5000.0
+- composition:
+    C: 2
+    H: 5
+    O: 2
+  name: DC2OOH1
+  note: T10/10
+  thermo:
+    data:
+    - - 8.88872432
+      - 0.0135833179
+      - -4.91116949e-06
+      - 7.92343362e-10
+      - -4.73525704e-14
+      - -7441.07388
+      - -19.0789836
+    - - 4.50099327
+      - 0.00687965342
+      - 4.74143971e-05
+      - -6.92287127e-08
+      - 2.87395324e-11
+      - -5395.47911
+      - 7.91490068
+    model: NASA7
+    temperature-ranges:
+    - 61.05
+    - 6000.0
+    - 61.05
+- composition:
+    H: 1
+  name: H
+  note: '120186'
+  thermo:
+    data:
+    - - 2.5
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 25471.62
+      - -0.4601176
+    - - 2.5
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 25471.62
+      - -0.4601176
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 5000.0
+- composition:
+    H: 2
+  name: H2
+  note: '121286'
+  thermo:
+    data:
+    - - 3.298124
+      - 0.0008249441
+      - -8.143015e-07
+      - -9.475434e-11
+      - 4.134872e-13
+      - -1012.5209
+      - -3.294094
+    - - 2.991423
+      - 0.0007000644
+      - -5.633828e-08
+      - -9.231578e-12
+      - 1.5827519e-15
+      - -835.034
+      - -1.3551101
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 5000.0
+- composition:
+    H: 2
+    O: 1
+  name: H2O
+  note: '20387'
+  thermo:
+    data:
+    - - 3.386842
+      - 0.003474982
+      - -6.354696e-06
+      - 6.968581e-09
+      - -2.506588e-12
+      - -30208.11
+      - 2.590232
+    - - 2.672145
+      - 0.003056293
+      - -8.73026e-07
+      - 1.2009964e-10
+      - -6.391618e-15
+      - -29899.21
+      - 6.862817
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 5000.0
+- composition:
+    H: 2
+    O: 2
+  name: H2O2
+  note: '120186'
+  thermo:
+    data:
+    - - 3.388753
+      - 0.006569226
+      - -1.4850125e-07
+      - -4.625805e-09
+      - 2.471514e-12
+      - -17663.14
+      - 6.785363
+    - - 4.573167
+      - 0.004336136
+      - -1.4746888e-06
+      - 2.348903e-10
+      - -1.4316536e-14
+      - -18006.96
+      - 0.5011369
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 5000.0
+- composition:
+    H: 1
+    O: 2
+  name: HO2
+  note: '20387'
+  thermo:
+    data:
+    - - 2.979963
+      - 0.004996697
+      - -3.790997e-06
+      - 2.354192e-09
+      - -8.089024e-13
+      - 176.2273
+      - 9.222724
+    - - 4.072191
+      - 0.002131296
+      - -5.308145e-07
+      - 6.112269e-11
+      - -2.841164e-15
+      - -157.9727
+      - 3.476029
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 5000.0
+- composition:
+    O: 1
+  name: O
+  note: '120186'
+  thermo:
+    data:
+    - - 2.946428
+      - -0.0016381665
+      - 2.421031e-06
+      - -1.6028431e-09
+      - 3.890696e-13
+      - 29147.64
+      - 2.963995
+    - - 2.542059
+      - -2.755061e-05
+      - -3.102803e-09
+      - 4.551067e-12
+      - -4.368051e-16
+      - 29230.8
+      - 4.920308
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 5000.0
+- composition:
+    O: 2
+  name: O2
+  note: '121386'
+  thermo:
+    data:
+    - - 3.212936
+      - 0.0011274864
+      - -5.75615e-07
+      - 1.3138773e-09
+      - -8.768554e-13
+      - -1005.249
+      - 6.034737
+    - - 3.697578
+      - 0.0006135197
+      - -1.258842e-07
+      - 1.775281e-11
+      - -1.1364354e-15
+      - -1233.9301
+      - 3.189165
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 5000.0
+- composition:
+    H: 1
+    O: 1
+  name: OH
+  note: '121286'
+  thermo:
+    data:
+    - - 3.637266
+      - 0.000185091
+      - -1.6761646e-06
+      - 2.387202e-09
+      - -8.431442e-13
+      - 3606.781
+      - 1.3588605
+    - - 2.88273
+      - 0.0010139743
+      - -2.276877e-07
+      - 2.174683e-11
+      - -5.126305e-16
+      - 3886.888
+      - 5.595712
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 5000.0
+- composition:
+    C: 2
+    H: 4
+    O: 1
+  name: OXIRAN
+  note: L8/88
+  thermo:
+    data:
+    - - 3.7590532
+      - -0.009441218
+      - 8.0309721e-05
+      - -1.0080788e-07
+      - 4.0039921e-11
+      - -7560.8143
+      - 7.8497475
+    - - 5.4887641
+      - 0.01204619
+      - -4.3336931e-06
+      - 7.0028311e-10
+      - -4.1949088e-14
+      - -9180.4251
+      - -7.0799605
+    model: NASA7
+    temperature-ranges:
+    - 200.0
+    - 1000.0
+    - 6000.0
+- composition:
+    He: 1
+  name: HE
+  note: G5/97
+  thermo:
+    data:
+    - - 2.5
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - -745.375
+      - 0.928723974
+    - - 2.5
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - -745.375
+      - 0.928723974
+    model: NASA7
+    temperature-ranges:
+    - 200.0
+    - 1000.0
+    - 6000.0
+- composition:
+    Pt: 1
+  name: _Pt_
+  thermo:
+    data:
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 3000.0
+- composition:
+    H: 2
+    O: 1
+    Pt: 1
+  name: H2O_Pt
+  note: '92491'
+  thermo:
+    data:
+    - - -2.7651553
+      - 0.013315115
+      - 1.0127695e-06
+      - -7.1820083e-09
+      - 2.2813776e-12
+      - -36398.055
+      - 12.098145
+    - - 2.5803051
+      - 0.0049570827
+      - -4.6894056e-07
+      - -5.2633137e-10
+      - 1.1998322e-13
+      - -38302.234
+      - -17.406322
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 3000.0
+- composition:
+    H: 1
+    Pt: 1
+  name: H_Pt
+  note: '92491'
+  thermo:
+    data:
+    - - -1.3029877
+      - 0.0054173199
+      - 3.1277972e-07
+      - -3.2328533e-09
+      - 1.136282e-12
+      - -4227.7075
+      - 5.8743238
+    - - 1.0696996
+      - 0.001543223
+      - -1.5500922e-07
+      - -1.6573165e-10
+      - 3.8359347e-14
+      - -5054.6128
+      - -7.1555238
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 3000.0
+- composition:
+    H: 1
+    O: 1
+    Pt: 1
+  name: OH_Pt
+  note: '92491'
+  thermo:
+    data:
+    - - -2.0340881
+      - 0.0093662683
+      - 6.6275214e-07
+      - -5.2074887e-09
+      - 1.7088735e-12
+      - -25319.949
+      - 8.9863186
+    - - 1.8249973
+      - 0.0032501565
+      - -3.1197541e-07
+      - -3.4603206e-10
+      - 7.9171472e-14
+      - -26685.492
+      - -12.280891
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 3000.0
+- composition:
+    C: 1
+    O: 1
+    Pt: 1
+  name: CO_Pt
+  note: '0'
+  thermo:
+    data:
+    - - 4.8907466
+      - 6.8134235e-05
+      - 1.9768814e-07
+      - 1.2388669e-09
+      - -9.0339249e-13
+      - -32297.836
+      - -17.453161
+    - - 4.7083778
+      - 0.00096037297
+      - -1.1805279e-07
+      - -7.6883826e-11
+      - 1.8232e-14
+      - -32311.723
+      - -16.719593
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 3000.0
+- composition:
+    C: 1
+    Pt: 1
+  name: C_Pt
+  note: '0'
+  thermo:
+    data:
+    - - 0.58924019
+      - 0.0025012842
+      - -3.4229498e-07
+      - -1.8994346e-09
+      - 1.0190406e-12
+      - 10236.923
+      - 2.1937017
+    - - 1.5792824
+      - 0.00036528701
+      - -5.0657672e-08
+      - -3.4884855e-11
+      - 8.8089699e-15
+      - 9953.5752
+      - -3.0240495
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 3000.0
+- composition:
+    C: 1
+    H: 3
+    Pt: 1
+  name: CH3_Pt
+  note: '0'
+  thermo:
+    data:
+    - - 1.2919217
+      - 0.0072675603
+      - 9.8179476e-07
+      - -2.0471294e-09
+      - 9.0832717e-14
+      - -2574.561
+      - -1.1983037
+    - - 3.0016165
+      - 0.0054084505
+      - -4.0538058e-07
+      - -5.3422466e-10
+      - 1.1451887e-13
+      - -3275.2722
+      - -10.965984
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 3000.0
+- composition:
+    C: 1
+    H: 2
+    Pt: 1
+  name: CH2_Pt
+  note: '0'
+  thermo:
+    data:
+    - - -0.14876404
+      - 0.0051396289
+      - 1.1211075e-06
+      - -8.2755452e-10
+      - -4.4572345e-13
+      - 10878.7
+      - 5.7451882
+    - - 0.74076122
+      - 0.0048032533
+      - -3.2825633e-07
+      - -4.7779786e-10
+      - 1.0073452e-13
+      - 10443.752
+      - 0.40842086
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 3000.0
+- composition:
+    C: 1
+    H: 1
+    Pt: 1
+  name: CH_Pt
+  note: '0'
+  thermo:
+    data:
+    - - 0.84157485
+      - 0.001309538
+      - 2.8464575e-07
+      - 6.3862904e-10
+      - -4.2766658e-13
+      - 22332.801
+      - 1.1452305
+    - - -0.0048242472
+      - 0.0030446239
+      - -1.6066099e-07
+      - -2.90417e-10
+      - 5.7999924e-14
+      - 22595.219
+      - 5.6677818
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 3000.0
+- composition:
+    O: 1
+    Pt: 1
+  name: O_Pt
+  note: '92491'
+  thermo:
+    data:
+    - - -0.94986904
+      - 0.0074042305
+      - -1.0451424e-06
+      - -6.112042e-09
+      - 3.3787992e-12
+      - -13209.912
+      - 3.6137905
+    - - 1.945418
+      - 0.00091761647
+      - -1.1226719e-07
+      - -9.9099624e-11
+      - 2.4307699e-14
+      - -14005.187
+      - -11.531663
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 3000.0
+- composition:
+    C: 1
+    O: 2
+    Pt: 1
+  name: CO2_Pt
+  note: 081292
+  thermo:
+    data:
+    - - 0.469
+      - 0.0062662
+      - 0.0
+      - 0.0
+      - 0.0
+      - -50458.7
+      - -4.555
+    - - 0.469
+      - 0.006266
+      - 0.0
+      - 0.0
+      - 0.0
+      - -50458.7
+      - -4.555
+    model: NASA7
+    temperature-ranges:
+    - 300.0
+    - 1000.0
+    - 3000.0
+units:
+  activation-energy: kJ/mol
+  length: cm
+  quantity: mol
