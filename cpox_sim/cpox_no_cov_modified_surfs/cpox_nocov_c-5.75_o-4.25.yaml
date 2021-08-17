@@ -1,1104 +1,2343 @@
-generator: YamlWriter
 cantera-version: 2.6.0a2
 date: Mon Aug 16 22:09:51 2021
-phases:
-  - kinetics: surface
-    name: surface1
-    thermo: ideal-surface
-    elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, F, Cl, Br, I, X]
-    species: [X(1), HX(21), CO2X(22), COX(23), CH4X(24), OX(25), CH2X(26),
-    CH3X(27), CHX(28), CX(29), H2X(30), OHX(31), H2OX(32), CHOX(33),
-    CH3OX(61), HOCOX(138), CHOX(231), CH2OX(232), C2H3X(241),
-    C2HOX(246)]
-    site-density: 2.483e-08
-    state:
-      T: 300.0
-      density: 195.083
-      Y: {X(1): 1.0}
-    reactions: [surface1-reactions]
-  - kinetics: gas
-    transport: mixture-averaged
-    name: gas
-    thermo: ideal-gas
-    elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, F, Cl, Br, I, X]
-    species: [Ar, Ne, N2, CH4(2), O2(3), CO2(4), H2O(5), H2(6), CO(7), C2H6(8),
-    CH2O(9), CH3(10), C3H8(11), H(12), C2H5(13), CH3OH(14), HCO(15),
-    CH3CHO(16), OH(17), C2H4(18), CH3OO(20), C2H4(52)]
-    state:
-      T: 300.0
-      density: 1.622848417231445
-      Y: {Ar: 1.0}
-    reactions: [gas-reactions]
-species:
-  - name: X(1)
-    composition: {X: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [298.0, 1000.0, 3000.0]
-      data:
-        - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-        - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-  - name: HX(21)
-    composition: {H: 1.0, X: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [298.0, 1000.0, 2000.0]
-      data:
-        - [-1.96702988, 0.0167920714, -2.50314139e-05, 1.80485455e-08,
-        -5.11491197e-12, -3212.77026, 7.68211257]
-        - [2.71968546, -1.07696656e-03, 2.00193294e-06, -1.12865983e-09,
-        2.11269165e-13, -4247.01712, -15.279349]
-  - name: CO2X(22)
-    composition: {C: 1.0, O: 2.0, X: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 953.6, 5000.0]
-      data:
-        - [3.09268416, 5.29285051e-03, 8.99424169e-06, -1.67126189e-08,
-        7.04895731e-12, -5.24627108e+04, -4.06894637]
-        - [5.99804988, 2.27482238e-03, -6.81075329e-07, 1.34428306e-10,
-        -1.11506248e-14, -5.34337089e+04, -20.1334826]
-  - name: COX(23)
-    composition: {C: 1.0, O: 1.0, X: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [298.0, 1000.0, 2000.0]
-      data:
-        - [2.70112272, 8.76650166e-03, -1.29512418e-05, 1.04194594e-08,
-        -3.3970049e-12, 8.169075315998729e+04, -12.8730512]
-        - [5.5282088, -1.52631254e-03, 2.79791895e-06, -1.54550129e-09,
-        2.84523223e-13, 8.10152885599873e+04, -26.9156979]
-  - name: CH4X(24)
-    composition: {C: 1.0, H: 4.0, X: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [298.0, 1000.0, 2000.0]
-      data:
-        - [5.26247002, -7.42703413e-03, 3.36472336e-05, -3.2940115e-08,
-        1.1025925e-11, -1.1603832e+04, -10.0920541]
-        - [9.54981008, -0.0103719404, 1.83183536e-05,
-        -9.633329160000001e-09, 1.70558531e-12, -1.32717208e+04,
-        -34.5374475]
-  - name: OX(25)
-    composition: {O: 1.0, X: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [298.0, 1000.0, 2000.0]
-      data:
-        - [0.179722382, 0.0125453156, -2.29924588e-05, 1.94187177e-08,
-        -6.22414099e-12, -1.73402246e+04, -2.22409728]
-        - [2.92050897, -2.70455589e-04, 5.15610634e-07, -2.93911213e-10,
-        5.54030466e-14, -1.78369003e+04, -15.0940536]
-  - name: CH2X(26)
-    composition: {C: 1.0, H: 2.0, X: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [298.0, 1000.0, 2000.0]
-      data:
-        - [-2.26602367, 0.0292517765, -4.32728797e-05, 3.30655723e-08,
-        -9.93242641e-12, 1.164147971149873e+05, 8.227512880000001]
-        - [6.82572636, -5.17192506e-03, 9.195519380000001e-06,
-        -4.87101486e-09, 8.67713091e-13, 1.143695503499873e+05,
-        -36.4410753]
-  - name: CH3X(27)
-    composition: {C: 1.0, H: 3.0, X: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [298.0, 1000.0, 2000.0]
-      data:
-        - [0.580099877, 0.0166399977, -1.3916487e-05, 6.70631582e-09,
-        -1.31079175e-12, 1.686471555199809e+05, -0.757148375]
-        - [8.67869881, -7.8423842e-03, 1.38956076e-05, -7.3360019e-09,
-        1.30321431e-12, 1.665068275499809e+05, -42.0966823]
-  - name: CHX(28)
-    composition: {C: 1.0, H: 1.0, X: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [298.0, 1000.0, 2000.0]
-      data:
-        - [-3.00950779, 0.0302193341, -4.99546294e-05, 3.99478464e-08,
-        -1.23021593e-11, 5.518566968999365e+04, 11.2314464]
-        - [4.88482023, -2.70846119e-03, 4.84648118e-06, -2.58513645e-09,
-        4.63180319e-13, 5.356838027999365e+04, -26.7870735]
-  - name: CX(29)
-    composition: {C: 1.0, X: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [298.0, 1000.0, 2000.0]
-      data:
-        - [-1.73430697, 0.0189855471, -3.23563661e-05, 2.5926989e-08,
-        -7.99102104e-12, 6363.85922, 6.25445028]
-        - [2.82193241, -6.61177416e-04, 1.24180431e-06, -7.03993893e-10,
-        1.32276605e-13, 5464.67816, -15.5251271]
-  - name: H2X(30)
-    composition: {H: 2.0, X: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [298.0, 1000.0, 2000.0]
-      data:
-        - [3.78935111, 1.10148021e-03, -2.313201e-06, 2.11937826e-09,
-        -6.31350224e-13, -1867.00333, -10.0616465]
-        - [4.06700165, -5.01780079e-04, 6.70738856e-07, -1.79170942e-10,
-        8.86886631e-15, -1891.07687, -11.2621699]
-  - name: OHX(31)
-    composition: {H: 1.0, O: 1.0, X: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [298.0, 1000.0, 2000.0]
-      data:
-        - [1.07348583, 0.0172652206, -3.17712232e-05, 2.71536568e-08,
-        -8.694493040000001e-12, -4.071227691383919e+04, -5.65622336]
-        - [5.01870328, -1.35424298e-03, 2.2768631e-06, -1.09407298e-09,
-        1.79396487e-13, -4.140997021383919e+04, -24.1159621]
-  - name: H2OX(32)
-    composition: {H: 2.0, O: 1.0, X: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [298.0, 1000.0, 2000.0]
-      data:
-        - [2.53777266, 9.4537201e-03, -1.41325664e-05, 1.16730945e-08,
-        -3.6765764e-12, -3.27590463e+04, -5.36548561]
-        - [5.84789466, -3.31526816e-03, 5.62018785e-06, -2.75864893e-09,
-        4.61279066e-13, -3.34885608e+04, -21.5622699]
-  - name: CHOX(33)
-    composition: {C: 1.0, H: 1.0, O: 1.0, X: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [298.0, 1000.0, 2000.0]
-      data:
-        - [1.94156388, 0.0130882912, -1.34260003e-05, 7.97044677e-09,
-        -2.06719711e-12, 1.469162537399809e+05, -5.97802577]
-        - [7.49136303, -4.18949199e-03, 7.54544313e-06, -4.07863095e-09,
-        7.38421146e-13, 1.454660107399809e+05, -34.207664]
-  - name: CH3OX(61)
-    composition: {C: 1.0, H: 3.0, O: 1.0, X: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [298.0, 1000.0, 2000.0]
-      data:
-        - [0.690559347, 0.0231880081, -1.92723889e-05, 7.42264515e-09,
-        -6.88671342e-13, 1.395521353399809e+05, -1.7804968]
-        - [11.318967, -8.553288940000001e-03, 1.51576215e-05,
-        -8.00760803e-09, 1.42446093e-12, 1.367526429399809e+05,
-        -56.0575095]
-  - name: HOCOX(138)
-    composition: {C: 1.0, H: 1.0, O: 2.0, X: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 943.4, 5000.0]
-      data:
-        - [3.72340236, -4.27932838e-03, 5.09064157e-05, -6.55312082e-08,
-        2.52469411e-11, 1.284921128399809e+05, -7.82080376]
-        - [8.73074431, 9.992967900000001e-04, 3.63420911e-07,
-        -2.85465672e-11, -4.35216598e-15, 1.263676371399809e+05,
-        -37.9389019]
-  - name: CHOX(231)
-    composition: {C: 1.0, H: 1.0, O: 1.0, X: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [298.0, 1000.0, 2000.0]
-      data:
-        - [0.863437744, 0.0214806054, -3.00009525e-05, 2.11729011e-08,
-        -5.90923491e-12, 2.732010837999365e+04, -5.10749731]
-        - [7.59479056, -3.06847382e-03, 5.43592647e-06, -2.8646356e-09,
-        5.09149225e-13, 2.577670947999365e+04, -38.3674793]
-  - name: CH2OX(232)
-    composition: {C: 1.0, H: 2.0, O: 1.0, X: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [298.0, 1000.0, 2000.0]
-      data:
-        - [0.468649725, 0.020497205, -1.85506813e-05, 8.22998468e-09,
-        -1.23251062e-12, 9.033597225998729e+04, -0.921769145]
-        - [9.394490019999999, -6.56375678e-03, 1.1714178e-05,
-        -6.25387815e-09, 1.12161443e-12, 8.80024671599873e+04,
-        -46.4113344]
-  - name: C2H3X(241)
-    composition: {C: 2.0, H: 3.0, X: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [298.0, 1000.0, 2000.0]
-      data:
-        - [0.157603104, 0.0234293413, -1.86683661e-05, 7.2923437e-09,
-        -8.79008671e-13, 4.706685487999365e+04, -1.73582278]
-        - [11.3050336, -9.40622931e-03, 1.67935678e-05,
-        -8.969015000000001e-09, 1.60855621e-12, 4.408439177999365e+04,
-        -58.836379]
-  - name: C2HOX(246)
-    composition: {C: 2.0, H: 1.0, O: 1.0, X: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 922.9400000000001, 5000.0]
-      data:
-        - [3.57759077, -2.02755438e-04, 3.97391514e-05, -5.64295916e-08,
-        2.29851541e-11, 2.719364327999364e+04, -11.0316123]
-        - [9.48327136, -1.34480368e-03, 1.85321411e-06, -3.56644376e-10,
-        2.05659227e-14, 2.506204777999365e+04, -44.6916968]
-  - name: Ar
-    composition: {Ar: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [200.0, 1000.0, 6000.0]
-      data:
-        - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 4.37967]
-        - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 4.37967]
-    transport:
-      model: gas
-      geometry: atom
-      diameter: 3.330000000000001
-      well-depth: 136.501
-  - name: Ne
-    composition: {Ne: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [200.0, 1000.0, 6000.0]
-      data:
-        - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 3.35532]
-        - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 3.35532]
-    transport:
-      model: gas
-      geometry: atom
-      diameter: 3.758
-      well-depth: 148.6
-  - name: N2
-    composition: {N: 2.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [200.0, 1000.0, 6000.0]
-      data:
-        - [3.53101, -1.23661e-04, -5.02999e-07, 2.43531e-09, -1.40881e-12,
-        -1046.98, 2.96747]
-        - [2.95258, 1.3969e-03, -4.92632e-07, 7.8601e-11, -4.60755e-15,
-        -923.949, 5.87189]
-    transport:
-      model: gas
-      geometry: linear
-      diameter: 3.621
-      well-depth: 97.53
-      polarizability: 1.76
-      rotational-relaxation: 4.0
-  - name: CH4(2)
-    composition: {C: 1.0, H: 4.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 1084.12, 5000.0]
-      data:
-        - [4.20541524, -5.35557362e-03, 2.51123265e-05, -2.13762843e-08,
-        5.97523937e-12, -1.01619433e+04, -0.9212792829999999]
-        - [0.908265721, 0.0114540858, -4.57173828e-06, 8.29191671e-10,
-        -5.66314895e-14, -9719.97444, 13.9930944]
-    transport:
-      model: gas
-      geometry: nonlinear
-      diameter: 3.746
-      well-depth: 141.4
-      polarizability: 2.6
-      rotational-relaxation: 13.0
-  - name: O2(3)
-    composition: {O: 2.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 1074.56, 5000.0]
-      data:
-        - [3.53732181, -1.2157093e-03, 5.31617826e-06, -4.89443424e-09,
-        1.45845042e-12, -1038.58846, 4.68368406]
-        - [3.15382425, 1.67803802e-03, -7.69971022e-07, 1.51274714e-10,
-        -1.08781801e-14, -1040.81878, 6.16753884]
-    transport:
-      model: gas
-      geometry: linear
-      diameter: 3.458
-      well-depth: 107.4
-      polarizability: 1.6
-      rotational-relaxation: 3.8
-  - name: CO2(4)
-    composition: {C: 1.0, O: 2.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 978.21, 5000.0]
-      data:
-        - [3.28084634, 2.5018346e-03, 8.08199998e-06, -1.20511416e-08,
-        4.66547255e-12, -4.84008304e+04, 6.00080795]
-        - [4.67426743, 2.60964031e-03, -9.856898570000001e-07,
-        1.95713857e-10, -1.49836245e-14, -4.8951214e+04, -2.11073617]
-    transport:
-      model: gas
-      geometry: linear
-      diameter: 3.763
-      well-depth: 244.001
-      polarizability: 2.65
-      rotational-relaxation: 2.1
-  - name: H2O(5)
-    composition: {H: 2.0, O: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 1130.24, 5000.0]
-      data:
-        - [4.0576361, -7.87938871e-04, 2.9087848e-06, -1.47520039e-09,
-        2.12847506e-13, -3.02815866e+04, -0.311365027]
-        - [2.84324866, 2.75108838e-03, -7.8103312e-07, 1.07244016e-10,
-        -5.79395308e-15, -2.9958612e+04, 5.91043011]
-    transport:
-      model: gas
-      geometry: nonlinear
-      diameter: 2.605
-      well-depth: 572.402
-      dipole: 1.844
-      rotational-relaxation: 4.0
-  - name: H2(6)
-    composition: {H: 2.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 1959.08, 5000.0]
-      data:
-        - [3.43536412, 2.12710353e-04, -2.78625043e-07, 3.40267167e-10,
-        -7.76031998e-14, -1031.35984, -3.90841732]
-        - [2.78816583, 5.87640942e-04, 1.59010417e-07, -5.52739026e-11,
-        4.34310984e-15, -596.14427, 0.112732655]
-    transport:
-      model: gas
-      geometry: linear
-      diameter: 2.92
-      well-depth: 38.0
-      polarizability: 0.7900000000000001
-      rotational-relaxation: 280.0
-  - name: CO(7)
-    composition: {C: 1.0, O: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 1571.63, 5000.0]
-      data:
-        - [3.56838038, -8.521295e-04, 2.48918819e-06, -1.56331996e-09,
-        3.13598127e-13, -1.4284255e+04, 3.57912028]
-        - [2.91305202, 1.64659937e-03, -6.88625686e-07, 1.21039677e-10,
-        -7.84035796e-15, -1.41808768e+04, 6.71054299]
-    transport:
-      model: gas
-      geometry: linear
-      diameter: 3.65
-      well-depth: 98.09999999999999
-      polarizability: 1.95
-      rotational-relaxation: 1.8
-  - name: C2H6(8)
-    composition: {C: 2.0, H: 6.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 1012.42, 5000.0]
-      data:
-        - [3.72239291, 1.65083841e-03, 3.4417553e-05, -3.76858229e-08,
-        1.24450657e-11, -1.15575901e+04, 4.68247999]
-        - [2.82848257, 0.0173040568, -6.73334245e-06, 1.23742024e-09,
-        -8.656764100000001e-14, -1.1997808e+04, 5.93811707]
-    transport:
-      model: gas
-      geometry: nonlinear
-      diameter: 4.302
-      well-depth: 252.301
-      rotational-relaxation: 1.5
-  - name: CH2O(9)
-    composition: {C: 1.0, H: 2.0, O: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 1070.44, 5000.0]
-      data:
-        - [4.12927802, -4.08401318e-03, 2.03229341e-05, -1.83524244e-08,
-        5.37975522e-12, -1.4429464e+04, 3.22418463]
-        - [2.21172442, 7.942656790000001e-03, -3.34193053e-06,
-        6.28471401e-10, -4.40431446e-14, -1.42974456e+04, 11.3048985]
-    transport:
-      model: gas
-      geometry: nonlinear
-      diameter: 3.59
-      well-depth: 498.002
-      rotational-relaxation: 2.0
-  - name: CH3(10)
-    composition: {C: 1.0, H: 3.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 697.71, 5000.0]
-      data:
-        - [3.96043098, 5.92939934e-04, 8.785753900000001e-06,
-        -9.88030557e-09, 3.6323458e-12, 1.64218818e+04, 0.339865631]
-        - [3.09511187, 5.55429874e-03, -1.88158855e-06, 3.13335012e-10,
-        -2.05195181e-14, 1.65426192e+04, 4.20297876]
-    transport:
-      model: gas
-      geometry: nonlinear
-      diameter: 3.8
-      well-depth: 144.001
-  - name: C3H8(11)
-    composition: {C: 3.0, H: 8.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 989.99, 5000.0]
-      data:
-        - [3.06336167, 0.0129214561, 3.47032808e-05, -4.70946154e-08,
-        1.71384141e-11, -1.43905789e+04, 10.7835592]
-        - [5.60440043, 0.0219528785, -8.220806100000001e-06, 1.50103993e-09,
-        -1.05635358e-13, -1.58394038e+04, -6.226233]
-    transport:
-      model: gas
-      geometry: nonlinear
-      diameter: 4.982
-      well-depth: 266.801
-      rotational-relaxation: 1.0
-  - name: H(12)
-    composition: {H: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 3459.6, 5000.0]
-      data:
-        - [2.5, 9.24384602e-15, -1.36779837e-17, 6.66184769e-21,
-        -1.00106912e-24, 2.54742178e+04, -0.444972896]
-        - [2.49999999, 9.20455546e-12, -3.58608293e-15, 6.15198922e-19,
-        -3.92041801e-23, 2.54742178e+04, -0.444972842]
-    transport:
-      model: gas
-      geometry: atom
-      diameter: 2.05
-      well-depth: 145.0
-  - name: C2H5(13)
-    composition: {C: 2.0, H: 5.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 1006.87, 5000.0]
-      data:
-        - [3.68746539, 3.06889693e-03, 2.55873112e-05, -2.94076576e-08,
-        9.940762150000001e-12, 1.31153648e+04, 6.96684864]
-        - [3.5378101, 0.0137311636, -5.29564638e-06, 9.714828580000001e-10,
-        -6.8028949e-14, 1.2635179e+04, 5.15566048]
-    transport:
-      model: gas
-      geometry: nonlinear
-      diameter: 4.302
-      well-depth: 252.301
-      rotational-relaxation: 1.5
-  - name: CH3OH(14)
-    composition: {C: 1.0, H: 4.0, O: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 1035.75, 5000.0]
-      data:
-        - [3.84006214, 1.38241998e-03, 1.91667191e-05, -2.0156866e-08,
-        6.39102259e-12, -2.56083087e+04, 5.90978137]
-        - [2.79184298, 0.0115827852, -4.51551928e-06, 8.212067060000001e-10,
-        -5.6706325e-14, -2.57211674e+04, 9.41061586]
-    transport:
-      model: gas
-      geometry: nonlinear
-      diameter: 3.626
-      well-depth: 481.802
-      rotational-relaxation: 1.0
-  - name: HCO(15)
-    composition: {C: 1.0, H: 1.0, O: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 1112.1, 5000.0]
-      data:
-        - [4.05936407, -1.73846452e-03, 9.14981041e-06, -8.01131526e-09,
-        2.25737264e-12, 3843.77617, 3.32449702]
-        - [3.05136186, 4.11706437e-03, -1.75586433e-06, 3.29302821e-10,
-        -2.2917403e-14, 3930.07923, 7.67464289]
-    transport:
-      model: gas
-      geometry: nonlinear
-      diameter: 3.59
-      well-depth: 498.002
-  - name: CH3CHO(16)
-    composition: {C: 2.0, H: 4.0, O: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 1028.81, 5000.0]
-      data:
-        - [3.57991319, 5.18996203e-03, 2.2689306e-05, -2.73736957e-08,
-        9.284558689999999e-12, -2.13697369e+04, 8.969754310000001]
-        - [4.08568882, 0.0139060358, -5.59365394e-06, 1.04608143e-09,
-        -7.38729265e-14, -2.20391558e+04, 3.76773341]
-    transport:
-      model: gas
-      geometry: nonlinear
-      diameter: 3.97
-      well-depth: 436.001
-      rotational-relaxation: 2.0
-  - name: OH(17)
-    composition: {H: 1.0, O: 1.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 1145.75, 5000.0]
-      data:
-        - [3.51456768, 2.92814373e-05, -5.32176582e-07, 1.01950588e-09,
-        -3.85951152e-13, 3414.25421, 2.10435015]
-        - [3.07194246, 6.04011411e-04, -1.39759127e-08, -2.13451563e-11,
-        2.48070095e-15, 3579.38557, 4.577985]
-    transport:
-      model: gas
-      geometry: linear
-      diameter: 2.75
-      well-depth: 80.0
-  - name: C2H4(18)
-    composition: {C: 2.0, H: 4.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 979.36, 5000.0]
-      data:
-        - [3.97471606, -4.75844285e-03, 4.1678377e-05, -4.51392516e-08,
-        1.54224761e-11, 4915.40746, 3.62430844]
-        - [3.5566061, 0.0110627464, -4.17019079e-06, 7.8558677e-10,
-        -5.70060829e-14, 4320.46489, 2.17719479]
-    transport:
-      model: gas
-      geometry: nonlinear
-      diameter: 3.971
-      well-depth: 280.801
-      rotational-relaxation: 1.5
-  - name: CH3OO(20)
-    composition: {C: 1.0, H: 3.0, O: 2.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 1031.35, 5000.0]
-      data:
-        - [3.58600855, 6.15348645e-03, 1.3326929e-05, -1.76581521e-08,
-        6.13210932e-12, 248.233564, 9.74096027]
-        - [4.35022282, 0.0107183275, -4.26215078e-06, 7.89578335e-10,
-        -5.53846326e-14, -309.810145, 4.08928223]
-    transport:
-      model: gas
-      geometry: nonlinear
-      diameter: 3.69
-      well-depth: 417.0
-      dipole: 1.7
-      rotational-relaxation: 2.0
-  - name: C2H4(52)
-    composition: {C: 2.0, H: 4.0}
-    thermo:
-      model: NASA7
-      temperature-ranges: [100.0, 846.11, 5000.0]
-      data:
-        - [3.36869114, 0.0164232504, -2.16503709e-05, 2.18227984e-08,
-        -8.70182877e-12, 4.28682838e+04, 21.8539333]
-        - [2.6234491, 0.013842914, -6.25541075e-06, 1.16703453e-09,
-        -7.9535941e-14, 4.32128675e+04, 26.6158079]
-    transport:
-      model: gas
-      geometry: nonlinear
-      diameter: 4.443
-      well-depth: 110.7
+elements:
+- atomic-weight: 13.003
+  symbol: Ci
+- atomic-weight: 2.014
+  symbol: D
+- atomic-weight: 17.999
+  symbol: Oi
+- atomic-weight: 3.016
+  symbol: T
+- atomic-weight: 195.083
+  symbol: X
 gas-reactions:
-  - equation: H2(6) + M <=> 2 H(12) + M
-    type: three-body
-    rate-constant: {A: 4.577000000000001e+16, b: -1.4, Ea: 4.3672592e+08}
-    efficiencies: {Ar: 0.0, CO(7): 1.9, CO2(4): 3.8, H2(6): 2.5, H2O(5): 12.0}
-    id: gas-1
-  - equation: H2(6) + Ar <=> 2 H(12) + Ar
-    rate-constant: {A: 5.840000000000001e+15, b: -1.1, Ea: 4.3672592e+08}
-    id: gas-2
-  - equation: H2(6) + OH(17) <=> H(12) + H2O(5)
-    rate-constant: {A: 2.16e+05, b: 1.51, Ea: 1.435112e+07}
-    id: gas-3
-  - equation: H2O(5) + M <=> H(12) + OH(17) + M
-    type: three-body
-    rate-constant: {A: 6.064000000000001e+24, b: -3.322, Ea: 5.0538536e+08}
-    efficiencies: {CO(7): 1.9, CO2(4): 3.8, H2(6): 3.0, H2O(5): 0.0, N2: 2.0,
-    O2(3): 1.5}
-    id: gas-4
-  - equation: H2O(5) + H2O(5) <=> H(12) + OH(17) + H2O(5)
-    rate-constant: {A: 1.006e+23, b: -2.44, Ea: 5.0283312e+08}
-    id: gas-5
-  - equation: 2 OH(17) <=> H2(6) + O2(3)
-    rate-constant: {A: 2.0e+08, b: 0.51, Ea: 2.11292e+08}
-    id: gas-6
-  - equation: CH3(10) + H(12) <=> CH4(2)
-    rate-constant: {A: 1.93e+11, b: 0.0, Ea: 1.12968e+06}
-    id: gas-7
-  - equation: 2 CH3(10) <=> C2H6(8)
-    rate-constant: {A: 9.450000000000001e+11, b: -0.538, Ea: 5.6484e+05}
-    id: gas-8
-  - equation: C2H5(13) + H(12) <=> C2H6(8)
-    rate-constant: {A: 1.0e+11, b: 0.0, Ea: 0.0}
-    id: gas-9
-  - equation: CO(7) + H2(6) <=> CH2O(9)
-    rate-constant: {A: 2.89e+06, b: 1.16, Ea: 3.435064e+08}
-    id: gas-10
-  - equation: H(12) + HCO(15) <=> CH2O(9)
-    rate-constant: {A: 4.680000000000001e+07, b: 0.0, Ea: -1.895352e+07}
-    id: gas-11
-  - equation: C2H5(13) + CH3(10) <=> C3H8(11)
-    rate-constant: {A: 1.23e+12, b: -0.5620000000000001, Ea: 8.7864e+04}
-    id: gas-12
-  - equation: C2H4(18) + H(12) <=> C2H5(13)
-    rate-constant: {A: 4.620000000000001e+05, b: 1.64, Ea: 4.22584e+06}
-    id: gas-13
-  - equation: CH3(10) + OH(17) <=> CH3OH(14)
-    rate-constant: {A: 6.030000000000001e+10, b: 0.0, Ea: 0.0}
-    id: gas-14
-  - equation: CO(7) + H(12) <=> HCO(15)
-    rate-constant: {A: 1.18e+08, b: 0.0, Ea: 1.138048e+07}
-    id: gas-15
-  - equation: CH4(2) + CO(7) <=> CH3CHO(16)
-    rate-constant: {A: 65.60000000000001, b: 2.86, Ea: 3.635896000000001e+08}
-    id: gas-16
-  - equation: CH3(10) + HCO(15) <=> CH3CHO(16)
-    rate-constant: {A: 1.81e+10, b: 0.0, Ea: 0.0}
-    id: gas-17
-  - equation: CH3OO(20) <=> CH3(10) + O2(3)
-    rate-constant: {A: 1.09e+14, b: 0.25, Ea: 1.393272e+08}
-    id: gas-18
-  - equation: CH3OO(20) <=> CH2O(9) + OH(17)
-    rate-constant: {A: 4.71e+08, b: 1.45, Ea: 1.7685768e+08}
-    id: gas-19
-  - equation: CH3(10) + HCO(15) <=> CH4(2) + CO(7)
-    rate-constant: {A: 4.000000000000001e+10, b: 0.0, Ea: 0.0}
-    id: gas-20
-  - equation: CH4(2) + H(12) <=> CH3(10) + H2(6)
-    rate-constant: {A: 4.100000000000001, b: 3.156, Ea: 3.663092e+07}
-    id: gas-21
-  - equation: C2H6(8) + CH3(10) <=> C2H5(13) + CH4(2)
-    rate-constant: {A: 0.035, b: 3.44, Ea: 4.3446656e+07}
-    id: gas-22
-  - equation: CH4(2) + HCO(15) <=> CH2O(9) + CH3(10)
-    rate-constant: {A: 7.280000000000001, b: 2.85, Ea: 1.43302e+08}
-    id: gas-23
-  - equation: CH4(2) + OH(17) <=> CH3(10) + H2O(5)
-    rate-constant: {A: 1000.0, b: 2.182, Ea: 1.0485104e+07}
-    id: gas-24
-  - equation: C2H5(13) + CH3(10) <=> C2H4(18) + CH4(2)
-    rate-constant: {A: 6.570000000000001e+11, b: -0.68, Ea: 0.0}
-    id: gas-25
-  - equation: HCO(15) + OH(17) <=> CO(7) + H2O(5)
-    rate-constant: {A: 1.24e+20, b: -3.29, Ea: 9.853320000000002e+06}
-    id: gas-26
-  - equation: C2H6(8) + OH(17) <=> C2H5(13) + H2O(5)
-    rate-constant: {A: 1610.0, b: 2.224, Ea: 3.100344e+06}
-    id: gas-27
-  - equation: CH2O(9) + OH(17) <=> H2O(5) + HCO(15)
-    rate-constant: {A: 3.44e+06, b: 1.18, Ea: -1.8828e+06}
-    id: gas-28
-  - equation: C2H5(13) + OH(17) <=> C2H4(18) + H2O(5)
-    rate-constant: {A: 7.230000000000002e+10, b: 0.0, Ea: 0.0}
-    id: gas-29
-  - equation: H(12) + HCO(15) <=> CO(7) + H2(6)
-    rate-constant: {A: 9.030000000000002e+10, b: 0.0, Ea: 0.0}
-    id: gas-30
-  - equation: C2H6(8) + H(12) <=> C2H5(13) + H2(6)
-    rate-constant: {A: 1.15e+05, b: 1.9, Ea: 3.150552e+07}
-    id: gas-31
-  - equation: H2(6) + HCO(15) <=> CH2O(9) + H(12)
-    rate-constant: {A: 1800.0, b: 2.0, Ea: 2.0476496e+08}
-    id: gas-32
-  - equation: C2H5(13) + H(12) <=> C2H4(18) + H2(6)
-    rate-constant: {A: 1.083e+10, b: 0.0, Ea: 0.0}
-    id: gas-33
-  - equation: C2H5(13) + HCO(15) <=> C2H6(8) + CO(7)
-    rate-constant: {A: 4.300000000000001e+10, b: 0.0, Ea: 0.0}
-    id: gas-34
-  - equation: 2 HCO(15) <=> CH2O(9) + CO(7)
-    rate-constant: {A: 1.8e+10, b: 0.0, Ea: 0.0}
-    id: gas-35
-  - equation: C2H6(8) + HCO(15) <=> C2H5(13) + CH2O(9)
-    rate-constant: {A: 46.92000000000001, b: 2.72, Ea: 1.5999616e+08}
-    id: gas-36
-  - equation: 2 C2H5(13) <=> C2H4(18) + C2H6(8)
-    rate-constant: {A: 6.900000000000002e+10, b: -0.35, Ea: 0.0}
-    id: gas-37
-  - equation: C2H5(13) + HCO(15) <=> C2H4(18) + CH2O(9)
-    rate-constant: {A: 5.972864000000001e+11, b: -0.34, Ea: 0.0}
-    id: gas-38
-  - equation: C2H4(52) <=> C2H4(18)
-    rate-constant: {A: 1.843941e+15, b: -1.078, Ea: 5.6848008e+07}
-    duplicate: true
-    id: gas-39
-  - equation: C2H4(52) <=> C2H4(18)
-    rate-constant: {A: 1.843941e+15, b: -1.078, Ea: 5.6848008e+07}
-    duplicate: true
-    id: gas-40
+- efficiencies:
+    Ar: 0.0
+    CO(7): 1.9
+    CO2(4): 3.8
+    H2(6): 2.5
+    H2O(5): 12.0
+  equation: H2(6) + M <=> 2 H(12) + M
+  id: gas-1
+  rate-constant:
+    A: 4.577000000000001e+16
+    Ea: 436725920.0
+    b: -1.4
+  type: three-body
+- equation: H2(6) + Ar <=> 2 H(12) + Ar
+  id: gas-2
+  rate-constant:
+    A: 5840000000000001.0
+    Ea: 436725920.0
+    b: -1.1
+- equation: H2(6) + OH(17) <=> H(12) + H2O(5)
+  id: gas-3
+  rate-constant:
+    A: 216000.0
+    Ea: 14351120.0
+    b: 1.51
+- efficiencies:
+    CO(7): 1.9
+    CO2(4): 3.8
+    H2(6): 3.0
+    H2O(5): 0.0
+    N2: 2.0
+    O2(3): 1.5
+  equation: H2O(5) + M <=> H(12) + OH(17) + M
+  id: gas-4
+  rate-constant:
+    A: 6.064000000000001e+24
+    Ea: 505385360.0
+    b: -3.322
+  type: three-body
+- equation: H2O(5) + H2O(5) <=> H(12) + OH(17) + H2O(5)
+  id: gas-5
+  rate-constant:
+    A: 1.006e+23
+    Ea: 502833120.0
+    b: -2.44
+- equation: 2 OH(17) <=> H2(6) + O2(3)
+  id: gas-6
+  rate-constant:
+    A: 200000000.0
+    Ea: 211292000.0
+    b: 0.51
+- equation: CH3(10) + H(12) <=> CH4(2)
+  id: gas-7
+  rate-constant:
+    A: 193000000000.0
+    Ea: 1129680.0
+    b: 0.0
+- equation: 2 CH3(10) <=> C2H6(8)
+  id: gas-8
+  rate-constant:
+    A: 945000000000.0001
+    Ea: 564840.0
+    b: -0.538
+- equation: C2H5(13) + H(12) <=> C2H6(8)
+  id: gas-9
+  rate-constant:
+    A: 100000000000.0
+    Ea: 0.0
+    b: 0.0
+- equation: CO(7) + H2(6) <=> CH2O(9)
+  id: gas-10
+  rate-constant:
+    A: 2890000.0
+    Ea: 343506400.0
+    b: 1.16
+- equation: H(12) + HCO(15) <=> CH2O(9)
+  id: gas-11
+  rate-constant:
+    A: 46800000.00000001
+    Ea: -18953520.0
+    b: 0.0
+- equation: C2H5(13) + CH3(10) <=> C3H8(11)
+  id: gas-12
+  rate-constant:
+    A: 1230000000000.0
+    Ea: 87864.0
+    b: -0.562
+- equation: C2H4(18) + H(12) <=> C2H5(13)
+  id: gas-13
+  rate-constant:
+    A: 462000.0000000001
+    Ea: 4225840.0
+    b: 1.64
+- equation: CH3(10) + OH(17) <=> CH3OH(14)
+  id: gas-14
+  rate-constant:
+    A: 60300000000.00001
+    Ea: 0.0
+    b: 0.0
+- equation: CO(7) + H(12) <=> HCO(15)
+  id: gas-15
+  rate-constant:
+    A: 118000000.0
+    Ea: 11380480.0
+    b: 0.0
+- equation: CH4(2) + CO(7) <=> CH3CHO(16)
+  id: gas-16
+  rate-constant:
+    A: 65.60000000000001
+    Ea: 363589600.0000001
+    b: 2.86
+- equation: CH3(10) + HCO(15) <=> CH3CHO(16)
+  id: gas-17
+  rate-constant:
+    A: 18100000000.0
+    Ea: 0.0
+    b: 0.0
+- equation: CH3OO(20) <=> CH3(10) + O2(3)
+  id: gas-18
+  rate-constant:
+    A: 109000000000000.0
+    Ea: 139327200.0
+    b: 0.25
+- equation: CH3OO(20) <=> CH2O(9) + OH(17)
+  id: gas-19
+  rate-constant:
+    A: 471000000.0
+    Ea: 176857680.0
+    b: 1.45
+- equation: CH3(10) + HCO(15) <=> CH4(2) + CO(7)
+  id: gas-20
+  rate-constant:
+    A: 40000000000.00001
+    Ea: 0.0
+    b: 0.0
+- equation: CH4(2) + H(12) <=> CH3(10) + H2(6)
+  id: gas-21
+  rate-constant:
+    A: 4.100000000000001
+    Ea: 36630920.0
+    b: 3.156
+- equation: C2H6(8) + CH3(10) <=> C2H5(13) + CH4(2)
+  id: gas-22
+  rate-constant:
+    A: 0.035
+    Ea: 43446656.0
+    b: 3.44
+- equation: CH4(2) + HCO(15) <=> CH2O(9) + CH3(10)
+  id: gas-23
+  rate-constant:
+    A: 7.280000000000001
+    Ea: 143302000.0
+    b: 2.85
+- equation: CH4(2) + OH(17) <=> CH3(10) + H2O(5)
+  id: gas-24
+  rate-constant:
+    A: 1000.0
+    Ea: 10485104.0
+    b: 2.182
+- equation: C2H5(13) + CH3(10) <=> C2H4(18) + CH4(2)
+  id: gas-25
+  rate-constant:
+    A: 657000000000.0001
+    Ea: 0.0
+    b: -0.68
+- equation: HCO(15) + OH(17) <=> CO(7) + H2O(5)
+  id: gas-26
+  rate-constant:
+    A: 1.24e+20
+    Ea: 9853320.000000002
+    b: -3.29
+- equation: C2H6(8) + OH(17) <=> C2H5(13) + H2O(5)
+  id: gas-27
+  rate-constant:
+    A: 1610.0
+    Ea: 3100344.0
+    b: 2.224
+- equation: CH2O(9) + OH(17) <=> H2O(5) + HCO(15)
+  id: gas-28
+  rate-constant:
+    A: 3440000.0
+    Ea: -1882800.0
+    b: 1.18
+- equation: C2H5(13) + OH(17) <=> C2H4(18) + H2O(5)
+  id: gas-29
+  rate-constant:
+    A: 72300000000.00002
+    Ea: 0.0
+    b: 0.0
+- equation: H(12) + HCO(15) <=> CO(7) + H2(6)
+  id: gas-30
+  rate-constant:
+    A: 90300000000.00002
+    Ea: 0.0
+    b: 0.0
+- equation: C2H6(8) + H(12) <=> C2H5(13) + H2(6)
+  id: gas-31
+  rate-constant:
+    A: 115000.0
+    Ea: 31505520.0
+    b: 1.9
+- equation: H2(6) + HCO(15) <=> CH2O(9) + H(12)
+  id: gas-32
+  rate-constant:
+    A: 1800.0
+    Ea: 204764960.0
+    b: 2.0
+- equation: C2H5(13) + H(12) <=> C2H4(18) + H2(6)
+  id: gas-33
+  rate-constant:
+    A: 10830000000.0
+    Ea: 0.0
+    b: 0.0
+- equation: C2H5(13) + HCO(15) <=> C2H6(8) + CO(7)
+  id: gas-34
+  rate-constant:
+    A: 43000000000.00001
+    Ea: 0.0
+    b: 0.0
+- equation: 2 HCO(15) <=> CH2O(9) + CO(7)
+  id: gas-35
+  rate-constant:
+    A: 18000000000.0
+    Ea: 0.0
+    b: 0.0
+- equation: C2H6(8) + HCO(15) <=> C2H5(13) + CH2O(9)
+  id: gas-36
+  rate-constant:
+    A: 46.92000000000001
+    Ea: 159996160.0
+    b: 2.72
+- equation: 2 C2H5(13) <=> C2H4(18) + C2H6(8)
+  id: gas-37
+  rate-constant:
+    A: 69000000000.00002
+    Ea: 0.0
+    b: -0.35
+- equation: C2H5(13) + HCO(15) <=> C2H4(18) + CH2O(9)
+  id: gas-38
+  rate-constant:
+    A: 597286400000.0001
+    Ea: 0.0
+    b: -0.34
+- duplicate: true
+  equation: C2H4(52) <=> C2H4(18)
+  id: gas-39
+  rate-constant:
+    A: 1843941000000000.0
+    Ea: 56848008.0
+    b: -1.078
+- duplicate: true
+  equation: C2H4(52) <=> C2H4(18)
+  id: gas-40
+  rate-constant:
+    A: 1843941000000000.0
+    Ea: 56848008.0
+    b: -1.078
+generator: YamlWriter
+phases:
+- elements:
+  - H
+  - D
+  - T
+  - C
+  - Ci
+  - O
+  - Oi
+  - N
+  - Ne
+  - Ar
+  - He
+  - Si
+  - S
+  - F
+  - Cl
+  - Br
+  - I
+  - X
+  kinetics: surface
+  name: surface1
+  reactions:
+  - surface1-reactions
+  site-density: 2.483e-08
+  species:
+  - X(1)
+  - HX(21)
+  - CO2X(22)
+  - COX(23)
+  - CH4X(24)
+  - OX(25)
+  - CH2X(26)
+  - CH3X(27)
+  - CHX(28)
+  - CX(29)
+  - H2X(30)
+  - OHX(31)
+  - H2OX(32)
+  - CHOX(33)
+  - CH3OX(61)
+  - HOCOX(138)
+  - CHOX(231)
+  - CH2OX(232)
+  - C2H3X(241)
+  - C2HOX(246)
+  state:
+    T: 300.0
+    Y:
+      X(1): 1.0
+    density: 195.083
+  thermo: ideal-surface
+- elements:
+  - H
+  - D
+  - T
+  - C
+  - Ci
+  - O
+  - Oi
+  - N
+  - Ne
+  - Ar
+  - He
+  - Si
+  - S
+  - F
+  - Cl
+  - Br
+  - I
+  - X
+  kinetics: gas
+  name: gas
+  reactions:
+  - gas-reactions
+  species:
+  - Ar
+  - Ne
+  - N2
+  - CH4(2)
+  - O2(3)
+  - CO2(4)
+  - H2O(5)
+  - H2(6)
+  - CO(7)
+  - C2H6(8)
+  - CH2O(9)
+  - CH3(10)
+  - C3H8(11)
+  - H(12)
+  - C2H5(13)
+  - CH3OH(14)
+  - HCO(15)
+  - CH3CHO(16)
+  - OH(17)
+  - C2H4(18)
+  - CH3OO(20)
+  - C2H4(52)
+  state:
+    T: 300.0
+    Y:
+      Ar: 1.0
+    density: 1.622848417231445
+  thermo: ideal-gas
+  transport: mixture-averaged
+species:
+- composition:
+    X: 1.0
+  name: X(1)
+  thermo:
+    data:
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    model: NASA7
+    temperature-ranges:
+    - 298.0
+    - 1000.0
+    - 3000.0
+- composition:
+    H: 1.0
+    X: 1.0
+  name: HX(21)
+  thermo:
+    data:
+    - - -1.96702988
+      - 0.0167920714
+      - -2.50314139e-05
+      - 1.80485455e-08
+      - -5.11491197e-12
+      - -3212.77026
+      - 7.68211257
+    - - 2.71968546
+      - -0.00107696656
+      - 2.00193294e-06
+      - -1.12865983e-09
+      - 2.11269165e-13
+      - -4247.01712
+      - -15.279349
+    model: NASA7
+    temperature-ranges:
+    - 298.0
+    - 1000.0
+    - 2000.0
+- composition:
+    C: 1.0
+    O: 2.0
+    X: 1.0
+  name: CO2X(22)
+  thermo:
+    data:
+    - - 3.09268416
+      - 0.00529285051
+      - 8.99424169e-06
+      - -1.67126189e-08
+      - 7.04895731e-12
+      - -52462.7108
+      - -4.06894637
+    - - 5.99804988
+      - 0.00227482238
+      - -6.81075329e-07
+      - 1.34428306e-10
+      - -1.11506248e-14
+      - -53433.7089
+      - -20.1334826
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 953.6
+    - 5000.0
+- composition:
+    C: 1.0
+    O: 1.0
+    X: 1.0
+  name: COX(23)
+  thermo:
+    data:
+    - - 2.70112272
+      - 0.00876650166
+      - -1.29512418e-05
+      - 1.04194594e-08
+      - -3.3970049e-12
+      - 81690.75315998729
+      - -12.8730512
+    - - 5.5282088
+      - -0.00152631254
+      - 2.79791895e-06
+      - -1.54550129e-09
+      - 2.84523223e-13
+      - 81015.2885599873
+      - -26.9156979
+    model: NASA7
+    temperature-ranges:
+    - 298.0
+    - 1000.0
+    - 2000.0
+- composition:
+    C: 1.0
+    H: 4.0
+    X: 1.0
+  name: CH4X(24)
+  thermo:
+    data:
+    - - 5.26247002
+      - -0.00742703413
+      - 3.36472336e-05
+      - -3.2940115e-08
+      - 1.1025925e-11
+      - -11603.832
+      - -10.0920541
+    - - 9.54981008
+      - -0.0103719404
+      - 1.83183536e-05
+      - -9.63332916e-09
+      - 1.70558531e-12
+      - -13271.7208
+      - -34.5374475
+    model: NASA7
+    temperature-ranges:
+    - 298.0
+    - 1000.0
+    - 2000.0
+- composition:
+    O: 1.0
+    X: 1.0
+  name: OX(25)
+  thermo:
+    data:
+    - - 0.179722382
+      - 0.0125453156
+      - -2.29924588e-05
+      - 1.94187177e-08
+      - -6.22414099e-12
+      - -17340.2246
+      - -2.22409728
+    - - 2.92050897
+      - -0.000270455589
+      - 5.15610634e-07
+      - -2.93911213e-10
+      - 5.54030466e-14
+      - -17836.9003
+      - -15.0940536
+    model: NASA7
+    temperature-ranges:
+    - 298.0
+    - 1000.0
+    - 2000.0
+- composition:
+    C: 1.0
+    H: 2.0
+    X: 1.0
+  name: CH2X(26)
+  thermo:
+    data:
+    - - -2.26602367
+      - 0.0292517765
+      - -4.32728797e-05
+      - 3.30655723e-08
+      - -9.93242641e-12
+      - 116414.7971149873
+      - 8.22751288
+    - - 6.82572636
+      - -0.00517192506
+      - 9.19551938e-06
+      - -4.87101486e-09
+      - 8.67713091e-13
+      - 114369.5503499873
+      - -36.4410753
+    model: NASA7
+    temperature-ranges:
+    - 298.0
+    - 1000.0
+    - 2000.0
+- composition:
+    C: 1.0
+    H: 3.0
+    X: 1.0
+  name: CH3X(27)
+  thermo:
+    data:
+    - - 0.580099877
+      - 0.0166399977
+      - -1.3916487e-05
+      - 6.70631582e-09
+      - -1.31079175e-12
+      - 168647.1555199809
+      - -0.757148375
+    - - 8.67869881
+      - -0.0078423842
+      - 1.38956076e-05
+      - -7.3360019e-09
+      - 1.30321431e-12
+      - 166506.8275499809
+      - -42.0966823
+    model: NASA7
+    temperature-ranges:
+    - 298.0
+    - 1000.0
+    - 2000.0
+- composition:
+    C: 1.0
+    H: 1.0
+    X: 1.0
+  name: CHX(28)
+  thermo:
+    data:
+    - - -3.00950779
+      - 0.0302193341
+      - -4.99546294e-05
+      - 3.99478464e-08
+      - -1.23021593e-11
+      - 55185.66968999365
+      - 11.2314464
+    - - 4.88482023
+      - -0.00270846119
+      - 4.84648118e-06
+      - -2.58513645e-09
+      - 4.63180319e-13
+      - 53568.38027999365
+      - -26.7870735
+    model: NASA7
+    temperature-ranges:
+    - 298.0
+    - 1000.0
+    - 2000.0
+- composition:
+    C: 1.0
+    X: 1.0
+  name: CX(29)
+  thermo:
+    data:
+    - - -1.73430697
+      - 0.0189855471
+      - -3.23563661e-05
+      - 2.5926989e-08
+      - -7.99102104e-12
+      - 6363.85922
+      - 6.25445028
+    - - 2.82193241
+      - -0.000661177416
+      - 1.24180431e-06
+      - -7.03993893e-10
+      - 1.32276605e-13
+      - 5464.67816
+      - -15.5251271
+    model: NASA7
+    temperature-ranges:
+    - 298.0
+    - 1000.0
+    - 2000.0
+- composition:
+    H: 2.0
+    X: 1.0
+  name: H2X(30)
+  thermo:
+    data:
+    - - 3.78935111
+      - 0.00110148021
+      - -2.313201e-06
+      - 2.11937826e-09
+      - -6.31350224e-13
+      - -1867.00333
+      - -10.0616465
+    - - 4.06700165
+      - -0.000501780079
+      - 6.70738856e-07
+      - -1.79170942e-10
+      - 8.86886631e-15
+      - -1891.07687
+      - -11.2621699
+    model: NASA7
+    temperature-ranges:
+    - 298.0
+    - 1000.0
+    - 2000.0
+- composition:
+    H: 1.0
+    O: 1.0
+    X: 1.0
+  name: OHX(31)
+  thermo:
+    data:
+    - - 1.07348583
+      - 0.0172652206
+      - -3.17712232e-05
+      - 2.71536568e-08
+      - -8.69449304e-12
+      - -40712.27691383919
+      - -5.65622336
+    - - 5.01870328
+      - -0.00135424298
+      - 2.2768631e-06
+      - -1.09407298e-09
+      - 1.79396487e-13
+      - -41409.97021383919
+      - -24.1159621
+    model: NASA7
+    temperature-ranges:
+    - 298.0
+    - 1000.0
+    - 2000.0
+- composition:
+    H: 2.0
+    O: 1.0
+    X: 1.0
+  name: H2OX(32)
+  thermo:
+    data:
+    - - 2.53777266
+      - 0.0094537201
+      - -1.41325664e-05
+      - 1.16730945e-08
+      - -3.6765764e-12
+      - -32759.0463
+      - -5.36548561
+    - - 5.84789466
+      - -0.00331526816
+      - 5.62018785e-06
+      - -2.75864893e-09
+      - 4.61279066e-13
+      - -33488.5608
+      - -21.5622699
+    model: NASA7
+    temperature-ranges:
+    - 298.0
+    - 1000.0
+    - 2000.0
+- composition:
+    C: 1.0
+    H: 1.0
+    O: 1.0
+    X: 1.0
+  name: CHOX(33)
+  thermo:
+    data:
+    - - 1.94156388
+      - 0.0130882912
+      - -1.34260003e-05
+      - 7.97044677e-09
+      - -2.06719711e-12
+      - 146916.2537399809
+      - -5.97802577
+    - - 7.49136303
+      - -0.00418949199
+      - 7.54544313e-06
+      - -4.07863095e-09
+      - 7.38421146e-13
+      - 145466.0107399809
+      - -34.207664
+    model: NASA7
+    temperature-ranges:
+    - 298.0
+    - 1000.0
+    - 2000.0
+- composition:
+    C: 1.0
+    H: 3.0
+    O: 1.0
+    X: 1.0
+  name: CH3OX(61)
+  thermo:
+    data:
+    - - 0.690559347
+      - 0.0231880081
+      - -1.92723889e-05
+      - 7.42264515e-09
+      - -6.88671342e-13
+      - 139552.1353399809
+      - -1.7804968
+    - - 11.318967
+      - -0.00855328894
+      - 1.51576215e-05
+      - -8.00760803e-09
+      - 1.42446093e-12
+      - 136752.6429399809
+      - -56.0575095
+    model: NASA7
+    temperature-ranges:
+    - 298.0
+    - 1000.0
+    - 2000.0
+- composition:
+    C: 1.0
+    H: 1.0
+    O: 2.0
+    X: 1.0
+  name: HOCOX(138)
+  thermo:
+    data:
+    - - 3.72340236
+      - -0.00427932838
+      - 5.09064157e-05
+      - -6.55312082e-08
+      - 2.52469411e-11
+      - 128492.1128399809
+      - -7.82080376
+    - - 8.73074431
+      - 0.00099929679
+      - 3.63420911e-07
+      - -2.85465672e-11
+      - -4.35216598e-15
+      - 126367.6371399809
+      - -37.9389019
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 943.4
+    - 5000.0
+- composition:
+    C: 1.0
+    H: 1.0
+    O: 1.0
+    X: 1.0
+  name: CHOX(231)
+  thermo:
+    data:
+    - - 0.863437744
+      - 0.0214806054
+      - -3.00009525e-05
+      - 2.11729011e-08
+      - -5.90923491e-12
+      - 27320.10837999365
+      - -5.10749731
+    - - 7.59479056
+      - -0.00306847382
+      - 5.43592647e-06
+      - -2.8646356e-09
+      - 5.09149225e-13
+      - 25776.70947999365
+      - -38.3674793
+    model: NASA7
+    temperature-ranges:
+    - 298.0
+    - 1000.0
+    - 2000.0
+- composition:
+    C: 1.0
+    H: 2.0
+    O: 1.0
+    X: 1.0
+  name: CH2OX(232)
+  thermo:
+    data:
+    - - 0.468649725
+      - 0.020497205
+      - -1.85506813e-05
+      - 8.22998468e-09
+      - -1.23251062e-12
+      - 90335.97225998729
+      - -0.921769145
+    - - 9.39449002
+      - -0.00656375678
+      - 1.1714178e-05
+      - -6.25387815e-09
+      - 1.12161443e-12
+      - 88002.4671599873
+      - -46.4113344
+    model: NASA7
+    temperature-ranges:
+    - 298.0
+    - 1000.0
+    - 2000.0
+- composition:
+    C: 2.0
+    H: 3.0
+    X: 1.0
+  name: C2H3X(241)
+  thermo:
+    data:
+    - - 0.157603104
+      - 0.0234293413
+      - -1.86683661e-05
+      - 7.2923437e-09
+      - -8.79008671e-13
+      - 47066.85487999365
+      - -1.73582278
+    - - 11.3050336
+      - -0.00940622931
+      - 1.67935678e-05
+      - -8.969015e-09
+      - 1.60855621e-12
+      - 44084.39177999365
+      - -58.836379
+    model: NASA7
+    temperature-ranges:
+    - 298.0
+    - 1000.0
+    - 2000.0
+- composition:
+    C: 2.0
+    H: 1.0
+    O: 1.0
+    X: 1.0
+  name: C2HOX(246)
+  thermo:
+    data:
+    - - 3.57759077
+      - -0.000202755438
+      - 3.97391514e-05
+      - -5.64295916e-08
+      - 2.29851541e-11
+      - 27193.64327999364
+      - -11.0316123
+    - - 9.48327136
+      - -0.00134480368
+      - 1.85321411e-06
+      - -3.56644376e-10
+      - 2.05659227e-14
+      - 25062.04777999365
+      - -44.6916968
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 922.94
+    - 5000.0
+- composition:
+    Ar: 1.0
+  name: Ar
+  thermo:
+    data:
+    - - 2.5
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - -745.375
+      - 4.37967
+    - - 2.5
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - -745.375
+      - 4.37967
+    model: NASA7
+    temperature-ranges:
+    - 200.0
+    - 1000.0
+    - 6000.0
+  transport:
+    diameter: 3.330000000000001
+    geometry: atom
+    model: gas
+    well-depth: 136.501
+- composition:
+    Ne: 1.0
+  name: Ne
+  thermo:
+    data:
+    - - 2.5
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - -745.375
+      - 3.35532
+    - - 2.5
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - -745.375
+      - 3.35532
+    model: NASA7
+    temperature-ranges:
+    - 200.0
+    - 1000.0
+    - 6000.0
+  transport:
+    diameter: 3.758
+    geometry: atom
+    model: gas
+    well-depth: 148.6
+- composition:
+    N: 2.0
+  name: N2
+  thermo:
+    data:
+    - - 3.53101
+      - -0.000123661
+      - -5.02999e-07
+      - 2.43531e-09
+      - -1.40881e-12
+      - -1046.98
+      - 2.96747
+    - - 2.95258
+      - 0.0013969
+      - -4.92632e-07
+      - 7.8601e-11
+      - -4.60755e-15
+      - -923.949
+      - 5.87189
+    model: NASA7
+    temperature-ranges:
+    - 200.0
+    - 1000.0
+    - 6000.0
+  transport:
+    diameter: 3.621
+    geometry: linear
+    model: gas
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+    well-depth: 97.53
+- composition:
+    C: 1.0
+    H: 4.0
+  name: CH4(2)
+  thermo:
+    data:
+    - - 4.20541524
+      - -0.00535557362
+      - 2.51123265e-05
+      - -2.13762843e-08
+      - 5.97523937e-12
+      - -10161.9433
+      - -0.921279283
+    - - 0.908265721
+      - 0.0114540858
+      - -4.57173828e-06
+      - 8.29191671e-10
+      - -5.66314895e-14
+      - -9719.97444
+      - 13.9930944
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 1084.12
+    - 5000.0
+  transport:
+    diameter: 3.746
+    geometry: nonlinear
+    model: gas
+    polarizability: 2.6
+    rotational-relaxation: 13.0
+    well-depth: 141.4
+- composition:
+    O: 2.0
+  name: O2(3)
+  thermo:
+    data:
+    - - 3.53732181
+      - -0.0012157093
+      - 5.31617826e-06
+      - -4.89443424e-09
+      - 1.45845042e-12
+      - -1038.58846
+      - 4.68368406
+    - - 3.15382425
+      - 0.00167803802
+      - -7.69971022e-07
+      - 1.51274714e-10
+      - -1.08781801e-14
+      - -1040.81878
+      - 6.16753884
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 1074.56
+    - 5000.0
+  transport:
+    diameter: 3.458
+    geometry: linear
+    model: gas
+    polarizability: 1.6
+    rotational-relaxation: 3.8
+    well-depth: 107.4
+- composition:
+    C: 1.0
+    O: 2.0
+  name: CO2(4)
+  thermo:
+    data:
+    - - 3.28084634
+      - 0.0025018346
+      - 8.08199998e-06
+      - -1.20511416e-08
+      - 4.66547255e-12
+      - -48400.8304
+      - 6.00080795
+    - - 4.67426743
+      - 0.00260964031
+      - -9.85689857e-07
+      - 1.95713857e-10
+      - -1.49836245e-14
+      - -48951.214
+      - -2.11073617
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 978.21
+    - 5000.0
+  transport:
+    diameter: 3.763
+    geometry: linear
+    model: gas
+    polarizability: 2.65
+    rotational-relaxation: 2.1
+    well-depth: 244.001
+- composition:
+    H: 2.0
+    O: 1.0
+  name: H2O(5)
+  thermo:
+    data:
+    - - 4.0576361
+      - -0.000787938871
+      - 2.9087848e-06
+      - -1.47520039e-09
+      - 2.12847506e-13
+      - -30281.5866
+      - -0.311365027
+    - - 2.84324866
+      - 0.00275108838
+      - -7.8103312e-07
+      - 1.07244016e-10
+      - -5.79395308e-15
+      - -29958.612
+      - 5.91043011
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 1130.24
+    - 5000.0
+  transport:
+    diameter: 2.605
+    dipole: 1.844
+    geometry: nonlinear
+    model: gas
+    rotational-relaxation: 4.0
+    well-depth: 572.402
+- composition:
+    H: 2.0
+  name: H2(6)
+  thermo:
+    data:
+    - - 3.43536412
+      - 0.000212710353
+      - -2.78625043e-07
+      - 3.40267167e-10
+      - -7.76031998e-14
+      - -1031.35984
+      - -3.90841732
+    - - 2.78816583
+      - 0.000587640942
+      - 1.59010417e-07
+      - -5.52739026e-11
+      - 4.34310984e-15
+      - -596.14427
+      - 0.112732655
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 1959.08
+    - 5000.0
+  transport:
+    diameter: 2.92
+    geometry: linear
+    model: gas
+    polarizability: 0.7900000000000001
+    rotational-relaxation: 280.0
+    well-depth: 38.0
+- composition:
+    C: 1.0
+    O: 1.0
+  name: CO(7)
+  thermo:
+    data:
+    - - 3.56838038
+      - -0.0008521295
+      - 2.48918819e-06
+      - -1.56331996e-09
+      - 3.13598127e-13
+      - -14284.255
+      - 3.57912028
+    - - 2.91305202
+      - 0.00164659937
+      - -6.88625686e-07
+      - 1.21039677e-10
+      - -7.84035796e-15
+      - -14180.8768
+      - 6.71054299
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 1571.63
+    - 5000.0
+  transport:
+    diameter: 3.65
+    geometry: linear
+    model: gas
+    polarizability: 1.95
+    rotational-relaxation: 1.8
+    well-depth: 98.1
+- composition:
+    C: 2.0
+    H: 6.0
+  name: C2H6(8)
+  thermo:
+    data:
+    - - 3.72239291
+      - 0.00165083841
+      - 3.4417553e-05
+      - -3.76858229e-08
+      - 1.24450657e-11
+      - -11557.5901
+      - 4.68247999
+    - - 2.82848257
+      - 0.0173040568
+      - -6.73334245e-06
+      - 1.23742024e-09
+      - -8.6567641e-14
+      - -11997.808
+      - 5.93811707
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 1012.42
+    - 5000.0
+  transport:
+    diameter: 4.302
+    geometry: nonlinear
+    model: gas
+    rotational-relaxation: 1.5
+    well-depth: 252.301
+- composition:
+    C: 1.0
+    H: 2.0
+    O: 1.0
+  name: CH2O(9)
+  thermo:
+    data:
+    - - 4.12927802
+      - -0.00408401318
+      - 2.03229341e-05
+      - -1.83524244e-08
+      - 5.37975522e-12
+      - -14429.464
+      - 3.22418463
+    - - 2.21172442
+      - 0.00794265679
+      - -3.34193053e-06
+      - 6.28471401e-10
+      - -4.40431446e-14
+      - -14297.4456
+      - 11.3048985
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 1070.44
+    - 5000.0
+  transport:
+    diameter: 3.59
+    geometry: nonlinear
+    model: gas
+    rotational-relaxation: 2.0
+    well-depth: 498.002
+- composition:
+    C: 1.0
+    H: 3.0
+  name: CH3(10)
+  thermo:
+    data:
+    - - 3.96043098
+      - 0.000592939934
+      - 8.7857539e-06
+      - -9.88030557e-09
+      - 3.6323458e-12
+      - 16421.8818
+      - 0.339865631
+    - - 3.09511187
+      - 0.00555429874
+      - -1.88158855e-06
+      - 3.13335012e-10
+      - -2.05195181e-14
+      - 16542.6192
+      - 4.20297876
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 697.71
+    - 5000.0
+  transport:
+    diameter: 3.8
+    geometry: nonlinear
+    model: gas
+    well-depth: 144.001
+- composition:
+    C: 3.0
+    H: 8.0
+  name: C3H8(11)
+  thermo:
+    data:
+    - - 3.06336167
+      - 0.0129214561
+      - 3.47032808e-05
+      - -4.70946154e-08
+      - 1.71384141e-11
+      - -14390.5789
+      - 10.7835592
+    - - 5.60440043
+      - 0.0219528785
+      - -8.2208061e-06
+      - 1.50103993e-09
+      - -1.05635358e-13
+      - -15839.4038
+      - -6.226233
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 989.99
+    - 5000.0
+  transport:
+    diameter: 4.982
+    geometry: nonlinear
+    model: gas
+    rotational-relaxation: 1.0
+    well-depth: 266.801
+- composition:
+    H: 1.0
+  name: H(12)
+  thermo:
+    data:
+    - - 2.5
+      - 9.24384602e-15
+      - -1.36779837e-17
+      - 6.66184769e-21
+      - -1.00106912e-24
+      - 25474.2178
+      - -0.444972896
+    - - 2.49999999
+      - 9.20455546e-12
+      - -3.58608293e-15
+      - 6.15198922e-19
+      - -3.92041801e-23
+      - 25474.2178
+      - -0.444972842
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 3459.6
+    - 5000.0
+  transport:
+    diameter: 2.05
+    geometry: atom
+    model: gas
+    well-depth: 145.0
+- composition:
+    C: 2.0
+    H: 5.0
+  name: C2H5(13)
+  thermo:
+    data:
+    - - 3.68746539
+      - 0.00306889693
+      - 2.55873112e-05
+      - -2.94076576e-08
+      - 9.94076215e-12
+      - 13115.3648
+      - 6.96684864
+    - - 3.5378101
+      - 0.0137311636
+      - -5.29564638e-06
+      - 9.71482858e-10
+      - -6.8028949e-14
+      - 12635.179
+      - 5.15566048
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 1006.87
+    - 5000.0
+  transport:
+    diameter: 4.302
+    geometry: nonlinear
+    model: gas
+    rotational-relaxation: 1.5
+    well-depth: 252.301
+- composition:
+    C: 1.0
+    H: 4.0
+    O: 1.0
+  name: CH3OH(14)
+  thermo:
+    data:
+    - - 3.84006214
+      - 0.00138241998
+      - 1.91667191e-05
+      - -2.0156866e-08
+      - 6.39102259e-12
+      - -25608.3087
+      - 5.90978137
+    - - 2.79184298
+      - 0.0115827852
+      - -4.51551928e-06
+      - 8.21206706e-10
+      - -5.6706325e-14
+      - -25721.1674
+      - 9.41061586
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 1035.75
+    - 5000.0
+  transport:
+    diameter: 3.626
+    geometry: nonlinear
+    model: gas
+    rotational-relaxation: 1.0
+    well-depth: 481.802
+- composition:
+    C: 1.0
+    H: 1.0
+    O: 1.0
+  name: HCO(15)
+  thermo:
+    data:
+    - - 4.05936407
+      - -0.00173846452
+      - 9.14981041e-06
+      - -8.01131526e-09
+      - 2.25737264e-12
+      - 3843.77617
+      - 3.32449702
+    - - 3.05136186
+      - 0.00411706437
+      - -1.75586433e-06
+      - 3.29302821e-10
+      - -2.2917403e-14
+      - 3930.07923
+      - 7.67464289
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 1112.1
+    - 5000.0
+  transport:
+    diameter: 3.59
+    geometry: nonlinear
+    model: gas
+    well-depth: 498.002
+- composition:
+    C: 2.0
+    H: 4.0
+    O: 1.0
+  name: CH3CHO(16)
+  thermo:
+    data:
+    - - 3.57991319
+      - 0.00518996203
+      - 2.2689306e-05
+      - -2.73736957e-08
+      - 9.28455869e-12
+      - -21369.7369
+      - 8.96975431
+    - - 4.08568882
+      - 0.0139060358
+      - -5.59365394e-06
+      - 1.04608143e-09
+      - -7.38729265e-14
+      - -22039.1558
+      - 3.76773341
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 1028.81
+    - 5000.0
+  transport:
+    diameter: 3.97
+    geometry: nonlinear
+    model: gas
+    rotational-relaxation: 2.0
+    well-depth: 436.001
+- composition:
+    H: 1.0
+    O: 1.0
+  name: OH(17)
+  thermo:
+    data:
+    - - 3.51456768
+      - 2.92814373e-05
+      - -5.32176582e-07
+      - 1.01950588e-09
+      - -3.85951152e-13
+      - 3414.25421
+      - 2.10435015
+    - - 3.07194246
+      - 0.000604011411
+      - -1.39759127e-08
+      - -2.13451563e-11
+      - 2.48070095e-15
+      - 3579.38557
+      - 4.577985
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 1145.75
+    - 5000.0
+  transport:
+    diameter: 2.75
+    geometry: linear
+    model: gas
+    well-depth: 80.0
+- composition:
+    C: 2.0
+    H: 4.0
+  name: C2H4(18)
+  thermo:
+    data:
+    - - 3.97471606
+      - -0.00475844285
+      - 4.1678377e-05
+      - -4.51392516e-08
+      - 1.54224761e-11
+      - 4915.40746
+      - 3.62430844
+    - - 3.5566061
+      - 0.0110627464
+      - -4.17019079e-06
+      - 7.8558677e-10
+      - -5.70060829e-14
+      - 4320.46489
+      - 2.17719479
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 979.36
+    - 5000.0
+  transport:
+    diameter: 3.971
+    geometry: nonlinear
+    model: gas
+    rotational-relaxation: 1.5
+    well-depth: 280.801
+- composition:
+    C: 1.0
+    H: 3.0
+    O: 2.0
+  name: CH3OO(20)
+  thermo:
+    data:
+    - - 3.58600855
+      - 0.00615348645
+      - 1.3326929e-05
+      - -1.76581521e-08
+      - 6.13210932e-12
+      - 248.233564
+      - 9.74096027
+    - - 4.35022282
+      - 0.0107183275
+      - -4.26215078e-06
+      - 7.89578335e-10
+      - -5.53846326e-14
+      - -309.810145
+      - 4.08928223
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 1031.35
+    - 5000.0
+  transport:
+    diameter: 3.69
+    dipole: 1.7
+    geometry: nonlinear
+    model: gas
+    rotational-relaxation: 2.0
+    well-depth: 417.0
+- composition:
+    C: 2.0
+    H: 4.0
+  name: C2H4(52)
+  thermo:
+    data:
+    - - 3.36869114
+      - 0.0164232504
+      - -2.16503709e-05
+      - 2.18227984e-08
+      - -8.70182877e-12
+      - 42868.2838
+      - 21.8539333
+    - - 2.6234491
+      - 0.013842914
+      - -6.25541075e-06
+      - 1.16703453e-09
+      - -7.9535941e-14
+      - 43212.8675
+      - 26.6158079
+    model: NASA7
+    temperature-ranges:
+    - 100.0
+    - 846.11
+    - 5000.0
+  transport:
+    diameter: 4.443
+    geometry: nonlinear
+    model: gas
+    well-depth: 110.7
 surface1-reactions:
-  - equation: H2(6) + 2 X(1) <=> 2 HX(21)
-    sticking-coefficient: {A: 0.046, b: 0.0, Ea: 0.0}
-    id: surface1-1
-  - equation: CO2(4) + X(1) <=> CO2X(22)
-    sticking-coefficient: {A: 5.0e-03, b: 0.0, Ea: 0.0}
-    id: surface1-2
-  - equation: CO(7) + X(1) <=> COX(23)
-    sticking-coefficient: {A: 0.84, b: 0.0, Ea: 0.0}
-    id: surface1-3
-  - equation: O2(3) + 2 X(1) <=> 2 OX(25)
-    rate-constant: {A: 1.89e+17, b: -0.5, Ea: 0.0}
-    id: surface1-4
-  - equation: COX(23) + OX(25) <=> CO2X(22) + X(1)
-    rate-constant: {A: 3.7e+20, b: 0.0, Ea: 1.17599688e+08}
-    id: surface1-5
-  - equation: CH4(2) + 2 X(1) <=> CH3X(27) + HX(21)
-    sticking-coefficient: {A: 9.0e-04, b: 0.0, Ea: 7.1998272e+07}
-    id: surface1-6
-  - equation: CH2X(26) + HX(21) <=> CH3X(27) + X(1)
-    rate-constant: {A: 3.09e+21, b: 0.0, Ea: 0.0}
-    id: surface1-7
-  - equation: CHX(28) + HX(21) <=> CH2X(26) + X(1)
-    rate-constant: {A: 3.09e+21, b: 0.0, Ea: 5.301128e+07}
-    id: surface1-8
-  - equation: CX(29) + OX(25) <=> COX(23) + X(1)
-    rate-constant: {A: 3.7e+18, b: 0.0, Ea: 0.0}
-    id: surface1-9
-  - equation: CHX(28) + X(1) <=> CX(29) + HX(21)
-    rate-constant: {A: 3.09e+21, b: 0.0, Ea: 5.213264000000001e+07}
-    id: surface1-10
-  - equation: CX(29) + H2(6) <=> CH2X(26)
-    sticking-coefficient: {A: 0.04, b: 0.0, Ea: 2.9698032e+07}
-    id: surface1-11
-  - equation: CH4(2) + OX(25) + X(1) <=> CH3X(27) + OHX(31)
-    rate-constant: {A: 5.000000000000001e+14, b: 0.7, Ea: 4.1998992e+07}
-    id: surface1-12
-  - equation: CO2X(22) + HX(21) <=> COX(23) + OHX(31)
-    rate-constant: {A: 1.0e+18, b: 0.0, Ea: 1.585736e+07}
-    id: surface1-13
-  - equation: HX(21) + OX(25) <=> OHX(31) + X(1)
-    rate-constant: {A: 1.28e+20, b: 0.0, Ea: 1.1200568e+07}
-    id: surface1-14
-  - equation: CH4(2) + OHX(31) + X(1) <=> CH3X(27) + H2OX(32)
-    sticking-coefficient: {A: 1.0, b: 0.0, Ea: 9.999760000000002e+06}
-    id: surface1-15
-  - equation: H2O(5) + X(1) <=> H2OX(32)
-    sticking-coefficient: {A: 0.75, b: 0.0, Ea: 0.0}
-    id: surface1-16
-  - equation: H2OX(32) + OX(25) <=> 2 OHX(31)
-    rate-constant: {A: 1.0e+19, b: 0.0, Ea: 9.229904e+07}
-    id: surface1-17
-  - equation: HX(21) + OHX(31) <=> H2OX(32) + X(1)
-    rate-constant: {A: 2.04e+20, b: 0.0, Ea: 6.6220168e+07}
-    id: surface1-18
-  - equation: H(12) + X(1) <=> HX(21)
-    sticking-coefficient: {A: 0.85, b: 0.0, Ea: 0.0}
-    id: surface1-19
-  - equation: CH4(2) + X(1) <=> CH4X(24)
-    sticking-coefficient: {A: 8.0e-03, b: 0.0, Ea: 0.0}
-    id: surface1-20
-  - equation: CH3(10) + X(1) <=> CH3X(27)
-    sticking-coefficient: {A: 0.85, b: 0.0, Ea: 0.0}
-    id: surface1-21
-  - equation: H2(6) + X(1) <=> H2X(30)
-    sticking-coefficient: {A: 8.0e-03, b: 0.0, Ea: 0.0}
-    id: surface1-22
-  - equation: OH(17) + X(1) <=> OHX(31)
-    sticking-coefficient: {A: 0.85, b: 0.0, Ea: 0.0}
-    id: surface1-23
-  - equation: HCO(15) + X(1) <=> CHOX(33)
-    sticking-coefficient: {A: 0.85, b: 0.0, Ea: 0.0}
-    id: surface1-24
-  - equation: CO2(4) + 2 X(1) <=> COX(23) + OX(25)
-    sticking-coefficient: {A: 0.02, b: 0.0, Ea: 4.184000000000001e+07}
-    id: surface1-25
-  - equation: H2O(5) + 2 X(1) <=> HX(21) + OHX(31)
-    sticking-coefficient: {A: 0.03, b: 0.0, Ea: 6.1935752e+07}
-    id: surface1-26
-  - equation: C2H6(8) + 2 X(1) <=> 2 CH3X(27)
-    sticking-coefficient: {A: 0.015, b: 0.0, Ea: 4.999880000000001e+06}
-    id: surface1-27
-  - equation: CH2O(9) + 2 X(1) <=> CHOX(33) + HX(21)
-    sticking-coefficient: {A: 0.03, b: 0.0, Ea: 4.999880000000001e+06}
-    id: surface1-28
-  - equation: CH2O(9) + 2 X(1) <=> CH2X(26) + OX(25)
-    sticking-coefficient: {A: 0.01, b: 0.0, Ea: 4.184000000000001e+07}
-    id: surface1-29
-  - equation: CH3OH(14) + 2 X(1) <=> CH3X(27) + OHX(31)
-    sticking-coefficient: {A: 0.015, b: 0.0, Ea: 4.999880000000001e+06}
-    id: surface1-30
-  - equation: CH3CHO(16) + 2 X(1) <=> CH3X(27) + CHOX(33)
-    sticking-coefficient: {A: 0.015, b: 0.0, Ea: 4.999880000000001e+06}
-    id: surface1-31
-  - equation: C2H4(18) + 2 X(1) <=> 2 CH2X(26)
-    sticking-coefficient: {A: 0.01, b: 0.0, Ea: 4.184000000000001e+07}
-    id: surface1-32
-  - equation: CH4X(24) + X(1) <=> CH3X(27) + HX(21)
-    rate-constant: {A: 1.54e+20, b: 0.08699999999999999, Ea: 5.5802008e+07}
-    id: surface1-33
-  - equation: COX(23) + HX(21) <=> CHOX(33) + X(1)
-    rate-constant: {A: 3.14e+20, b: 0.0, Ea: 9.552072000000001e+07}
-    id: surface1-34
-  - equation: CH3X(27) + H2X(30) <=> CH4X(24) + HX(21)
-    rate-constant: {A: 2.0e+16, b: 0.0, Ea: 0.0}
-    id: surface1-35
-  - equation: CHX(28) + H2X(30) <=> CH2X(26) + HX(21)
-    rate-constant: {A: 2.073936e+16, b: 0.9370000000000001, Ea: 8.646236e+07}
-    id: surface1-36
-  - equation: CH2X(26) + H2X(30) <=> CH3X(27) + HX(21)
-    rate-constant: {A: 2.073936e+16, b: 0.9370000000000001, Ea: 8.646236e+07}
-    id: surface1-37
-  - equation: CX(29) + H2X(30) <=> CHX(28) + HX(21)
-    rate-constant: {A: 2.073936e+16, b: 0.9370000000000001, Ea: 8.646236e+07}
-    id: surface1-38
-  - equation: H2X(30) + OX(25) <=> HX(21) + OHX(31)
-    rate-constant: {A: 4.782614e+23, b: -0.188, Ea: 1.55548568e+08}
-    id: surface1-39
-  - equation: H2X(30) + OHX(31) <=> H2OX(32) + HX(21)
-    rate-constant: {A: 2.0e+16, b: 0.0, Ea: 0.0}
-    id: surface1-40
-  - equation: COX(23) + H2X(30) <=> CHOX(33) + HX(21)
-    rate-constant: {A: 2.073936e+16, b: 0.9370000000000001, Ea: 8.646236e+07}
-    id: surface1-41
-  - equation: CH4X(24) + COX(23) <=> CH3X(27) + CHOX(33)
-    rate-constant: {A: 4.147872e+16, b: 0.9370000000000001, Ea: 9.7918152e+07}
-    id: surface1-42
-  - equation: CHOX(33) + CHX(28) <=> CH2X(26) + COX(23)
-    rate-constant: {A: 1.204624e+21, b: 0.051, Ea: 2.1200328e+07}
-    id: surface1-43
-  - equation: CH2X(26) + CHOX(33) <=> CH3X(27) + COX(23)
-    rate-constant: {A: 2.141079e+20, b: 0.051, Ea: 9.501864000000002e+06}
-    id: surface1-44
-  - equation: CHOX(33) + CX(29) <=> CHX(28) + COX(23)
-    rate-constant: {A: 2.830926e+20, b: -0.156, Ea: 5.9450456e+07}
-    id: surface1-45
-  - equation: CHOX(33) + OX(25) <=> COX(23) + OHX(31)
-    rate-constant: {A: 3.298e+20, b: 0.0, Ea: 0.0}
-    id: surface1-46
-  - equation: CHOX(33) + OHX(31) <=> COX(23) + H2OX(32)
-    rate-constant: {A: 3.261e+20, b: 0.0, Ea: 2.8944912e+07}
-    id: surface1-47
-  - equation: CH4X(24) + OX(25) <=> CH3X(27) + OHX(31)
-    rate-constant: {A: 5.62e+23, b: -0.101, Ea: 9.270070400000001e+07}
-    id: surface1-48
-  - equation: CH2X(26) + CH4X(24) <=> 2 CH3X(27)
-    rate-constant: {A: 4.147872e+16, b: 0.9370000000000001, Ea: 8.646236e+07}
-    id: surface1-49
-  - equation: CH4X(24) + CHX(28) <=> CH2X(26) + CH3X(27)
-    rate-constant: {A: 4.147872e+16, b: 0.9370000000000001, Ea: 8.646236e+07}
-    id: surface1-50
-  - equation: CH4X(24) + CX(29) <=> CH3X(27) + CHX(28)
-    rate-constant: {A: 4.147872e+16, b: 0.9370000000000001, Ea: 8.646236e+07}
-    id: surface1-51
-  - equation: CH4X(24) + OHX(31) <=> CH3X(27) + H2OX(32)
-    rate-constant: {A: 4.0e+16, b: 0.0, Ea: 0.0}
-    id: surface1-52
-  - equation: CHX(28) + OHX(31) <=> CH2X(26) + OX(25)
-    rate-constant: {A: 4.4e+21, b: 0.101, Ea: 4.2869264e+07}
-    id: surface1-53
-  - equation: CH2X(26) + OHX(31) <=> CH3X(27) + OX(25)
-    rate-constant: {A: 1.39e+20, b: 0.101, Ea: 1.8999544e+07}
-    id: surface1-54
-  - equation: CX(29) + OHX(31) <=> CHX(28) + OX(25)
-    rate-constant: {A: 2.43e+20, b: -0.312, Ea: 1.18900912e+08}
-    id: surface1-55
-  - equation: 2 CH2X(26) <=> CH3X(27) + CHX(28)
-    rate-constant: {A: 2.78e+20, b: 0.101, Ea: 1.8999544e+07}
-    id: surface1-56
-  - equation: CH3X(27) + CX(29) <=> CH2X(26) + CHX(28)
-    rate-constant: {A: 8.492777000000001e+20, b: -0.156, Ea: 5.9450456e+07}
-    id: surface1-57
-  - equation: CH2X(26) + CX(29) <=> 2 CHX(28)
-    rate-constant: {A: 4.86e+20, b: -0.312, Ea: 1.18900912e+08}
-    id: surface1-58
-  - equation: CHX(28) + H2OX(32) <=> CH2X(26) + OHX(31)
-    rate-constant: {A: 2.073936e+16, b: 0.9370000000000001, Ea: 1.33670432e+08}
-    id: surface1-59
-  - equation: CH2X(26) + H2OX(32) <=> CH3X(27) + OHX(31)
-    rate-constant: {A: 2.073936e+16, b: 0.9370000000000001, Ea: 8.646236e+07}
-    id: surface1-60
-  - equation: CX(29) + H2OX(32) <=> CHX(28) + OHX(31)
-    rate-constant: {A: 2.073936e+16, b: 0.9370000000000001, Ea: 8.646236e+07}
-    id: surface1-61
-  - equation: COX(23) + HX(21) <=> CHOX(231) + X(1)
-    rate-constant: {A: 3.799000000000001e+20, b: 0.0, Ea: 2.18057528e+08}
-    id: surface1-62
-  - equation: CHOX(231) + X(1) <=> CX(29) + OHX(31)
-    rate-constant: {A: 1.46e+23, b: -0.213, Ea: 1.4733956e+08}
-    duplicate: true
-    id: surface1-63
-  - equation: CX(29) + H2OX(32) <=> CHOX(231) + HX(21)
-    rate-constant: {A: 2.073936e+16, b: 0.9370000000000001, Ea: 8.646236e+07}
-    id: surface1-64
-  - equation: CHOX(231) + X(1) <=> CX(29) + OHX(31)
-    rate-constant: {A: 1.46e+23, b: -0.213, Ea: 1.4733956e+08}
-    duplicate: true
-    id: surface1-65
-  - equation: CHOX(33) + HX(21) <=> CH2OX(232) + X(1)
-    rate-constant: {A: 3.048e+20, b: 0.0, Ea: 8.780124e+07}
-    id: surface1-66
-  - equation: CH2OX(232) + X(1) <=> CHX(28) + OHX(31)
-    rate-constant: {A: 1.46e+23, b: -0.213, Ea: 5.429995200000001e+07}
-    duplicate: true
-    id: surface1-67
-  - equation: CHX(28) + H2OX(32) <=> CH2OX(232) + HX(21)
-    rate-constant: {A: 2.073936e+16, b: 0.9370000000000001, Ea: 8.646236e+07}
-    id: surface1-68
-  - equation: CH2OX(232) + X(1) <=> CHOX(231) + HX(21)
-    rate-constant: {A: 3.71e+20, b: 0.0, Ea: 0.0}
-    id: surface1-69
-  - equation: CH4X(24) + CHOX(231) <=> CH2OX(232) + CH3X(27)
-    rate-constant: {A: 4.147872e+16, b: 0.9370000000000001, Ea: 8.646236e+07}
-    id: surface1-70
-  - equation: CH2OX(232) + CHX(28) <=> CH2X(26) + CHOX(231)
-    rate-constant: {A: 4.4e+21, b: 0.101, Ea: 4.2400656e+07}
-    id: surface1-71
-  - equation: CH2OX(232) + CH2X(26) <=> CH3X(27) + CHOX(231)
-    rate-constant: {A: 1.39e+20, b: 0.101, Ea: 1.8999544e+07}
-    id: surface1-72
-  - equation: CH2OX(232) + CX(29) <=> CHOX(231) + CHX(28)
-    rate-constant: {A: 2.43e+20, b: -0.312, Ea: 1.18900912e+08}
-    duplicate: true
-    id: surface1-73
-  - equation: CH2OX(232) + CX(29) <=> CHOX(231) + CHX(28)
-    rate-constant: {A: 2.43e+20, b: -0.312, Ea: 1.18900912e+08}
-    duplicate: true
-    id: surface1-74
-  - equation: CHOX(231) + H2X(30) <=> CH2OX(232) + HX(21)
-    rate-constant: {A: 2.073936e+16, b: 0.9370000000000001, Ea: 8.646236e+07}
-    id: surface1-75
-  - equation: CHOX(231) + OHX(31) <=> CH2OX(232) + OX(25)
-    rate-constant: {A: 4.4e+21, b: 0.101, Ea: 5.655512800000001e+07}
-    id: surface1-76
-  - equation: CHOX(231) + H2OX(32) <=> CH2OX(232) + OHX(31)
-    rate-constant: {A: 2.073936e+16, b: 0.9370000000000001, Ea: 1.47059232e+08}
-    id: surface1-77
-  - equation: CHOX(231) + CHOX(33) <=> CH2OX(232) + COX(23)
-    rate-constant: {A: 1.204624e+21, b: 0.051, Ea: 2.1200328e+07}
-    id: surface1-78
-  - equation: CH2OX(232) + X(1) <=> CHX(28) + OHX(31)
-    rate-constant: {A: 1.46e+23, b: -0.213, Ea: 5.429995200000001e+07}
-    duplicate: true
-    id: surface1-79
-  - equation: CH2OX(232) + CX(29) <=> CHOX(231) + CHX(28)
-    rate-constant: {A: 2.43e+20, b: -0.312, Ea: 1.18900912e+08}
-    duplicate: true
-    id: surface1-80
-  - equation: CH2OX(232) + CX(29) <=> CHOX(231) + CHX(28)
-    rate-constant: {A: 2.43e+20, b: -0.312, Ea: 1.18900912e+08}
-    duplicate: true
-    id: surface1-81
-  - equation: C2H4(52) + 2 X(1) <=> CH3X(27) + CHX(28)
-    sticking-coefficient: {A: 0.015, b: 0.0, Ea: 4.999880000000001e+06}
-    id: surface1-82
-  - equation: CH4X(24) + CX(29) <=> C2H3X(241) + HX(21)
-    rate-constant: {A: 4.147872e+16, b: 0.9370000000000001, Ea: 8.646236e+07}
-    id: surface1-83
-  - equation: C2H3X(241) + X(1) <=> CH3X(27) + CX(29)
-    rate-constant: {A: 7.359755000000001e+21, b: -0.106, Ea: 9.361281600000001e+07}
-    duplicate: true
-    id: surface1-84
-  - equation: C2H4(52) + 2 X(1) <=> C2H3X(241) + HX(21)
-    sticking-coefficient: {A: 0.015, b: 0.0, Ea: 4.999880000000001e+06}
-    id: surface1-85
-  - equation: C2H3X(241) + X(1) <=> CH3X(27) + CX(29)
-    rate-constant: {A: 7.359755000000001e+21, b: -0.106, Ea: 9.361281600000001e+07}
-    duplicate: true
-    id: surface1-86
-  - equation: CH3OH(14) + 2 X(1) <=> CH3OX(61) + HX(21)
-    sticking-coefficient: {A: 0.045, b: 0.0, Ea: 4.999880000000001e+06}
-    id: surface1-87
-  - equation: CH2O(9) + HX(21) <=> CH3OX(61)
-    sticking-coefficient: {A: 0.05, b: 0.0, Ea: 7.3061008e+07}
-    id: surface1-88
-  - equation: CH3OX(61) + X(1) <=> CH2X(26) + OHX(31)
-    rate-constant: {A: 1.46e+23, b: -0.213, Ea: 1.3020608e+08}
-    duplicate: true
-    id: surface1-89
-  - equation: CH2X(26) + H2OX(32) <=> CH3OX(61) + HX(21)
-    rate-constant: {A: 2.073936e+16, b: 0.9370000000000001, Ea: 8.646236e+07}
-    id: surface1-90
-  - equation: CH3OX(61) + CX(29) <=> CH2X(26) + CHOX(231)
-    rate-constant: {A: 2.43e+20, b: -0.312, Ea: 1.18900912e+08}
-    id: surface1-91
-  - equation: CH3OX(61) + X(1) <=> CH2OX(232) + HX(21)
-    rate-constant: {A: 7.42e+20, b: 0.0, Ea: 4.7065816e+07}
-    id: surface1-92
-  - equation: CH2OX(232) + CH4X(24) <=> CH3OX(61) + CH3X(27)
-    rate-constant: {A: 4.147872e+16, b: 0.9370000000000001, Ea: 8.646236e+07}
-    id: surface1-93
-  - equation: CH2OX(232) + CH2X(26) <=> CH3OX(61) + CHX(28)
-    rate-constant: {A: 1.39e+20, b: 0.101, Ea: 1.8999544e+07}
-    duplicate: true
-    id: surface1-94
-  - equation: CH2OX(232) + CH2X(26) <=> CH3OX(61) + CHX(28)
-    rate-constant: {A: 2.78e+20, b: 0.101, Ea: 1.8999544e+07}
-    duplicate: true
-    id: surface1-95
-  - equation: CH2OX(232) + CH3X(27) <=> CH2X(26) + CH3OX(61)
-    rate-constant: {A: 6.423238e+20, b: 0.051, Ea: 9.501864000000002e+06}
-    id: surface1-96
-  - equation: CH3OX(61) + CX(29) <=> CH2OX(232) + CHX(28)
-    rate-constant: {A: 5.661851e+20, b: -0.156, Ea: 5.9450456e+07}
-    id: surface1-97
-  - equation: CH2OX(232) + H2X(30) <=> CH3OX(61) + HX(21)
-    rate-constant: {A: 2.073936e+16, b: 0.9370000000000001, Ea: 8.646236e+07}
-    id: surface1-98
-  - equation: CH3OX(61) + OX(25) <=> CH2OX(232) + OHX(31)
-    rate-constant: {A: 6.596e+20, b: 0.0, Ea: 5.7559288e+07}
-    id: surface1-99
-  - equation: CH2OX(232) + H2OX(32) <=> CH3OX(61) + OHX(31)
-    rate-constant: {A: 2.073936e+16, b: 0.9370000000000001, Ea: 8.646236e+07}
-    id: surface1-100
-  - equation: CH2OX(232) + CHOX(33) <=> CH3OX(61) + COX(23)
-    rate-constant: {A: 2.141079e+20, b: 0.051, Ea: 9.501864000000002e+06}
-    id: surface1-101
-  - equation: 2 CH2OX(232) <=> CH3OX(61) + CHOX(231)
-    rate-constant: {A: 1.39e+20, b: 0.101, Ea: 1.8999544e+07}
-    id: surface1-102
-  - equation: CH3OX(61) + X(1) <=> CH2X(26) + OHX(31)
-    rate-constant: {A: 1.46e+23, b: -0.213, Ea: 1.3020608e+08}
-    duplicate: true
-    id: surface1-103
-  - equation: CH2OX(232) + CH2X(26) <=> CH3OX(61) + CHX(28)
-    rate-constant: {A: 1.39e+20, b: 0.101, Ea: 1.8999544e+07}
-    duplicate: true
-    id: surface1-104
-  - equation: CH2OX(232) + CH2X(26) <=> CH3OX(61) + CHX(28)
-    rate-constant: {A: 2.78e+20, b: 0.101, Ea: 1.8999544e+07}
-    duplicate: true
-    id: surface1-105
-  - equation: CO2(4) + HX(21) <=> HOCOX(138)
-    sticking-coefficient: {A: 0.1, b: 0.0, Ea: 7.3061008e+07}
-    id: surface1-106
-  - equation: CO2X(22) + HX(21) <=> HOCOX(138) + X(1)
-    rate-constant: {A: 6.250000000000001e+23, b: -0.475, Ea: 1.17198024e+08}
-    id: surface1-107
-  - equation: CH4X(24) + CO2X(22) <=> CH3X(27) + HOCOX(138)
-    rate-constant: {A: 1.624586e+13, b: 1.299, Ea: 1.6867796e+08}
-    id: surface1-108
-  - equation: CH2X(26) + CO2X(22) <=> CHX(28) + HOCOX(138)
-    rate-constant: {A: 7.256e+19, b: 0.0, Ea: 4.052204e+07}
-    id: surface1-109
-  - equation: CH3X(27) + CO2X(22) <=> CH2X(26) + HOCOX(138)
-    rate-constant: {A: 1.0884e+20, b: 0.0, Ea: 9.80102e+07}
-    id: surface1-110
-  - equation: CHX(28) + CO2X(22) <=> CX(29) + HOCOX(138)
-    rate-constant: {A: 3.628e+19, b: 0.0, Ea: 1.29837888e+08}
-    id: surface1-111
-  - equation: CO2X(22) + H2X(30) <=> HOCOX(138) + HX(21)
-    rate-constant: {A: 8.122929e+12, b: 1.299, Ea: 1.6867796e+08}
-    id: surface1-112
-  - equation: CO2X(22) + OHX(31) <=> HOCOX(138) + OX(25)
-    rate-constant: {A: 3.628e+19, b: 0.0, Ea: 6.7680384e+07}
-    id: surface1-113
-  - equation: HOCOX(138) + OHX(31) <=> CO2X(22) + H2OX(32)
-    rate-constant: {A: 3.398e+20, b: 0.0, Ea: 0.0}
-    id: surface1-114
-  - equation: CHOX(33) + CO2X(22) <=> COX(23) + HOCOX(138)
-    rate-constant: {A: 3.628e+19, b: 0.0, Ea: 4.052204e+07}
-    id: surface1-115
-  - equation: COX(23) + OHX(31) <=> HOCOX(138) + X(1)
-    rate-constant: {A: 4.02e+17, b: 0.0, Ea: 6.323279200000001e+07}
-    duplicate: true
-    id: surface1-116
-  - equation: COX(23) + H2OX(32) <=> HOCOX(138) + HX(21)
-    rate-constant: {A: 2.073936e+16, b: 0.9370000000000001, Ea: 1.43247608e+08}
-    id: surface1-117
-  - equation: CX(29) + HOCOX(138) <=> CHOX(231) + COX(23)
-    rate-constant: {A: 2.43e+20, b: -0.312, Ea: 1.18900912e+08}
-    id: surface1-118
-  - equation: CH2OX(232) + CO2X(22) <=> CHOX(231) + HOCOX(138)
-    rate-constant: {A: 3.628e+19, b: 0.0, Ea: 4.052204e+07}
-    id: surface1-119
-  - equation: CHX(28) + HOCOX(138) <=> CH2OX(232) + COX(23)
-    rate-constant: {A: 4.4e+21, b: 0.101, Ea: 4.2400656e+07}
-    id: surface1-120
-  - equation: CH3OX(61) + CO2X(22) <=> CH2OX(232) + HOCOX(138)
-    rate-constant: {A: 7.256e+19, b: 0.0, Ea: 1.25239672e+08}
-    id: surface1-121
-  - equation: CH2X(26) + HOCOX(138) <=> CH3OX(61) + COX(23)
-    rate-constant: {A: 1.39e+20, b: 0.101, Ea: 1.8999544e+07}
-    id: surface1-122
-  - equation: COX(23) + OHX(31) <=> HOCOX(138) + X(1)
-    rate-constant: {A: 4.02e+17, b: 0.0, Ea: 6.323279200000001e+07}
-    duplicate: true
-    id: surface1-123
-  - equation: C2HOX(246) + X(1) <=> CHOX(33) + CX(29)
-    rate-constant: {A: 7.359755000000001e+21, b: -0.106, Ea: 7.945416000000001e+07}
-    id: surface1-124
+- equation: H2(6) + 2 X(1) <=> 2 HX(21)
+  id: surface1-1
+  sticking-coefficient:
+    A: 0.046
+    Ea: 0.0
+    b: 0.0
+- equation: CO2(4) + X(1) <=> CO2X(22)
+  id: surface1-2
+  sticking-coefficient:
+    A: 0.005
+    Ea: 0.0
+    b: 0.0
+- equation: CO(7) + X(1) <=> COX(23)
+  id: surface1-3
+  sticking-coefficient:
+    A: 0.84
+    Ea: 0.0
+    b: 0.0
+- equation: O2(3) + 2 X(1) <=> 2 OX(25)
+  id: surface1-4
+  rate-constant:
+    A: 1.89e+17
+    Ea: 0.0
+    b: -0.5
+- equation: COX(23) + OX(25) <=> CO2X(22) + X(1)
+  id: surface1-5
+  rate-constant:
+    A: 3.7e+20
+    Ea: 117599688.0
+    b: 0.0
+- equation: CH4(2) + 2 X(1) <=> CH3X(27) + HX(21)
+  id: surface1-6
+  sticking-coefficient:
+    A: 0.0009
+    Ea: 71998272.0
+    b: 0.0
+- equation: CH2X(26) + HX(21) <=> CH3X(27) + X(1)
+  id: surface1-7
+  rate-constant:
+    A: 3.09e+21
+    Ea: 0.0
+    b: 0.0
+- equation: CHX(28) + HX(21) <=> CH2X(26) + X(1)
+  id: surface1-8
+  rate-constant:
+    A: 3.09e+21
+    Ea: 53011280.0
+    b: 0.0
+- equation: CX(29) + OX(25) <=> COX(23) + X(1)
+  id: surface1-9
+  rate-constant:
+    A: 3.7e+18
+    Ea: 0.0
+    b: 0.0
+- equation: CHX(28) + X(1) <=> CX(29) + HX(21)
+  id: surface1-10
+  rate-constant:
+    A: 3.09e+21
+    Ea: 52132640.00000001
+    b: 0.0
+- equation: CX(29) + H2(6) <=> CH2X(26)
+  id: surface1-11
+  sticking-coefficient:
+    A: 0.04
+    Ea: 29698032.0
+    b: 0.0
+- equation: CH4(2) + OX(25) + X(1) <=> CH3X(27) + OHX(31)
+  id: surface1-12
+  rate-constant:
+    A: 500000000000000.1
+    Ea: 41998992.0
+    b: 0.7
+- equation: CO2X(22) + HX(21) <=> COX(23) + OHX(31)
+  id: surface1-13
+  rate-constant:
+    A: 1.0e+18
+    Ea: 15857360.0
+    b: 0.0
+- equation: HX(21) + OX(25) <=> OHX(31) + X(1)
+  id: surface1-14
+  rate-constant:
+    A: 1.28e+20
+    Ea: 11200568.0
+    b: 0.0
+- equation: CH4(2) + OHX(31) + X(1) <=> CH3X(27) + H2OX(32)
+  id: surface1-15
+  sticking-coefficient:
+    A: 1.0
+    Ea: 9999760.000000002
+    b: 0.0
+- equation: H2O(5) + X(1) <=> H2OX(32)
+  id: surface1-16
+  sticking-coefficient:
+    A: 0.75
+    Ea: 0.0
+    b: 0.0
+- equation: H2OX(32) + OX(25) <=> 2 OHX(31)
+  id: surface1-17
+  rate-constant:
+    A: 1.0e+19
+    Ea: 92299040.0
+    b: 0.0
+- equation: HX(21) + OHX(31) <=> H2OX(32) + X(1)
+  id: surface1-18
+  rate-constant:
+    A: 2.04e+20
+    Ea: 66220168.0
+    b: 0.0
+- equation: H(12) + X(1) <=> HX(21)
+  id: surface1-19
+  sticking-coefficient:
+    A: 0.85
+    Ea: 0.0
+    b: 0.0
+- equation: CH4(2) + X(1) <=> CH4X(24)
+  id: surface1-20
+  sticking-coefficient:
+    A: 0.008
+    Ea: 0.0
+    b: 0.0
+- equation: CH3(10) + X(1) <=> CH3X(27)
+  id: surface1-21
+  sticking-coefficient:
+    A: 0.85
+    Ea: 0.0
+    b: 0.0
+- equation: H2(6) + X(1) <=> H2X(30)
+  id: surface1-22
+  sticking-coefficient:
+    A: 0.008
+    Ea: 0.0
+    b: 0.0
+- equation: OH(17) + X(1) <=> OHX(31)
+  id: surface1-23
+  sticking-coefficient:
+    A: 0.85
+    Ea: 0.0
+    b: 0.0
+- equation: HCO(15) + X(1) <=> CHOX(33)
+  id: surface1-24
+  sticking-coefficient:
+    A: 0.85
+    Ea: 0.0
+    b: 0.0
+- equation: CO2(4) + 2 X(1) <=> COX(23) + OX(25)
+  id: surface1-25
+  sticking-coefficient:
+    A: 0.02
+    Ea: 41840000.00000001
+    b: 0.0
+- equation: H2O(5) + 2 X(1) <=> HX(21) + OHX(31)
+  id: surface1-26
+  sticking-coefficient:
+    A: 0.03
+    Ea: 61935752.0
+    b: 0.0
+- equation: C2H6(8) + 2 X(1) <=> 2 CH3X(27)
+  id: surface1-27
+  sticking-coefficient:
+    A: 0.015
+    Ea: 4999880.000000001
+    b: 0.0
+- equation: CH2O(9) + 2 X(1) <=> CHOX(33) + HX(21)
+  id: surface1-28
+  sticking-coefficient:
+    A: 0.03
+    Ea: 4999880.000000001
+    b: 0.0
+- equation: CH2O(9) + 2 X(1) <=> CH2X(26) + OX(25)
+  id: surface1-29
+  sticking-coefficient:
+    A: 0.01
+    Ea: 41840000.00000001
+    b: 0.0
+- equation: CH3OH(14) + 2 X(1) <=> CH3X(27) + OHX(31)
+  id: surface1-30
+  sticking-coefficient:
+    A: 0.015
+    Ea: 4999880.000000001
+    b: 0.0
+- equation: CH3CHO(16) + 2 X(1) <=> CH3X(27) + CHOX(33)
+  id: surface1-31
+  sticking-coefficient:
+    A: 0.015
+    Ea: 4999880.000000001
+    b: 0.0
+- equation: C2H4(18) + 2 X(1) <=> 2 CH2X(26)
+  id: surface1-32
+  sticking-coefficient:
+    A: 0.01
+    Ea: 41840000.00000001
+    b: 0.0
+- equation: CH4X(24) + X(1) <=> CH3X(27) + HX(21)
+  id: surface1-33
+  rate-constant:
+    A: 1.54e+20
+    Ea: 55802008.0
+    b: 0.087
+- equation: COX(23) + HX(21) <=> CHOX(33) + X(1)
+  id: surface1-34
+  rate-constant:
+    A: 3.14e+20
+    Ea: 95520720.00000001
+    b: 0.0
+- equation: CH3X(27) + H2X(30) <=> CH4X(24) + HX(21)
+  id: surface1-35
+  rate-constant:
+    A: 2.0e+16
+    Ea: 0.0
+    b: 0.0
+- equation: CHX(28) + H2X(30) <=> CH2X(26) + HX(21)
+  id: surface1-36
+  rate-constant:
+    A: 2.073936e+16
+    Ea: 86462360.0
+    b: 0.937
+- equation: CH2X(26) + H2X(30) <=> CH3X(27) + HX(21)
+  id: surface1-37
+  rate-constant:
+    A: 2.073936e+16
+    Ea: 86462360.0
+    b: 0.937
+- equation: CX(29) + H2X(30) <=> CHX(28) + HX(21)
+  id: surface1-38
+  rate-constant:
+    A: 2.073936e+16
+    Ea: 86462360.0
+    b: 0.937
+- equation: H2X(30) + OX(25) <=> HX(21) + OHX(31)
+  id: surface1-39
+  rate-constant:
+    A: 4.782614e+23
+    Ea: 155548568.0
+    b: -0.188
+- equation: H2X(30) + OHX(31) <=> H2OX(32) + HX(21)
+  id: surface1-40
+  rate-constant:
+    A: 2.0e+16
+    Ea: 0.0
+    b: 0.0
+- equation: COX(23) + H2X(30) <=> CHOX(33) + HX(21)
+  id: surface1-41
+  rate-constant:
+    A: 2.073936e+16
+    Ea: 86462360.0
+    b: 0.937
+- equation: CH4X(24) + COX(23) <=> CH3X(27) + CHOX(33)
+  id: surface1-42
+  rate-constant:
+    A: 4.147872e+16
+    Ea: 97918152.0
+    b: 0.937
+- equation: CHOX(33) + CHX(28) <=> CH2X(26) + COX(23)
+  id: surface1-43
+  rate-constant:
+    A: 1.204624e+21
+    Ea: 21200328.0
+    b: 0.051
+- equation: CH2X(26) + CHOX(33) <=> CH3X(27) + COX(23)
+  id: surface1-44
+  rate-constant:
+    A: 2.141079e+20
+    Ea: 9501864.000000002
+    b: 0.051
+- equation: CHOX(33) + CX(29) <=> CHX(28) + COX(23)
+  id: surface1-45
+  rate-constant:
+    A: 2.830926e+20
+    Ea: 59450456.0
+    b: -0.156
+- equation: CHOX(33) + OX(25) <=> COX(23) + OHX(31)
+  id: surface1-46
+  rate-constant:
+    A: 3.298e+20
+    Ea: 0.0
+    b: 0.0
+- equation: CHOX(33) + OHX(31) <=> COX(23) + H2OX(32)
+  id: surface1-47
+  rate-constant:
+    A: 3.261e+20
+    Ea: 28944912.0
+    b: 0.0
+- equation: CH4X(24) + OX(25) <=> CH3X(27) + OHX(31)
+  id: surface1-48
+  rate-constant:
+    A: 5.62e+23
+    Ea: 92700704.00000001
+    b: -0.101
+- equation: CH2X(26) + CH4X(24) <=> 2 CH3X(27)
+  id: surface1-49
+  rate-constant:
+    A: 4.147872e+16
+    Ea: 86462360.0
+    b: 0.937
+- equation: CH4X(24) + CHX(28) <=> CH2X(26) + CH3X(27)
+  id: surface1-50
+  rate-constant:
+    A: 4.147872e+16
+    Ea: 86462360.0
+    b: 0.937
+- equation: CH4X(24) + CX(29) <=> CH3X(27) + CHX(28)
+  id: surface1-51
+  rate-constant:
+    A: 4.147872e+16
+    Ea: 86462360.0
+    b: 0.937
+- equation: CH4X(24) + OHX(31) <=> CH3X(27) + H2OX(32)
+  id: surface1-52
+  rate-constant:
+    A: 4.0e+16
+    Ea: 0.0
+    b: 0.0
+- equation: CHX(28) + OHX(31) <=> CH2X(26) + OX(25)
+  id: surface1-53
+  rate-constant:
+    A: 4.4e+21
+    Ea: 42869264.0
+    b: 0.101
+- equation: CH2X(26) + OHX(31) <=> CH3X(27) + OX(25)
+  id: surface1-54
+  rate-constant:
+    A: 1.39e+20
+    Ea: 18999544.0
+    b: 0.101
+- equation: CX(29) + OHX(31) <=> CHX(28) + OX(25)
+  id: surface1-55
+  rate-constant:
+    A: 2.43e+20
+    Ea: 118900912.0
+    b: -0.312
+- equation: 2 CH2X(26) <=> CH3X(27) + CHX(28)
+  id: surface1-56
+  rate-constant:
+    A: 2.78e+20
+    Ea: 18999544.0
+    b: 0.101
+- equation: CH3X(27) + CX(29) <=> CH2X(26) + CHX(28)
+  id: surface1-57
+  rate-constant:
+    A: 8.492777000000001e+20
+    Ea: 59450456.0
+    b: -0.156
+- equation: CH2X(26) + CX(29) <=> 2 CHX(28)
+  id: surface1-58
+  rate-constant:
+    A: 4.86e+20
+    Ea: 118900912.0
+    b: -0.312
+- equation: CHX(28) + H2OX(32) <=> CH2X(26) + OHX(31)
+  id: surface1-59
+  rate-constant:
+    A: 2.073936e+16
+    Ea: 133670432.0
+    b: 0.937
+- equation: CH2X(26) + H2OX(32) <=> CH3X(27) + OHX(31)
+  id: surface1-60
+  rate-constant:
+    A: 2.073936e+16
+    Ea: 86462360.0
+    b: 0.937
+- equation: CX(29) + H2OX(32) <=> CHX(28) + OHX(31)
+  id: surface1-61
+  rate-constant:
+    A: 2.073936e+16
+    Ea: 86462360.0
+    b: 0.937
+- equation: COX(23) + HX(21) <=> CHOX(231) + X(1)
+  id: surface1-62
+  rate-constant:
+    A: 3.799000000000001e+20
+    Ea: 218057528.0
+    b: 0.0
+- duplicate: true
+  equation: CHOX(231) + X(1) <=> CX(29) + OHX(31)
+  id: surface1-63
+  rate-constant:
+    A: 1.46e+23
+    Ea: 147339560.0
+    b: -0.213
+- equation: CX(29) + H2OX(32) <=> CHOX(231) + HX(21)
+  id: surface1-64
+  rate-constant:
+    A: 2.073936e+16
+    Ea: 86462360.0
+    b: 0.937
+- duplicate: true
+  equation: CHOX(231) + X(1) <=> CX(29) + OHX(31)
+  id: surface1-65
+  rate-constant:
+    A: 1.46e+23
+    Ea: 147339560.0
+    b: -0.213
+- equation: CHOX(33) + HX(21) <=> CH2OX(232) + X(1)
+  id: surface1-66
+  rate-constant:
+    A: 3.048e+20
+    Ea: 87801240.0
+    b: 0.0
+- duplicate: true
+  equation: CH2OX(232) + X(1) <=> CHX(28) + OHX(31)
+  id: surface1-67
+  rate-constant:
+    A: 1.46e+23
+    Ea: 54299952.00000001
+    b: -0.213
+- equation: CHX(28) + H2OX(32) <=> CH2OX(232) + HX(21)
+  id: surface1-68
+  rate-constant:
+    A: 2.073936e+16
+    Ea: 86462360.0
+    b: 0.937
+- equation: CH2OX(232) + X(1) <=> CHOX(231) + HX(21)
+  id: surface1-69
+  rate-constant:
+    A: 3.71e+20
+    Ea: 0.0
+    b: 0.0
+- equation: CH4X(24) + CHOX(231) <=> CH2OX(232) + CH3X(27)
+  id: surface1-70
+  rate-constant:
+    A: 4.147872e+16
+    Ea: 86462360.0
+    b: 0.937
+- equation: CH2OX(232) + CHX(28) <=> CH2X(26) + CHOX(231)
+  id: surface1-71
+  rate-constant:
+    A: 4.4e+21
+    Ea: 42400656.0
+    b: 0.101
+- equation: CH2OX(232) + CH2X(26) <=> CH3X(27) + CHOX(231)
+  id: surface1-72
+  rate-constant:
+    A: 1.39e+20
+    Ea: 18999544.0
+    b: 0.101
+- duplicate: true
+  equation: CH2OX(232) + CX(29) <=> CHOX(231) + CHX(28)
+  id: surface1-73
+  rate-constant:
+    A: 2.43e+20
+    Ea: 118900912.0
+    b: -0.312
+- duplicate: true
+  equation: CH2OX(232) + CX(29) <=> CHOX(231) + CHX(28)
+  id: surface1-74
+  rate-constant:
+    A: 2.43e+20
+    Ea: 118900912.0
+    b: -0.312
+- equation: CHOX(231) + H2X(30) <=> CH2OX(232) + HX(21)
+  id: surface1-75
+  rate-constant:
+    A: 2.073936e+16
+    Ea: 86462360.0
+    b: 0.937
+- equation: CHOX(231) + OHX(31) <=> CH2OX(232) + OX(25)
+  id: surface1-76
+  rate-constant:
+    A: 4.4e+21
+    Ea: 56555128.00000001
+    b: 0.101
+- equation: CHOX(231) + H2OX(32) <=> CH2OX(232) + OHX(31)
+  id: surface1-77
+  rate-constant:
+    A: 2.073936e+16
+    Ea: 147059232.0
+    b: 0.937
+- equation: CHOX(231) + CHOX(33) <=> CH2OX(232) + COX(23)
+  id: surface1-78
+  rate-constant:
+    A: 1.204624e+21
+    Ea: 21200328.0
+    b: 0.051
+- duplicate: true
+  equation: CH2OX(232) + X(1) <=> CHX(28) + OHX(31)
+  id: surface1-79
+  rate-constant:
+    A: 1.46e+23
+    Ea: 54299952.00000001
+    b: -0.213
+- duplicate: true
+  equation: CH2OX(232) + CX(29) <=> CHOX(231) + CHX(28)
+  id: surface1-80
+  rate-constant:
+    A: 2.43e+20
+    Ea: 118900912.0
+    b: -0.312
+- duplicate: true
+  equation: CH2OX(232) + CX(29) <=> CHOX(231) + CHX(28)
+  id: surface1-81
+  rate-constant:
+    A: 2.43e+20
+    Ea: 118900912.0
+    b: -0.312
+- equation: C2H4(52) + 2 X(1) <=> CH3X(27) + CHX(28)
+  id: surface1-82
+  sticking-coefficient:
+    A: 0.015
+    Ea: 4999880.000000001
+    b: 0.0
+- equation: CH4X(24) + CX(29) <=> C2H3X(241) + HX(21)
+  id: surface1-83
+  rate-constant:
+    A: 4.147872e+16
+    Ea: 86462360.0
+    b: 0.937
+- duplicate: true
+  equation: C2H3X(241) + X(1) <=> CH3X(27) + CX(29)
+  id: surface1-84
+  rate-constant:
+    A: 7.359755000000001e+21
+    Ea: 93612816.00000001
+    b: -0.106
+- equation: C2H4(52) + 2 X(1) <=> C2H3X(241) + HX(21)
+  id: surface1-85
+  sticking-coefficient:
+    A: 0.015
+    Ea: 4999880.000000001
+    b: 0.0
+- duplicate: true
+  equation: C2H3X(241) + X(1) <=> CH3X(27) + CX(29)
+  id: surface1-86
+  rate-constant:
+    A: 7.359755000000001e+21
+    Ea: 93612816.00000001
+    b: -0.106
+- equation: CH3OH(14) + 2 X(1) <=> CH3OX(61) + HX(21)
+  id: surface1-87
+  sticking-coefficient:
+    A: 0.045
+    Ea: 4999880.000000001
+    b: 0.0
+- equation: CH2O(9) + HX(21) <=> CH3OX(61)
+  id: surface1-88
+  sticking-coefficient:
+    A: 0.05
+    Ea: 73061008.0
+    b: 0.0
+- duplicate: true
+  equation: CH3OX(61) + X(1) <=> CH2X(26) + OHX(31)
+  id: surface1-89
+  rate-constant:
+    A: 1.46e+23
+    Ea: 130206080.0
+    b: -0.213
+- equation: CH2X(26) + H2OX(32) <=> CH3OX(61) + HX(21)
+  id: surface1-90
+  rate-constant:
+    A: 2.073936e+16
+    Ea: 86462360.0
+    b: 0.937
+- equation: CH3OX(61) + CX(29) <=> CH2X(26) + CHOX(231)
+  id: surface1-91
+  rate-constant:
+    A: 2.43e+20
+    Ea: 118900912.0
+    b: -0.312
+- equation: CH3OX(61) + X(1) <=> CH2OX(232) + HX(21)
+  id: surface1-92
+  rate-constant:
+    A: 7.42e+20
+    Ea: 47065816.0
+    b: 0.0
+- equation: CH2OX(232) + CH4X(24) <=> CH3OX(61) + CH3X(27)
+  id: surface1-93
+  rate-constant:
+    A: 4.147872e+16
+    Ea: 86462360.0
+    b: 0.937
+- duplicate: true
+  equation: CH2OX(232) + CH2X(26) <=> CH3OX(61) + CHX(28)
+  id: surface1-94
+  rate-constant:
+    A: 1.39e+20
+    Ea: 18999544.0
+    b: 0.101
+- duplicate: true
+  equation: CH2OX(232) + CH2X(26) <=> CH3OX(61) + CHX(28)
+  id: surface1-95
+  rate-constant:
+    A: 2.78e+20
+    Ea: 18999544.0
+    b: 0.101
+- equation: CH2OX(232) + CH3X(27) <=> CH2X(26) + CH3OX(61)
+  id: surface1-96
+  rate-constant:
+    A: 6.423238e+20
+    Ea: 9501864.000000002
+    b: 0.051
+- equation: CH3OX(61) + CX(29) <=> CH2OX(232) + CHX(28)
+  id: surface1-97
+  rate-constant:
+    A: 5.661851e+20
+    Ea: 59450456.0
+    b: -0.156
+- equation: CH2OX(232) + H2X(30) <=> CH3OX(61) + HX(21)
+  id: surface1-98
+  rate-constant:
+    A: 2.073936e+16
+    Ea: 86462360.0
+    b: 0.937
+- equation: CH3OX(61) + OX(25) <=> CH2OX(232) + OHX(31)
+  id: surface1-99
+  rate-constant:
+    A: 6.596e+20
+    Ea: 57559288.0
+    b: 0.0
+- equation: CH2OX(232) + H2OX(32) <=> CH3OX(61) + OHX(31)
+  id: surface1-100
+  rate-constant:
+    A: 2.073936e+16
+    Ea: 86462360.0
+    b: 0.937
+- equation: CH2OX(232) + CHOX(33) <=> CH3OX(61) + COX(23)
+  id: surface1-101
+  rate-constant:
+    A: 2.141079e+20
+    Ea: 9501864.000000002
+    b: 0.051
+- equation: 2 CH2OX(232) <=> CH3OX(61) + CHOX(231)
+  id: surface1-102
+  rate-constant:
+    A: 1.39e+20
+    Ea: 18999544.0
+    b: 0.101
+- duplicate: true
+  equation: CH3OX(61) + X(1) <=> CH2X(26) + OHX(31)
+  id: surface1-103
+  rate-constant:
+    A: 1.46e+23
+    Ea: 130206080.0
+    b: -0.213
+- duplicate: true
+  equation: CH2OX(232) + CH2X(26) <=> CH3OX(61) + CHX(28)
+  id: surface1-104
+  rate-constant:
+    A: 1.39e+20
+    Ea: 18999544.0
+    b: 0.101
+- duplicate: true
+  equation: CH2OX(232) + CH2X(26) <=> CH3OX(61) + CHX(28)
+  id: surface1-105
+  rate-constant:
+    A: 2.78e+20
+    Ea: 18999544.0
+    b: 0.101
+- equation: CO2(4) + HX(21) <=> HOCOX(138)
+  id: surface1-106
+  sticking-coefficient:
+    A: 0.1
+    Ea: 73061008.0
+    b: 0.0
+- equation: CO2X(22) + HX(21) <=> HOCOX(138) + X(1)
+  id: surface1-107
+  rate-constant:
+    A: 6.25e+23
+    Ea: 117198024.0
+    b: -0.475
+- equation: CH4X(24) + CO2X(22) <=> CH3X(27) + HOCOX(138)
+  id: surface1-108
+  rate-constant:
+    A: 16245860000000.0
+    Ea: 168677960.0
+    b: 1.299
+- equation: CH2X(26) + CO2X(22) <=> CHX(28) + HOCOX(138)
+  id: surface1-109
+  rate-constant:
+    A: 7.256e+19
+    Ea: 40522040.0
+    b: 0.0
+- equation: CH3X(27) + CO2X(22) <=> CH2X(26) + HOCOX(138)
+  id: surface1-110
+  rate-constant:
+    A: 1.0884e+20
+    Ea: 98010200.0
+    b: 0.0
+- equation: CHX(28) + CO2X(22) <=> CX(29) + HOCOX(138)
+  id: surface1-111
+  rate-constant:
+    A: 3.628e+19
+    Ea: 129837888.0
+    b: 0.0
+- equation: CO2X(22) + H2X(30) <=> HOCOX(138) + HX(21)
+  id: surface1-112
+  rate-constant:
+    A: 8122929000000.0
+    Ea: 168677960.0
+    b: 1.299
+- equation: CO2X(22) + OHX(31) <=> HOCOX(138) + OX(25)
+  id: surface1-113
+  rate-constant:
+    A: 3.628e+19
+    Ea: 67680384.0
+    b: 0.0
+- equation: HOCOX(138) + OHX(31) <=> CO2X(22) + H2OX(32)
+  id: surface1-114
+  rate-constant:
+    A: 3.398e+20
+    Ea: 0.0
+    b: 0.0
+- equation: CHOX(33) + CO2X(22) <=> COX(23) + HOCOX(138)
+  id: surface1-115
+  rate-constant:
+    A: 3.628e+19
+    Ea: 40522040.0
+    b: 0.0
+- duplicate: true
+  equation: COX(23) + OHX(31) <=> HOCOX(138) + X(1)
+  id: surface1-116
+  rate-constant:
+    A: 4.02e+17
+    Ea: 63232792.00000001
+    b: 0.0
+- equation: COX(23) + H2OX(32) <=> HOCOX(138) + HX(21)
+  id: surface1-117
+  rate-constant:
+    A: 2.073936e+16
+    Ea: 143247608.0
+    b: 0.937
+- equation: CX(29) + HOCOX(138) <=> CHOX(231) + COX(23)
+  id: surface1-118
+  rate-constant:
+    A: 2.43e+20
+    Ea: 118900912.0
+    b: -0.312
+- equation: CH2OX(232) + CO2X(22) <=> CHOX(231) + HOCOX(138)
+  id: surface1-119
+  rate-constant:
+    A: 3.628e+19
+    Ea: 40522040.0
+    b: 0.0
+- equation: CHX(28) + HOCOX(138) <=> CH2OX(232) + COX(23)
+  id: surface1-120
+  rate-constant:
+    A: 4.4e+21
+    Ea: 42400656.0
+    b: 0.101
+- equation: CH3OX(61) + CO2X(22) <=> CH2OX(232) + HOCOX(138)
+  id: surface1-121
+  rate-constant:
+    A: 7.256e+19
+    Ea: 125239672.0
+    b: 0.0
+- equation: CH2X(26) + HOCOX(138) <=> CH3OX(61) + COX(23)
+  id: surface1-122
+  rate-constant:
+    A: 1.39e+20
+    Ea: 18999544.0
+    b: 0.101
+- duplicate: true
+  equation: COX(23) + OHX(31) <=> HOCOX(138) + X(1)
+  id: surface1-123
+  rate-constant:
+    A: 4.02e+17
+    Ea: 63232792.00000001
+    b: 0.0
+- equation: C2HOX(246) + X(1) <=> CHOX(33) + CX(29)
+  id: surface1-124
+  rate-constant:
+    A: 7.359755000000001e+21
+    Ea: 79454160.00000001
+    b: -0.106
